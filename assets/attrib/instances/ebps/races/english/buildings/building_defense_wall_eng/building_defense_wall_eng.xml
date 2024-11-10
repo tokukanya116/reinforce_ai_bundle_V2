@@ -1,0 +1,108 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1184830763" List.ParentItemID="-1184830763">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="Wall" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1930986963" List.ParentItemID="-1930986963">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="4500" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\english" List.ItemID="1350599862" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="31226680" List.ParentItemID="31226680">
+			<group name="time_cost">
+				<float name="time_seconds" value="14" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1904123328" List.ParentItemID="-1904123328">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+				<instance_reference name="fence_cap_entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_wall_bastion_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+			</template_reference>
+			<list name="cap_connection_variants" overrideParent="True">
+				<group name="cap_connection_entry" List.ItemID="380611728">
+					<string name="attachment_category" value="" overrideParent="True" />
+					<float name="default_angle_between_connections" value="0" />
+					<int name="number_of_connections" value="0" />
+					<string name="sim_inventory_category" value="" />
+					<list name="connection_bones">
+					</list>
+				</group>
+			</list>
+			<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_segments_west" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="166251" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1735264747" List.ParentItemID="1735264747">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="Wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="254499696" List.ParentItemID="254499696">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2123635899" List.ParentItemID="-2123635899">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="327942837" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="2039514846" List.ParentItemID="2039514846">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_wall_bastion_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				</template_reference>
+				<list name="cap_connection_variants" overrideParent="True">
+					<group name="cap_connection_entry" List.ItemID="-444523101">
+						<string name="attachment_category" value="" overrideParent="True" />
+						<float name="default_angle_between_connections" value="0" />
+						<int name="number_of_connections" value="0" />
+						<string name="sim_inventory_category" value="" />
+						<list name="connection_bones">
+						</list>
+					</group>
+				</list>
+				<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_segments_west" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="166251" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1184830763" List.ParentItemID="-1184830763">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="Wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1930986963" List.ParentItemID="-1930986963">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="-448248470" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1904123328" List.ParentItemID="-1904123328">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_wall_bastion_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				</template_reference>
+				<list name="cap_connection_variants" overrideParent="True">
+					<group name="cap_connection_entry" List.ItemID="1789364573">
+						<string name="attachment_category" value="" overrideParent="True" />
+						<float name="default_angle_between_connections" value="0" />
+						<int name="number_of_connections" value="0" />
+						<string name="sim_inventory_category" value="" />
+						<list name="connection_bones">
+						</list>
+					</group>
+				</list>
+				<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_segments_west" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="166251" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall" />
+	</variant>
+</instance>

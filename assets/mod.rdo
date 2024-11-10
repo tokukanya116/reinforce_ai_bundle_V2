@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--Mod/-->
+	<DataObject Name="reinforce_bundle_v2" Type="Mod" Id="13046261111387794146" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">732191981967142736</DataValue>
+			<!--Mod/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="732191981967142736" OwnerId="13046261111387794146">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="1302638257"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="3939995532"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="4271330456"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1208664683"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">14945176494692558037</DataValue>
+			<!--Mod/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="14945176494692558037" OwnerId="13046261111387794146">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="1302638257"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="3939995532"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="4271330456"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1208664683"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+

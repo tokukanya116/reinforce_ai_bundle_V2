@@ -1,0 +1,110 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1212808348" List.ParentItemID="-1212808348">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\building_defense_wall_eng\building_defense_wall_stone_tower_eng" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2028962899" List.ParentItemID="2028962899">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="4500" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-923485527" List.ParentItemID="-923485527">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\english" List.ItemID="-1502749320" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1200962088" List.ParentItemID="1200962088">
+			<bool name="show_ability_range_in_construction_item_preview" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-730002550" List.ParentItemID="-730002550">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_dependent">
+				<instance_reference name="depends_on_blueprint" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_wall_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-349461896" List.ParentItemID="-349461896">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle_no_enemies" overrideParent="True" List.ItemID="1680491812" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="-182547063" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1758295093" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-575977893" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1237379993" List.ParentItemID="1237379993">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\english\tower_eng" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="166248" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_tower" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="621879581" List.ParentItemID="621879581">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\building_defense_wall_eng\building_defense_wall_stone_tower_eng" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1787291477" List.ParentItemID="-1787291477">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-504935898" List.ParentItemID="-504935898">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="-272105270" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1734843614" List.ParentItemID="-1734843614">
+				<bool name="show_ability_range_in_construction_item_preview" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="1353921606" List.ParentItemID="1353921606">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_dependent">
+					<instance_reference name="depends_on_blueprint" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_wall_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="1310878414" List.ParentItemID="1310878414">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle_no_enemies" overrideParent="True" List.ItemID="-795259280" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="-316081138" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1985033395" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1232426698" List.ParentItemID="1232426698">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\english\tower_eng" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="166248" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_tower" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1212808348" List.ParentItemID="-1212808348">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\building_defense_wall_eng\building_defense_wall_stone_tower_eng" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2028962899" List.ParentItemID="2028962899">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-923485527" List.ParentItemID="-923485527">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="1845034215" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="1200962088" List.ParentItemID="1200962088">
+				<bool name="show_ability_range_in_construction_item_preview" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-730002550" List.ParentItemID="-730002550">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_dependent">
+					<instance_reference name="depends_on_blueprint" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_wall_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-349461896" List.ParentItemID="-349461896">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle_no_enemies" overrideParent="True" List.ItemID="-1458286421" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="614361080" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1652627918" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1237379993" List.ParentItemID="1237379993">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\english\tower_eng" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="166248" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_tower" />
+	</variant>
+</instance>
