@@ -31,7 +31,7 @@
 		<bool name="initial_recharge" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="25" comment="生效范围" />
+		<float name="range" value="100" comment="生效范围" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="0" />
 		<bool name="refundable" value="True" />
@@ -195,7 +195,7 @@
 			<state_tree_node name="ability_activate_deferred_tree" value="" />
 		</group>
 		<bool name="clear_ability_on_blueprint_conversion" value="True" />
-		<float name="min_range" value="0" />
+		<float name="min_range" value="100" />
 		<instance_reference name="ability_description" value="" />
 		<enum name="ability_description_storage_index" value="" />
 		<int name="default_command_weight_modifier" value="0" />
@@ -223,7 +223,7 @@
 		<bool name="can_cast_again_whilst_pending" value="False" />
 		<list name="float_properties">
 			<template_reference name="float" value="abilitybag_float_property" List.ItemID="1532397848">
-				<float name="value" value="1.3" />
+				<float name="value" value="2" />
 				<enum name="id" value="melee_damage_amplification" />
 			</template_reference>
 			<template_reference name="float" value="abilitybag_float_property" List.ItemID="909690776">

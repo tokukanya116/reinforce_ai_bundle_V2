@@ -1935,7 +1935,7 @@
 					<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_2_abb" List.ItemID="1565339515" />
 					<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_3_abb" List.ItemID="-1729277293" />
 					<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_4_abb" List.ItemID="860457293" />
-					<instance_reference name="member" value="sbps\races\chinese\unit_horseman_2_chi" List.ItemID="-1188269844" />
+					<instance_reference name="member" value="sbps\races\chinese\unit_horseman_2_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1188269844" />
 					<instance_reference name="member" value="sbps\races\chinese\unit_horseman_3_chi" List.ItemID="-301480966" />
 					<instance_reference name="member" value="sbps\races\chinese\unit_horseman_4_chi" List.ItemID="983241491" />
 					<instance_reference name="member" value="sbps\races\english\unit_horseman_2_eng" List.ItemID="-778523781" />
@@ -4184,7 +4184,7 @@
 					<instance_reference name="member" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_fell_rate_1_kura_jpn" List.ItemID="1752811005" />
 					<instance_reference name="member" value="upgrade\races\abbasid\research\upgrade_econ_fertile_crescent_abb" List.ItemID="-1750475155" />
 					<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\officials\upgrade_official_limit" List.ItemID="-1922360578" />
-					<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\officials\upgrade_official_movement_speed" List.ItemID="1623476149" />
+					<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\officials\upgrade_official_movement_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1623476149" />
 					<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\officials\upgrade_official_supervise" List.ItemID="-1104261498" />
 					<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\upgrade_library_improved_officials" List.ItemID="-189729812" />
 					<instance_reference name="member" value="upgrade\races\hre\research\unit\upgrade_unit_religious_tithe_barn_4_hre" List.ItemID="-135117320" />
@@ -6437,7 +6437,7 @@
 						<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_2_abb" List.ItemID="-531392641" />
 						<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_3_abb" List.ItemID="-573944162" />
 						<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_4_abb" List.ItemID="1329339948" />
-						<instance_reference name="member" value="sbps\races\chinese\unit_horseman_2_chi" List.ItemID="785227610" />
+						<instance_reference name="member" value="sbps\races\chinese\unit_horseman_2_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="785227610" />
 						<instance_reference name="member" value="sbps\races\chinese\unit_horseman_3_chi" List.ItemID="-163895177" />
 						<instance_reference name="member" value="sbps\races\chinese\unit_horseman_4_chi" List.ItemID="646619831" />
 						<instance_reference name="member" value="sbps\races\english\unit_horseman_2_eng" List.ItemID="-1063279452" />
@@ -9717,7 +9717,7 @@
 						<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_2_abb" List.ItemID="1850901535" />
 						<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_3_abb" List.ItemID="693969219" />
 						<instance_reference name="member" value="sbps\races\abbasid\unit_horseman_4_abb" List.ItemID="-75664584" />
-						<instance_reference name="member" value="sbps\races\chinese\unit_horseman_2_chi" List.ItemID="-145442528" />
+						<instance_reference name="member" value="sbps\races\chinese\unit_horseman_2_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-145442528" />
 						<instance_reference name="member" value="sbps\races\chinese\unit_horseman_3_chi" List.ItemID="766068226" />
 						<instance_reference name="member" value="sbps\races\chinese\unit_horseman_4_chi" List.ItemID="-1537321867" />
 						<instance_reference name="member" value="sbps\races\english\unit_horseman_2_eng" List.ItemID="-165715202" />
@@ -11959,7 +11959,7 @@
 						<instance_reference name="member" value="upgrade\races\japanese\research\economy\upgrade_econ_resource_wood_fell_rate_1_kura_jpn" List.ItemID="-893984190" />
 						<instance_reference name="member" value="upgrade\races\abbasid\research\upgrade_econ_fertile_crescent_abb" List.ItemID="2004739558" />
 						<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\officials\upgrade_official_limit" List.ItemID="135962341" />
-						<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\officials\upgrade_official_movement_speed" List.ItemID="597773883" />
+						<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\officials\upgrade_official_movement_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="597773883" />
 						<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\officials\upgrade_official_supervise" List.ItemID="878279573" />
 						<instance_reference name="member" value="upgrade\races\chinese_ha_01\research\upgrade_library_improved_officials" List.ItemID="-783177783" />
 						<instance_reference name="member" value="upgrade\races\hre\research\unit\upgrade_unit_religious_tithe_barn_4_hre" List.ItemID="-389210498" />
