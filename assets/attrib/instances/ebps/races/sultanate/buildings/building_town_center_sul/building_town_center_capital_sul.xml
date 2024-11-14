@@ -28,10 +28,10 @@
 				<instance_reference name="ability" value="abilities\always_on_abilities\sultanate\scholar_research_behavior_sul" List.ItemID="-691797607" />
 				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2068006033" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\town_center_town_bell" List.ItemID="1672643142" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\kurultai_healing_aura_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="118512348" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal_and_damge" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="118512348" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_addition" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="683923848" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_main" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1929544099" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1881618814" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1881618814" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-272167440" List.ParentItemID="-272167440">

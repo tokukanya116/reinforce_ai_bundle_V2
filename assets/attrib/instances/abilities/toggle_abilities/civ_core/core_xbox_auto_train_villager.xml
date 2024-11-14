@@ -237,6 +237,6 @@
 		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_town_center\auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 		<int name="default_command_additional_rally_weight_modifier" value="0" />
 	</group>
-	<uniqueid name="pbgid" value="2139668" />
+	<uniqueid name="pbgid" value="1073741838" />
 	<instance_reference name="parent_pbg" value="" />
 </instance>

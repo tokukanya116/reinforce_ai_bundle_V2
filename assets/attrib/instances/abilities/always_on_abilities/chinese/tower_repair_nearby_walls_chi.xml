@@ -235,7 +235,7 @@
 		<instance_reference name="hotkey_binding" value="" />
 		<int name="default_command_additional_rally_weight_modifier" value="0" />
 	</group>
-	<uniqueid name="pbgid" value="182388" />
+	<uniqueid name="pbgid" value="1073741839" />
 	<instance_reference name="parent_pbg" value="" />
 	<variant name="campaign">
 		<group name="ability_bag">
@@ -480,7 +480,7 @@
 			<instance_reference name="hotkey_binding" value="" />
 			<int name="default_command_additional_rally_weight_modifier" value="0" />
 		</group>
-		<uniqueid name="pbgid" value="182388" />
+		<uniqueid name="pbgid" value="1073741839" />
 		<instance_reference name="parent_pbg" value="" />
 	</variant>
 </instance>
