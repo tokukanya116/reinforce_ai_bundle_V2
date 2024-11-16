@@ -16,10 +16,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="565171784" List.ParentItemID="565171784">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal_and_damge" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="466548591" List.ListAction="Append" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_addition" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1699767855" List.ListAction="Append" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_main" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1392056413" List.ListAction="Append" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2040648650" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal_and_damge" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="466548591" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_addition" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1699767855" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_main" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="1392056413" List.ListAction="Append" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-2040648650" List.ListAction="Append" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-272167440" List.ParentItemID="-272167440">

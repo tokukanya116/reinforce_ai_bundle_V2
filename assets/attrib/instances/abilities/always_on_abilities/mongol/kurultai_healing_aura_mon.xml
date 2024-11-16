@@ -67,7 +67,12 @@
 			</template_reference>
 			<template_reference name="extra_text_formatter" value="">
 			</template_reference>
-			<template_reference name="help_text_formatter" value="">
+			<template_reference name="help_text_formatter" value="ui_text_formatter">
+				<list name="formatter_arguments">
+					<int name="int_value" value="3" List.ItemID="1073531561" />
+					<float name="float_value" value="1.5" List.ItemID="-1992333893" />
+				</list>
+				<locstring name="formatter" value="6" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 			</template_reference>
 			<template_reference name="help_text_alternate_formatter" value="">
 			</template_reference>
@@ -233,7 +238,7 @@
 		</list>
 		<list name="int_properties">
 			<template_reference name="int" value="abilitybag_int_property" List.ItemID="-693755919">
-				<int name="value" value="1" />
+				<int name="value" value="3" />
 				<enum name="id" value="military_building_heal_amount_mon" />
 			</template_reference>
 		</list>
