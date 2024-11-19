@@ -1667,7 +1667,7 @@
 			<list name="standard_upgrades" overrideParent="True">
 				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_springald" List.ItemID="-1264372838" />
 				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-395359755" />
-				<instance_reference name="upgrade" value="upgrade\races\english\research\upgrade_network_of_citadels_eng" List.ItemID="710931218" />
+				<instance_reference name="upgrade" value="upgrade\races\english\research\upgrade_network_of_citadels_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="710931218" />
 				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="884129761" />
 			</list>
 		</template_reference>
@@ -1676,7 +1676,7 @@
 				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-970292803" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="94898447" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="1382112006" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1165972345" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1165972345" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1565087475" />
 			</list>
 		</template_reference>

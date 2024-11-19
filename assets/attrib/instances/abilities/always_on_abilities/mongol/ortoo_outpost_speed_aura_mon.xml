@@ -69,8 +69,8 @@
 			</template_reference>
 			<template_reference name="help_text_formatter" value="ui_text_formatter">
 				<list name="formatter_arguments">
-					<int name="int_value" value="20" List.ItemID="1072151217" />
-					<int name="int_value" value="13" List.ItemID="354407135" />
+					<int name="int_value" value="15" List.ItemID="1072151217" />
+					<int name="int_value" value="10" List.ItemID="354407135" />
 				</list>
 				<locstring name="formatter" value="11219984" />
 			</template_reference>
@@ -279,6 +279,14 @@
 		<bool name="can_passive_ability_create_formation_squad_group" value="False" />
 		<bool name="can_cast_again_whilst_pending" value="False" />
 		<list name="float_properties">
+			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-977099607">
+				<float name="value" value="20" />
+				<enum name="id" value="move_speed" />
+			</template_reference>
+			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-1906938719">
+				<float name="value" value="55" />
+				<enum name="id" value="cooldown" />
+			</template_reference>
 		</list>
 		<list name="int_properties">
 		</list>
@@ -288,6 +296,6 @@
 		<instance_reference name="hotkey_binding" value="" />
 		<int name="default_command_additional_rally_weight_modifier" value="0" />
 	</group>
-	<uniqueid name="pbgid" value="131400" />
+	<uniqueid name="pbgid" value="1073741837" />
 	<instance_reference name="parent_pbg" value="" />
 </instance>

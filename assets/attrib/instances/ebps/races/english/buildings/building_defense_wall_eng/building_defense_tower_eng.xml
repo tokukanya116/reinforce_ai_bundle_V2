@@ -25,7 +25,7 @@
 			<list name="abilities" overrideParent="True">
 				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle_no_enemies" overrideParent="True" List.ItemID="1680491812" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="-182547063" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1758295093" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1758295093" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-575977893" />
 			</list>
 		</template_reference>
@@ -61,7 +61,7 @@
 				<list name="abilities" overrideParent="True">
 					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle_no_enemies" overrideParent="True" List.ItemID="-795259280" />
 					<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="-316081138" />
-					<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1985033395" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1985033395" />
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1232426698" List.ParentItemID="1232426698">
@@ -97,7 +97,7 @@
 				<list name="abilities" overrideParent="True">
 					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle_no_enemies" overrideParent="True" List.ItemID="-1458286421" />
 					<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="614361080" />
-					<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1652627918" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1652627918" />
 				</list>
 			</template_reference>
 			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1237379993" List.ParentItemID="1237379993">

@@ -378,6 +378,7 @@
 					<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_ranged_janissary_guns_ott" List.ItemID="1267307504" />
 					<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_monk_formation_ott" List.ItemID="1372700105" />
 					<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_manned_siege_ott" List.ItemID="-1856129250" />
+					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="740003508" />
 				</list>
 			</group>
 			<group name="utility_entry" comment="Econ" List.ItemID="-1186785654">
@@ -399,6 +400,7 @@
 					<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_anatolian_hills_ott" List.ItemID="-531170338" />
 					<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_trader_capacity_ott" List.ItemID="-21138013" />
 					<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_trader_bonus_castle_ott" List.ItemID="-473709432" />
+					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1996943140" />
 				</list>
 			</group>
 		</list>
@@ -1070,7 +1072,7 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_palantine_chapel_hre\building_landmark_age1_palantine_chapel_hre" List.ItemID="-1726090977" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_golden_gate_vladimir_rus\building_landmark_age1_golden_gate_vladimir_control_rus" List.ItemID="1833919716" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_quwwat_ul_islam_sul\building_landmark_age1_quwwat_ul_islam_control_sul" List.ItemID="2006590026" />
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" List.ItemID="-726263097" />
+					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-726263097" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarkb_mal" List.ItemID="-233114516" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age1_cifte_minareli_medrese_ott" List.ItemID="-1825275183" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age1_han_caravanserai_ott" List.ItemID="965796676" />
@@ -1108,7 +1110,7 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_imperial_palace_of_paderborn_hre" List.ItemID="-1759041014" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" List.ItemID="1148091822" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_qutub_minar_sul\building_landmark_age1_qutub_minar_control_sul" List.ItemID="1349247413" />
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" List.ItemID="-349505230" />
+					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-349505230" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarka_mal" List.ItemID="757028912" />
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
@@ -1139,31 +1141,31 @@
 			</group>
 			<group name="utility_entry" comment="Walls" List.ItemID="-1809249898">
 				<list name="blueprints">
-					<instance_reference name="entity" value="ebps\races\campaign\lithuania\buildings\building_defense_wall_lith\building_defense_palisade_lith" List.ItemID="236092320" />
-					<instance_reference name="entity" value="ebps\races\campaign\lithuania\buildings\building_defense_wall_lith\building_defense_wall_lith" List.ItemID="-49988569" />
-					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_palisade_chi" List.ItemID="-1806137383" />
-					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_chi" List.ItemID="831169310" />
-					<instance_reference name="entity" value="ebps\races\core\buildings\building_defense_wall" List.ItemID="-1448521798" />
-					<instance_reference name="entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_palisade_eng" List.ItemID="-2091908797" />
-					<instance_reference name="entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_wall_eng" List.ItemID="1171488403" />
-					<instance_reference name="entity" value="ebps\races\french\buildings\building_defense_wall_fre\building_defense_palisade_fre" List.ItemID="1584550117" />
-					<instance_reference name="entity" value="ebps\races\french\buildings\building_defense_wall_fre\building_defense_wall_fre" List.ItemID="-192604285" />
-					<instance_reference name="entity" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_palisade_hre" List.ItemID="1253447246" />
-					<instance_reference name="entity" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_wall_hre" List.ItemID="698543012" />
-					<instance_reference name="entity" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_palisade_rus" List.ItemID="-1694566732" />
-					<instance_reference name="entity" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_rus" List.ItemID="-1660245463" />
-					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_defense_wall_sul\building_defense_palisade_sul" List.ItemID="-116065083" />
-					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_defense_wall_sul\building_defense_wall_sul" List.ItemID="2052227768" />
-					<instance_reference name="entity" value="ebps\races\malian\buildings\building_defense_wall_mal\building_defense_wall_mal" List.ItemID="1575046620" />
-					<instance_reference name="entity" value="ebps\races\malian\buildings\building_defense_wall_mal\building_defense_palisade_mal" List.ItemID="1289603186" />
-					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_defense_wall_ott\building_defense_palisade_ott" List.ItemID="-1153054569" />
-					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_defense_wall_ott\building_defense_wall_ott" List.ItemID="732632522" />
-					<instance_reference name="entity" value="ebps\races\japanese\buildings\building_defense_wall_jpn\building_defense_palisade_jpn" List.ItemID="1973600102" />
-					<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_defense_wall_byz\building_defense_palisade_byz" List.ItemID="-214323023" />
-					<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_defense_wall_byz\building_defense_wall_byz" List.ItemID="-1707203812" />
-					<instance_reference name="entity" value="ebps\races\japanese\buildings\building_defense_wall_jpn\building_defense_wall_jpn" List.ItemID="-1725306129" />
-					<instance_reference name="entity" value="ebps\races\chinese_ha_01\buildings\building_defense_wall_chi_ha_01\building_defense_palisade_chi_ha_01" List.ItemID="42413479" />
-					<instance_reference name="entity" value="ebps\races\chinese_ha_01\buildings\building_defense_wall_chi_ha_01\building_defense_wall_chi_ha_01" List.ItemID="-682171159" />
+					<instance_reference name="entity" value="ebps\races\campaign\lithuania\buildings\building_defense_wall_lith\building_defense_palisade_lith" List.ItemID="-997372251" />
+					<instance_reference name="entity" value="ebps\races\campaign\lithuania\buildings\building_defense_wall_lith\building_defense_wall_lith" List.ItemID="1881299546" />
+					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_palisade_chi" List.ItemID="-1216503300" />
+					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_chi" List.ItemID="-1539332205" />
+					<instance_reference name="entity" value="ebps\races\core\buildings\building_defense_wall" List.ItemID="1252967884" />
+					<instance_reference name="entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_palisade_eng" List.ItemID="1834432617" />
+					<instance_reference name="entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_wall_eng" List.ItemID="2106825448" />
+					<instance_reference name="entity" value="ebps\races\french\buildings\building_defense_wall_fre\building_defense_palisade_fre" List.ItemID="235320357" />
+					<instance_reference name="entity" value="ebps\races\french\buildings\building_defense_wall_fre\building_defense_wall_fre" List.ItemID="-602060211" />
+					<instance_reference name="entity" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_palisade_hre" List.ItemID="-921550106" />
+					<instance_reference name="entity" value="ebps\races\hre\buildings\building_defense_wall_hre\building_defense_wall_hre" List.ItemID="-1926962811" />
+					<instance_reference name="entity" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_palisade_rus" List.ItemID="-277416018" />
+					<instance_reference name="entity" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_rus" List.ItemID="-1495345311" />
+					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_defense_wall_sul\building_defense_palisade_sul" List.ItemID="-811583458" />
+					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_defense_wall_sul\building_defense_wall_sul" List.ItemID="-1511325238" />
+					<instance_reference name="entity" value="ebps\races\malian\buildings\building_defense_wall_mal\building_defense_wall_mal" List.ItemID="-404195741" />
+					<instance_reference name="entity" value="ebps\races\malian\buildings\building_defense_wall_mal\building_defense_palisade_mal" List.ItemID="326672611" />
+					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_defense_wall_ott\building_defense_palisade_ott" List.ItemID="-1351213099" />
+					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_defense_wall_ott\building_defense_wall_ott" List.ItemID="469730961" />
+					<instance_reference name="entity" value="ebps\races\japanese\buildings\building_defense_wall_jpn\building_defense_palisade_jpn" List.ItemID="-1107338066" />
+					<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_defense_wall_byz\building_defense_palisade_byz" List.ItemID="1469620608" />
+					<instance_reference name="entity" value="ebps\races\byzantine\buildings\building_defense_wall_byz\building_defense_wall_byz" List.ItemID="-883730568" />
+					<instance_reference name="entity" value="ebps\races\japanese\buildings\building_defense_wall_jpn\building_defense_wall_jpn" List.ItemID="-1295696118" />
+					<instance_reference name="entity" value="ebps\races\chinese_ha_01\buildings\building_defense_wall_chi_ha_01\building_defense_palisade_chi_ha_01" List.ItemID="379461860" />
+					<instance_reference name="entity" value="ebps\races\chinese_ha_01\buildings\building_defense_wall_chi_ha_01\building_defense_wall_chi_ha_01" List.ItemID="1363584405" />
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
 					<float name="utility" value="1000" />
@@ -1174,9 +1176,13 @@
 					<int name="max_num" value="-1" />
 					<int name="max_num_produced" value="-1" />
 					<list name="weighted_strategic_intentions">
-						<group name="weighted_intention" List.ItemID="-244328980">
+						<group name="weighted_intention" List.ItemID="-2013306831">
 							<enum name="strategic_intention_type" value="wall" />
 							<float name="strategic_intention_weight" value="1" />
+						</group>
+						<group name="weighted_intention" List.ItemID="-1562017449">
+							<enum name="strategic_intention_type" value="defense" />
+							<float name="strategic_intention_weight" value="0.5" />
 						</group>
 					</list>
 					<bool name="inherit_utility" value="True" />
@@ -1533,13 +1539,14 @@
 			</group>
 			<group name="utility_entry" comment="Landmark Age 3  - Offensive" List.ItemID="-341720321">
 				<list name="blueprints">
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_khanbaliq_mon" List.ItemID="-1293590711" />
-					<instance_reference name="entity" value="ebps\races\french\buildings\building_landmark_age3_le_grande_university_fre\building_landmark_age3_le_grande_university_fre" List.ItemID="927827256" />
-					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" List.ItemID="983007768" />
-					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age3_spassakaya_tower_rus\building_landmark_age3_spassakaya_tower_control_rus" List.ItemID="-1291224999" />
-					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age3_bijay_mandal_palace_control_sul" List.ItemID="898716275" />
-					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age3_sprit_way_chi\building_landmark_age3_spirit_way_control_chi" List.ItemID="945579746" />
-					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age3_kilitbahir_castle_ott" List.ItemID="-182410271" />
+					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_khanbaliq_mon" List.ItemID="1587714106" />
+					<instance_reference name="entity" value="ebps\races\french\buildings\building_landmark_age3_le_grande_university_fre\building_landmark_age3_le_grande_university_fre" List.ItemID="155194468" />
+					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" List.ItemID="-430995807" />
+					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age3_spassakaya_tower_rus\building_landmark_age3_spassakaya_tower_control_rus" List.ItemID="-1778942692" />
+					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age3_bijay_mandal_palace_control_sul" List.ItemID="1378699209" />
+					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age3_sprit_way_chi\building_landmark_age3_spirit_way_control_chi" List.ItemID="-216523386" />
+					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age3_kilitbahir_castle_ott" List.ItemID="-2031002322" />
+					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" List.ItemID="2001603133" />
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
 					<float name="utility" value="800" />
@@ -1550,11 +1557,11 @@
 					<int name="max_num" value="-1" />
 					<int name="max_num_produced" value="-1" />
 					<list name="weighted_strategic_intentions">
-						<group name="weighted_intention" List.ItemID="1435226250">
+						<group name="weighted_intention" List.ItemID="430387260">
 							<enum name="strategic_intention_type" value="age_up" />
 							<float name="strategic_intention_weight" value="0.8" />
 						</group>
-						<group name="weighted_intention" List.ItemID="-2010634767">
+						<group name="weighted_intention" List.ItemID="544328312">
 							<enum name="strategic_intention_type" value="offense" />
 							<float name="strategic_intention_weight" value="0.2" />
 						</group>
@@ -1592,6 +1599,49 @@
 					<float name="minimum_final_utility_to_produce" value="-1" />
 					<float name="minimum_placement_utility_to_produce" value="-1" />
 					<bool name="recalculate_utility_when_produced" value="True" />
+				</template_reference>
+			</group>
+			<group name="utility_entry" List.ItemID="1376253118">
+				<list name="blueprints">
+					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_chi" List.ItemID="-278592454" />
+					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_gate_chi" List.ItemID="-70509555" />
+				</list>
+				<template_reference name="utility" value="ai\economy\production_instance_utility">
+					<float name="utility" value="-1" />
+					<float name="utility_random_range_offset" value="-1" />
+					<string name="utility_function" value="" />
+					<float name="per_unit_scale" value="-1" />
+					<float name="per_unit_scale_produced" value="-1" />
+					<int name="max_num" value="-1" />
+					<int name="max_num_produced" value="-1" />
+					<bool name="recalculate_utility_when_produced" value="True" />
+					<list name="weighted_strategic_intentions">
+						<group name="weighted_intention" List.ItemID="1164289310">
+							<enum name="strategic_intention_type" value="defense" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
+						<group name="weighted_intention" List.ItemID="-64022285">
+							<enum name="strategic_intention_type" value="wall" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
+						<group name="weighted_intention" List.ItemID="2075234962">
+							<enum name="strategic_intention_type" value="religion" />
+							<float name="strategic_intention_weight" value="0.3" />
+						</group>
+						<group name="weighted_intention" List.ItemID="-339345939">
+							<enum name="strategic_intention_type" value="age_up" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
+						<group name="weighted_intention" List.ItemID="1683069270">
+							<enum name="strategic_intention_type" value="offense" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
+					</list>
+					<bool name="inherit_utility" value="False" />
+					<float name="requested_production_scale" value="-1" />
+					<bool name="consider_time_to_acquire" value="False" />
+					<float name="minimum_final_utility_to_produce" value="-1" />
+					<float name="minimum_placement_utility_to_produce" value="-1" />
 				</template_reference>
 			</group>
 		</list>

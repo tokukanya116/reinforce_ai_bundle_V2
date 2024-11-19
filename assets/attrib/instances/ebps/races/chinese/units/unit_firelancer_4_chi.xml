@@ -1,0 +1,202 @@
+<instance version="6" description="Chinese Imperial Age Fire Lancer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="222812666" List.ParentItemID="222812666">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-847030144">
+					<group name="tier" List.ItemID="804553311">
+						<list name="tier_requirements" overrideParent="True">
+						</list>
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier4_cavalry_firelancer_chi" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-770978587" List.ParentItemID="-770978587">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="135286055" List.ParentItemID="135286055">
+			<float name="hitpoints" value="180" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Ranged" value="3" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1335598886" List.ParentItemID="-1335598886">
+			<group name="sight_package">
+				<float name="inner_height" value="10" overrideParent="True" />
+				<float name="inner_radius" value="20" overrideParent="True" />
+				<float name="outer_height" value="-15" overrideParent="True" />
+				<float name="outer_radius" value="50" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1485525333" List.ParentItemID="1485525333">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-1745137264" List.ParentItemID="-1745137264">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="918590797" List.ParentItemID="918590797">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\melee\weapon_firelancer_4_chi" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_melee_firelancer_4_chi" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-392543677" List.ParentItemID="-392543677">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\ranged\weapon_torch_strong" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch_weak" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="1424016142" List.ParentItemID="1424016142">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\melee\weapon_firelancer_4_charge_chi" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_melee_firelancer_4_charge_chi" overrideParent="True" />
+								<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-831992925" List.ParentItemID="-831992925">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-1546990256" List.ParentItemID="-1546990256">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_combined\audio\firelancer\4" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1358252062" List.ParentItemID="-1358252062">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese" List.ItemID="1516126647" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="1874742378" List.ParentItemID="1874742378">
+			<enum_table name="speed_scaling_table">
+				<float name="default_speed" value="7.5" overrideParent="True" />
+				<float name="max_speed" value="8" overrideParent="True" />
+			</enum_table>
+			<enum_table name="speed_levels">
+				<float name="speed_level_0" value="1.5" overrideParent="True" />
+				<float name="speed_level_1" value="2.7" overrideParent="True" />
+				<float name="speed_level_2" value="4.2" overrideParent="True" />
+				<float name="speed_level_3" value="6.2" overrideParent="True" />
+				<float name="speed_level_4" value="8.2" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="156273" />
+	<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_firelancer_3_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="252358616" List.ParentItemID="252358616">
+				<list name="tier_group_list" overrideParent="True">
+					<list name="tier_group" overrideParent="True" List.ItemID="1137109691">
+						<group name="tier" List.ItemID="47109569">
+							<list name="tier_requirements" overrideParent="True">
+							</list>
+							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\units\tier4_cavalry_firelancer_chi" />
+							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+								<state_tree_node name="ActionTree_OpeningBranch" value="campaignMod_tier_unit_exposure_dca" overrideParent="True" />
+								<bool name="start_suspended" value="False" />
+							</template_reference>
+							<instance_reference name="statetree_tier_requirements_pbg" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+							<string name="tier_attachment_action" value="" />
+							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+								<bool name="reissue_commands" value="False" />
+								<bool name="continue_state_trees" value="True" />
+								<bool name="remove_from_pending_deaths" value="False" />
+								<bool name="enable_all_extensions" value="True" />
+							</template_reference>
+							<string name="inventory_category_to_refresh_on_tier_up" value="" />
+						</group>
+					</list>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-697663867" List.ParentItemID="-697663867">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1247105416" List.ParentItemID="-1247105416">
+				<float name="hitpoints" value="200" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-317415118" List.ParentItemID="-317415118">
+				<group name="sight_package">
+					<float name="inner_height" value="10" overrideParent="True" />
+					<float name="inner_radius" value="20" overrideParent="True" />
+					<float name="outer_height" value="-15" overrideParent="True" />
+					<float name="outer_radius" value="50" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="2032527218" List.ParentItemID="2032527218">
+				<list name="hardpoints">
+					<group name="hardpoint" List.ItemID="495904024" List.ParentItemID="495904024">
+						<list name="weapon_table">
+							<group name="weapon" List.ItemID="-1807877730" List.ParentItemID="-1807877730">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\melee\weapon_firelancer_4_chi" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_melee_firelancer_4_chi" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-61666795" List.ParentItemID="-61666795">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\ranged\weapon_torch_strong" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_siege_torch_weak" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+							<group name="weapon" List.ItemID="-628810815" List.ParentItemID="-628810815">
+								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+								</template_reference>
+								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\chinese\melee\weapon_firelancer_4_charge_chi" overrideParent="True" />
+									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_melee_firelancer_4_charge_chi" overrideParent="True" />
+									<string name="marker_name_parent" value="metarig_rarmpalmsocket" overrideParent="True" />
+								</template_reference>
+							</group>
+						</list>
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-1356055694" List.ParentItemID="-1356055694">
+				<list name="action_state_trees">
+					<group name="container" List.ItemID="-588166961" List.ParentItemID="-588166961">
+						<string name="state_tree" value="campaignMod_unit_action_apply\units\cavalry_combined\audio\firelancer\4" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1473067051" List.ParentItemID="1473067051">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\chinese" List.ItemID="764060353" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="156273" />
+		<instance_reference name="parent_pbg" value="ebps\races\chinese\units\unit_firelancer_3_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+	</variant>
+</instance>

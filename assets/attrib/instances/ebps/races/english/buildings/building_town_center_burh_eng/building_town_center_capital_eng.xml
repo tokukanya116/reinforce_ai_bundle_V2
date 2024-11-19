@@ -26,8 +26,8 @@
 				<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="-1890520705" />
 				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1654883688" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\town_center_town_bell" List.ItemID="-1231422003" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels_eng" overrideParent="True" List.ItemID="-100907420" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\kurultai_healing_aura_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-456067549" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-100907420" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal_and_damge" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-456067549" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_main" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-353922966" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_addition" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="407559257" />
 			</list>
