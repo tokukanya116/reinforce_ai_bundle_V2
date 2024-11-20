@@ -3215,22 +3215,19 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Expansion TC" List.ItemID="-2117598950">
 				<list name="members">
-					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_town_center_sul\building_town_center_sul" List.ItemID="-2891804" />
-					<instance_reference name="member" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_rus" List.ItemID="1728119778" />
-					<instance_reference name="member" value="ebps\races\mongol\buildings\building_town_center_mon" List.ItemID="-212096245" />
-					<instance_reference name="member" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_hre" List.ItemID="1672007907" />
-					<instance_reference name="member" value="ebps\races\french\buildings\building_town_center_fre\building_town_center_fre" List.ItemID="2115759012" />
-					<instance_reference name="member" value="ebps\races\english\buildings\building_town_center_burh_eng\building_town_center_eng" List.ItemID="-2014909910" />
-					<instance_reference name="member" value="ebps\races\abbasid\buildings\building_town_center_abb" List.ItemID="-1705422238" />
-					<instance_reference name="member" value="ebps\races\chinese\buildings\building_town_center_chi\building_town_center_chi" List.ItemID="-1736075267" />
-					<instance_reference name="member" value="ebps\races\malian\buildings\building_town_center_mal" List.ItemID="1951407318" />
-					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_town_center_ott" List.ItemID="1272830560" />
-					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_town_center_byz" List.ItemID="694493749" />
-					<instance_reference name="member" value="ebps\races\japanese\buildings\building_town_center_jpn" List.ItemID="-1878746175" />
-					<instance_reference name="member" value="ebps\races\abbasid_ha_01\buildings\building_town_center_abb_ha_01" List.ItemID="124054666" />
-					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_town_center_chi_ha_01\building_town_center_chi_ha_01" List.ItemID="-609498957" />
-					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_town_center_hre_ha_01\building_town_center_hre_ha_01" List.ItemID="-1745965397" />
-					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_town_center_fre_ha_01\building_town_center_fre_ha_01" List.ItemID="126574516" />
+					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_town_center_sul\building_town_center_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2891804" />
+					<instance_reference name="member" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1728119778" />
+					<instance_reference name="member" value="ebps\races\mongol\buildings\building_town_center_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-212096245" />
+					<instance_reference name="member" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1672007907" />
+					<instance_reference name="member" value="ebps\races\french\buildings\building_town_center_fre\building_town_center_fre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="2115759012" />
+					<instance_reference name="member" value="ebps\races\english\buildings\building_town_center_burh_eng\building_town_center_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2014909910" />
+					<instance_reference name="member" value="ebps\races\chinese\buildings\building_town_center_chi\building_town_center_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1736075267" />
+					<instance_reference name="member" value="ebps\races\malian\buildings\building_town_center_mal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1951407318" />
+					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_town_center_ott" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1272830560" />
+					<instance_reference name="member" value="ebps\races\japanese\buildings\building_town_center_jpn" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1878746175" />
+					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_town_center_chi_ha_01\building_town_center_chi_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-609498957" />
+					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_town_center_hre_ha_01\building_town_center_hre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1745965397" />
+					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_town_center_fre_ha_01\building_town_center_fre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="126574516" />
 				</list>
 				<float name="base_scale" value="1000" />
 				<float name="minimum_score_to_produce" value="50" />
@@ -4606,22 +4603,20 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Production group for building capital in nomad mode" List.ItemID="-839189644">
 				<list name="members">
-					<instance_reference name="member" value="ebps\races\abbasid\buildings\building_town_center_capital_abb" List.ItemID="385431972" />
-					<instance_reference name="member" value="ebps\races\chinese\buildings\building_town_center_chi\building_town_center_capital_chi" List.ItemID="-54951650" />
-					<instance_reference name="member" value="ebps\races\english\buildings\building_town_center_burh_eng\building_town_center_capital_eng" List.ItemID="1155092731" />
-					<instance_reference name="member" value="ebps\races\french\buildings\building_town_center_fre\building_town_center_capital_fre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-95733190" />
-					<instance_reference name="member" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_capital_hre" List.ItemID="-1727879323" />
-					<instance_reference name="member" value="ebps\races\malian\buildings\building_town_center_capital_mal" List.ItemID="580276951" />
-					<instance_reference name="member" value="ebps\races\mongol\buildings\building_town_center_capital_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-489051154" />
-					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_town_center_capital_ott" List.ItemID="-1973306239" />
-					<instance_reference name="member" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_capital_rus" List.ItemID="1661371689" />
-					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_town_center_sul\building_town_center_capital_sul" List.ItemID="-1807966580" />
-					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_town_center_capital_byz" List.ItemID="-1968426222" />
-					<instance_reference name="member" value="ebps\races\japanese\buildings\building_town_center_capital_jpn" List.ItemID="621242332" />
-					<instance_reference name="member" value="ebps\races\abbasid_ha_01\buildings\building_town_center_capital_abb_ha_01" List.ItemID="-184929495" />
-					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_town_center_chi_ha_01\building_town_center_capital_chi_ha_01" List.ItemID="1039617447" />
-					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_town_center_hre_ha_01\building_town_center_capital_hre_ha_01" List.ItemID="338846397" />
-					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_town_center_fre_ha_01\building_town_center_capital_fre_ha_01" List.ItemID="-1409596925" />
+					<instance_reference name="member" value="ebps\races\abbasid\buildings\building_town_center_capital_abb" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="385431972" />
+					<instance_reference name="member" value="ebps\races\chinese\buildings\building_town_center_chi\building_town_center_capital_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-54951650" />
+					<instance_reference name="member" value="ebps\races\english\buildings\building_town_center_burh_eng\building_town_center_capital_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1155092731" />
+					<instance_reference name="member" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_capital_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1727879323" />
+					<instance_reference name="member" value="ebps\races\malian\buildings\building_town_center_capital_mal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="580276951" />
+					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_town_center_capital_ott" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1973306239" />
+					<instance_reference name="member" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_capital_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1661371689" />
+					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_town_center_sul\building_town_center_capital_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1807966580" />
+					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_town_center_capital_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1968426222" />
+					<instance_reference name="member" value="ebps\races\japanese\buildings\building_town_center_capital_jpn" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="621242332" />
+					<instance_reference name="member" value="ebps\races\abbasid_ha_01\buildings\building_town_center_capital_abb_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-184929495" />
+					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_town_center_chi_ha_01\building_town_center_capital_chi_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1039617447" />
+					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_town_center_hre_ha_01\building_town_center_capital_hre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="338846397" />
+					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_town_center_fre_ha_01\building_town_center_capital_fre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1409596925" />
 				</list>
 				<float name="base_scale" value="1" />
 				<float name="minimum_score_to_produce" value="0" />

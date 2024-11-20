@@ -8,3 +8,7 @@
 7,,,screen_name,,,Home Guard(attack speed)
 8,,,formatter,,,Units that are close to each other gain the Home Guard effect.\r\nHeal +%1%%% per second.\r\nDamage increased by %2%.
 9,,,screen_name,,,Home Guard(damage & heal)
+10,,,help_text,,,Home Guard.  Units gain a buff that heals 4HP per second.
+11,,,screen_name,,,Home Guard(Healing)
+12,,,formatter,,,家园守卫(治疗强化)
+13,,,formatter,,,单位获得每秒治愈4HP的buff
