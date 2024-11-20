@@ -31,7 +31,7 @@
 		<bool name="initial_recharge" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="25" comment="生效范围" />
+		<float name="range" value="60" comment="生效范围" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="0" />
 		<bool name="refundable" value="True" />
@@ -123,6 +123,10 @@
 				<enum name="data_source_type" value="entity_datasource" />
 				<bool name="default_value" value="True" />
 				<bool name="compare_to_value" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_none" List.ItemID="1541836629">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -228,7 +232,7 @@
 		<bool name="can_cast_again_whilst_pending" value="False" />
 		<list name="float_properties" comment="最终影响技能模板的浮动参数">
 			<template_reference name="float" value="abilitybag_float_property" List.ItemID="1532397848">
-				<float name="value" value="10" />
+				<float name="value" value="1000" />
 				<enum name="id" value="melee_damage_amplification" comment="此处是攻击力加成" />
 			</template_reference>
 			<template_reference name="float" value="abilitybag_float_property" List.ItemID="909690776">
@@ -238,8 +242,8 @@
 		</list>
 		<list name="int_properties" comment="能力包组成">
 			<template_reference name="int" value="abilitybag_int_property" List.ItemID="-873001524">
-				<int name="value" value="10" />
-				<enum name="id" value="military_building_heal_amount_mon" comment="此处是蒙古忽里勒台回血，数值1-&gt;3" />
+				<int name="value" value="100" />
+				<enum name="id" value="health" comment="此处是蒙古忽里勒台回血，数值1-&gt;3" />
 			</template_reference>
 		</list>
 		<bool name="can_queue_passive_ability" value="False" />

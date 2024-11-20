@@ -24,6 +24,8 @@ https://support.ageofempires.com/hc/en-us/sections/4409121920276-Tuning-Packs
 
 **abilities属于编辑器的核心内容之一 (包括游戏内各种单位的技能和效果包，都是在这里定义)**
 
+**注：调整包不能新增ability！所以只能拿现有的模板改，且任何挂在载tateTree或者entityTree的技能模板 数值改动都不生效(除了血量，范围这些会生效)**
+
 1. 你可以直接**clone**官方已有的技能包修改(如果是同名技能会自动应用继承)
 
 2. 如果需要引入条件(**requirements**：可用于限定给谁用或者此能力发动需要什么条件)
