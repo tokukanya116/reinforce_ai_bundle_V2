@@ -135,7 +135,6 @@
 						<list name="satisfying_entity_groups" overrideParent="True">
 							<group name="satisfying_entity_group" comment="Town Center Capital&#xD;&#xA;" List.ItemID="-1123599397">
 								<list name="satisfying_entities">
-									<instance_reference name="entity" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_capital_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1070379387" />
 								</list>
 							</group>
 							<group name="satisfying_entity_group" comment="Town Center" List.ItemID="1798179519">
@@ -150,7 +149,6 @@
 							</group>
 							<group name="satisfying_entity_group" comment="Town Center Capital - Historic HRE&#xD;&#xA;" List.ItemID="1307637526">
 								<list name="satisfying_entities">
-									<instance_reference name="entity" value="ebps\races\hre_ha_01\buildings\building_town_center_hre_ha_01\building_town_center_capital_hre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-218920298" />
 								</list>
 							</group>
 							<group name="satisfying_entity_group" comment="Town Center - Historic HRE" List.ItemID="-1957737462">
@@ -267,7 +265,6 @@
 							<list name="satisfying_entity_groups" overrideParent="True">
 								<group name="satisfying_entity_group" comment="Town Center Capital&#xD;&#xA;" overrideParent="True" List.ItemID="1201851829">
 									<list name="satisfying_entities">
-										<instance_reference name="entity" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_capital_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="1695633457" />
 									</list>
 								</group>
 								<group name="satisfying_entity_group" comment="Keep&#xD;&#xA;" List.ItemID="1235580967">
@@ -1092,7 +1089,6 @@
 							<list name="satisfying_entity_groups">
 								<group name="satisfying_entity_group" List.ItemID="-1709466898" List.ParentItemID="-2047237236">
 									<list name="satisfying_entities">
-										<instance_reference name="entity" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_capital_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-66730798" List.ParentItemID="-408447509" />
 									</list>
 								</group>
 								<group name="satisfying_entity_group" List.ItemID="-1120711188" List.ParentItemID="-1382696298">
@@ -1107,7 +1103,6 @@
 								</group>
 								<group name="satisfying_entity_group" List.ItemID="252208864" List.ParentItemID="831896975">
 									<list name="satisfying_entities">
-										<instance_reference name="entity" value="ebps\races\hre_ha_01\buildings\building_town_center_hre_ha_01\building_town_center_capital_hre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="2069778179" List.ParentItemID="-408447509" />
 									</list>
 								</group>
 								<group name="satisfying_entity_group" List.ItemID="-1127356286" List.ParentItemID="-1112368890">

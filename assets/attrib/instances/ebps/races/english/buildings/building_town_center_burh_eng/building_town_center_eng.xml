@@ -4,186 +4,195 @@
 			<file name="alternate_sua" value="" overrideParent="True" />
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-894120277" List.ParentItemID="-894120277">
-			<bool name="can_repair" value="True" overrideParent="True" />
-			<float name="hitpoints" value="7000" overrideParent="True" />
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="964116860" List.ParentItemID="964116860">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965" List.ParentItemID="519261965">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="-737937526" />
+				<enum name="unit_type" value="hq" List.ItemID="-334945515" />
+				<enum name="unit_type" value="town_center" List.ItemID="748011744" />
+				<enum name="unit_type" value="resource_drop_off" List.ItemID="-971957951" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-130100570" />
+				<enum name="unit_type" value="emits_herding_interest" List.ItemID="-1751816697" />
+				<enum name="unit_type" value="town_bell_target" List.ItemID="1165683078" />
+				<enum name="unit_type" value="production_building" List.ItemID="-606748084" />
+				<enum name="unit_type" value="defensive_structure" List.ItemID="-1605093136" />
+				<enum name="unit_type" value="town_center_non_capital" List.ItemID="569355314" />
+				<enum name="unit_type" value="has_default_building_weapons" List.ItemID="1239184017" />
+				<enum name="unit_type" value="town_center_or_landmark" List.ItemID="1232999950" />
+				<enum name="unit_type" value="land_food_deposit_4_by_4" List.ItemID="193526245" />
+			</list>
 			<list name="race_type_list" overrideParent="True">
-				<instance_reference name="race_type" value="racebps\french_ha_01" overrideParent="True" List.ItemID="-637023080" />
+				<instance_reference name="race_type" value="racebps\english" List.ItemID="2050148618" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="565171784" List.ParentItemID="565171784">
 			<list name="abilities" overrideParent="True">
-				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1382407535" />
-				<instance_reference name="ability" value="abilities\modal_abilities\core\age_up_feudal" List.ItemID="1368184617" />
-				<instance_reference name="ability" value="abilities\modal_abilities\core\age_up_castle" overrideParent="True" List.ItemID="475000373" />
-				<instance_reference name="ability" value="abilities\modal_abilities\core\age_up_imperial" overrideParent="True" List.ItemID="701040594" />
-				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="-770648075" />
-				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\global_return_to_work" List.ItemID="368681399" />
-				<instance_reference name="ability" value="abilities\modal_abilities\french_ha_01\jeanne_d_arc_buyback_1_fre_ha_01" overrideParent="True" List.ItemID="-1054836026" />
-				<instance_reference name="ability" value="abilities\modal_abilities\french_ha_01\jeanne_d_arc_buyback_2_fre_ha_01" overrideParent="True" List.ItemID="-1178015167" />
-				<instance_reference name="ability" value="abilities\modal_abilities\french_ha_01\jeanne_d_arc_buyback_3_fre_ha_01" overrideParent="True" List.ItemID="600416489" />
-				<instance_reference name="ability" value="abilities\modal_abilities\french_ha_01\jeanne_d_arc_buyback_4_fre_ha_01" overrideParent="True" List.ItemID="-379203389" />
-				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\town_center_town_bell" List.ItemID="908268864" />
-				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-66614412" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1192657654" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-50655309" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_main" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="695150522" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_addition" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="326147869" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\kurultai_healing_aura_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1134273097" />
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1736824467" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\age_up_feudal" List.ItemID="317747455" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\age_up_castle" List.ItemID="55027889" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\age_up_imperial" List.ItemID="463825212" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="693192900" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\global_return_to_work" overrideParent="True" List.ItemID="1443853493" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="-402304808" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\town_center_town_bell" List.ItemID="-1113537796" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\english\network_of_citadels_eng" List.ItemID="-744191366" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1671698483" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1672558478" />
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="2068490625" List.ParentItemID="2068490625">
-			<group name="on_construction_complete_state_tree_refs">
-				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\town_center_construction_complete" overrideParent="True" />
-			</group>
-		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-272167440" List.ParentItemID="-272167440">
-			<file name="minimap_icon" value="minimap\capital" overrideParent="True" />
-			<float name="minimap_icon_scale" value="0.45" overrideParent="True" />
-			<instance_reference name="district_info" value="ui_district_info\french\dib_fre_econ_aura" overrideParent="True" />
-			<group name="ui_codex_info">
-				<int name="priority" value="5950" overrideParent="True" />
-				<bool name="exclusive" value="True" overrideParent="True" />
-			</group>
+			<bool name="use_construction_range_on_selection" comment="Network of Castles bonus is the reason for this selection range difference" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1529303587" List.ParentItemID="1529303587">
 			<list name="action_state_trees">
 				<group name="container" List.ItemID="1248741447" List.ParentItemID="1248741447">
-					<string name="state_tree" value="town_center_action_apply_fre_ha_01" overrideParent="True" />
+					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply" overrideParent="True" />
 				</group>
 			</list>
-			<list name="action_state_trees_run_once">
-				<group name="container" List.ItemID="1236838043" List.ListAction="Append">
-					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply\set_civ_dynamic_root\fre_ha_01" overrideParent="True" />
+			<list name="action_state_trees_run_once" overrideParent="True">
+				<group name="container" List.ItemID="-147110625">
+					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply\set_civ_dynamic_root\eng" overrideParent="True" />
 				</group>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1875812947" List.ParentItemID="-1875812947">
 			<list name="spawn_items">
 				<group name="spawn_item" List.ItemID="-389734842" List.ParentItemID="-389734842">
-					<instance_reference name="squad" value="sbps\races\french_ha_01\unit_villager_1_fre_ha_01" overrideParent="True" />
-					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
-						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
+					<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
+						<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+							<group name="ui_position">
+								<int name="ui_position_row" value="1" overrideParent="True" />
+								<int name="ui_position_column" value="1" overrideParent="True" />
+							</group>
+							<int name="command_card_priority" value="1" overrideParent="True" />
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_commands_info" value="ui_quick_commands_info">
 							<int name="quick_commands_slot_index" value="0" />
 							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
-							<int name="quick_commands_priority" value="5" />
+							<int name="quick_commands_priority" value="1" />
 						</template_reference>
-						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
-							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
-							<int name="quick_commands_priority" value="5" />
-							<int name="quick_commands_slot_index" value="2" />
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="x_quick_command_y" overrideParent="True" />
+							<int name="quick_commands_priority" value="5" overrideParent="True" />
+							<int name="quick_commands_slot_index" value="2" overrideParent="True" />
 							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
 						</template_reference>
 						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
-							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
-							<int name="nominal_index" value="0" />
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+							<int name="nominal_index" value="0" overrideParent="True" />
 							<int name="priority" value="0" />
 							<instance_reference name="linked" value="" />
 						</template_reference>
+						<enum name="observer_type" value="Disabled" overrideParent="True" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
 					</template_reference>
 				</group>
 				<group name="spawn_item" List.ItemID="-430274810" List.ParentItemID="-430274810">
-					<instance_reference name="squad" value="sbps\races\french\unit_scout_1_fre" overrideParent="True" />
-					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+					<instance_reference name="squad" value="sbps\races\english\unit_scout_1_eng" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
 						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
-							<int name="quick_commands_slot_index" value="1" />
-							<enum name="quick_commands_hotkey" value="x_quick_command_x" />
-							<int name="quick_commands_priority" value="5" />
+							<int name="quick_commands_slot_index" value="1" overrideParent="True" />
+							<enum name="quick_commands_hotkey" value="x_quick_command_x" overrideParent="True" />
+							<int name="quick_commands_priority" value="5" overrideParent="True" />
+						</template_reference>
+						<template_reference name="command_card_info" value="ui_command_card_info" overrideParent="True">
+							<group name="ui_position">
+								<int name="ui_position_row" value="1" overrideParent="True" />
+								<int name="ui_position_column" value="2" overrideParent="True" />
+							</group>
+							<int name="command_card_priority" value="1" overrideParent="True" />
+						</template_reference>
+						<template_reference name="quick_abilities_info" value="">
+						</template_reference>
+						<template_reference name="quick_formation_info" value="">
+						</template_reference>
+						<template_reference name="ping_menu_info" value="">
+						</template_reference>
+						<enum name="category" value="Economic" />
+						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+							<enum name="quick_commands_hotkey" value="" />
+							<int name="quick_commands_priority" value="-1" />
+							<int name="quick_commands_slot_index" value="-1" />
+							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
 						</template_reference>
 						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info" overrideParent="True">
-							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
-							<int name="nominal_index" value="4" />
+							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" overrideParent="True" />
+							<int name="nominal_index" value="4" overrideParent="True" />
 							<int name="priority" value="0" />
 							<instance_reference name="linked" value="" />
 						</template_reference>
+						<enum name="observer_type" value="Enabled" overrideParent="True" />
+						<group name="issuable_info">
+							<bool name="is_secondary" value="False" />
+							<instance_reference name="secondary_issuable" value="" />
+						</group>
 					</template_reference>
 				</group>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-2049432204" List.ParentItemID="-2049432204">
 			<list name="standard_upgrades" overrideParent="True">
-				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_villager_health" List.ItemID="1647416619" />
-				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="995161833" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_villager_health" overrideParent="True" List.ItemID="-1471389804" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-151977967" List.ParentItemID="-151977967">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-379087369">
+					<enum name="reason" value="usage" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_statemodelfloat" List.ItemID="-831036188">
+					<locstring name="ui_name" value="0" />
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<enum name="key" value="has_capital" overrideParent="True" />
+					<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+					<float name="default_value" value="0" />
+					<float name="compare_to_value" value="1" overrideParent="True" />
+					<enum name="comparison" value="equal_to" />
+					<float name="ui_max_value" value="0" />
+					<float name="ui_min_value" value="0" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1383350114" List.ParentItemID="-1383350114">
-			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\french_ha_01\town_center_capital_fre_ha_01" overrideParent="True" />
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\english\town_center_eng" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-211859969" List.ParentItemID="-211859969">
-			<list name="hardpoints">
-				<group name="hardpoint" comment="Red Palace Arbalest&#xD;&#xA;&#xD;&#xA;If changes are made to this hardpoints, the values in the initialize_hardpoints tracks will need to change here: 9228620779365287374" overrideParent="True" List.ItemID="892909322" List.ListAction="Append">
-					<float name="parent_hardpoint" value="-1" />
-					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-491994656">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0.3" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="10" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-									<template_reference name="attach_data" value="attachments\attach_data">
-										<string name="marker_name_parent" value="" />
-										<string name="parent_rigidbody_target_name" value="" />
-										<enum name="game_object_attachment_type" value="scenegraph" />
-									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\french\weapons\wpn_range_keep_arbalest_d" overrideParent="True" />
-									<group name="attachment_flags">
-										<bool name="sim_only" value="False" />
-										<bool name="no_pathfinding" value="False" />
-										<bool name="not_snappable" value="False" />
-										<bool name="restore_snap_to_ground_on_detach" value="False" />
-										<bool name="no_sim_update" value="True" />
-										<bool name="join_parent_squad" value="False" />
-										<bool name="redirect_damage_to_parent_entity" value="True" />
-										<bool name="assign_as_attachment_combat_leader" value="False" />
-										<bool name="assign_as_attachment_movement_leader" value="False" />
-										<bool name="receive_parent_animations" value="False" />
-										<bool name="receive_parent_death" value="False" />
-									</group>
-								</template_reference>
-								<list name="possible_blueprint_updates">
-								</list>
-							</template_reference>
-							<template_reference name="non_entity_weapon_wrapper" value="">
-							</template_reference>
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="True" />
-					<string name="base_marker" value="" />
-					<list name="preferred_inventory_item_categories">
-					</list>
-					<list name="firing_offset_markers">
-						<string name="marker" value="fx_muz_arrow_00" List.ItemID="-1163503427" />
-						<string name="marker" value="fx_muz_arrow_01" List.ItemID="154111519" />
-						<string name="marker" value="fx_muz_arrow_02" List.ItemID="-494823625" />
-						<string name="marker" value="fx_muz_arrow_03" List.ItemID="768811943" />
-						<string name="marker" value="fx_muz_arrow_04" List.ItemID="-1954912786" />
-						<string name="marker" value="fx_muz_arrow_05" List.ItemID="243108410" />
-						<string name="marker" value="fx_muz_arrow_06" List.ItemID="-1763506743" />
-						<string name="marker" value="fx_muz_arrow_07" List.ItemID="958101781" />
-					</list>
-					<string name="offhand_marker" value="" />
-					<bool name="initialize_weapons_on_creation" value="False" />
-				</group>
-			</list>
+			<template_reference name="kill_action_tree" value="state_tree_reference_info" comment="Check these weird values that inherit oddly">
+				<state_tree_node name="ActionTree_OpeningBranch" value="" overrideParent="True" />
+				<bool name="start_suspended" value="False" overrideParent="True" />
+			</template_reference>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1580753747" List.ListAction="Append">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1627442817" List.ListAction="Append">
 			<list name="tier_group_list">
-				<list name="tier_group" List.ItemID="1273783421">
-					<group name="tier" List.ItemID="61932147">
+				<list name="tier_group" List.ItemID="-1553869799">
+					<group name="tier" List.ItemID="1973266100">
 						<list name="tier_requirements">
 						</list>
-						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\buildings\town_center_fre\tier1_town_center_control_fre" />
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\town_center_eng\tier1_town_center_control_eng" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
 							<bool name="start_suspended" value="False" />
@@ -200,10 +209,10 @@
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
-					<group name="tier" List.ItemID="-2000776411">
+					<group name="tier" List.ItemID="2038351627">
 						<list name="tier_requirements">
 						</list>
-						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\buildings\town_center_fre\tier2_town_center_control_fre" />
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\town_center_eng\tier2_town_center_control_eng" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
 							<bool name="start_suspended" value="False" />
@@ -220,10 +229,10 @@
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
-					<group name="tier" List.ItemID="-46940284">
+					<group name="tier" List.ItemID="1183595110">
 						<list name="tier_requirements">
 						</list>
-						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\buildings\town_center_fre\tier3_town_center_control_fre" />
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\town_center_eng\tier3_town_center_control_eng" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
 							<bool name="start_suspended" value="False" />
@@ -240,10 +249,10 @@
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
-					<group name="tier" List.ItemID="1490733845">
+					<group name="tier" List.ItemID="1647916765">
 						<list name="tier_requirements">
 						</list>
-						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\french\buildings\town_center_fre\tier4_town_center_control_fre" />
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\buildings\town_center_eng\tier4_town_center_control_eng" />
 						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
 							<state_tree_node name="ActionTree_OpeningBranch" value="" />
 							<bool name="start_suspended" value="False" />
@@ -261,8 +270,8 @@
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
 				</list>
-				<list name="tier_group" overrideParent="True" List.ItemID="291605699">
-					<group name="tier" List.ItemID="-1374343023">
+				<list name="tier_group" List.ItemID="2096581536">
+					<group name="tier" List.ItemID="-686064608">
 						<list name="tier_requirements">
 						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\outskirts\general\towncenter_01" comment="Outskirts go here. Removed until a fix for selection is in. To add back, copy and paste the following into this field:&#xD;&#xA;&#xD;&#xA;&lt;instance_reference name=&quot;attachments&quot; value=&quot;attachments\attachment_lists\civilizations\english\outskirts\general\towncenter_01&quot; /&gt;" overrideParent="True" />
@@ -282,9 +291,9 @@
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
-					<group name="tier" List.ItemID="853503646">
+					<group name="tier" List.ItemID="412418035">
 						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1080748616">
+							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1848771684">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
 								<bool name="is_present" value="True" />
@@ -317,8 +326,8 @@
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
 				</list>
-				<list name="tier_group" List.ItemID="-820015971">
-					<group name="tier" List.ItemID="1704486990">
+				<list name="tier_group" List.ItemID="-1299752953">
+					<group name="tier" List.ItemID="-202514308">
 						<list name="tier_requirements">
 						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\common\buildings\building_town_center_bell_arch" />
@@ -342,6 +351,6 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="7494087" />
-	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_town_center_capital" />
+	<uniqueid name="pbgid" value="188762" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_town_center" />
 </instance>

@@ -31,7 +31,7 @@
 		<bool name="initial_recharge" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="50" comment="Edit the cooldown float property to match the range" />
+		<float name="range" value="40" comment="Edit the cooldown float property to match the range" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="0" />
 		<bool name="refundable" value="True" />
@@ -228,18 +228,26 @@
 		<bool name="can_cast_again_whilst_pending" value="False" />
 		<list name="float_properties">
 			<template_reference name="float" value="abilitybag_float_property" List.ItemID="1772289205">
-				<float name="value" value="1.5" />
+				<float name="value" value="1" />
 				<enum name="id" value="melee_damage_amplification" />
 			</template_reference>
 			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-1344668705">
-				<float name="value" value="50" />
+				<float name="value" value="5" />
+				<enum name="id" value="multiplier" />
+			</template_reference>
+			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-1091664833">
+				<float name="value" value="40" />
 				<enum name="id" value="cooldown" comment="Aura size" />
 			</template_reference>
 		</list>
 		<list name="int_properties">
 			<template_reference name="int" value="abilitybag_int_property" List.ItemID="-693755919">
-				<int name="value" value="3" />
+				<int name="value" value="1" />
 				<enum name="id" value="military_building_heal_amount_mon" />
+			</template_reference>
+			<template_reference name="int" value="abilitybag_int_property" List.ItemID="-92426863">
+				<int name="value" value="4" />
+				<enum name="id" value="duration" />
 			</template_reference>
 		</list>
 		<bool name="can_queue_passive_ability" value="False" />

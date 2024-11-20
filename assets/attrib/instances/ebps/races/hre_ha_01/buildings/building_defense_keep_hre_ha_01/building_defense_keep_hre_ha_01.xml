@@ -198,7 +198,6 @@
 						<list name="satisfying_entity_groups" overrideParent="True">
 							<group name="satisfying_entity_group" comment="Town Center Capital&#xD;&#xA;" List.ItemID="-771841086">
 								<list name="satisfying_entities">
-									<instance_reference name="entity" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_capital_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1360452787" />
 								</list>
 							</group>
 							<group name="satisfying_entity_group" comment="Town Center" List.ItemID="-479704618">
@@ -213,7 +212,6 @@
 							</group>
 							<group name="satisfying_entity_group" comment="Town Center Capital - Historic HRE&#xD;&#xA;" List.ItemID="-806918302">
 								<list name="satisfying_entities">
-									<instance_reference name="entity" value="ebps\races\hre_ha_01\buildings\building_town_center_hre_ha_01\building_town_center_capital_hre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="205025930" />
 								</list>
 							</group>
 							<group name="satisfying_entity_group" comment="Town Center - Historic HRE" List.ItemID="783491607">

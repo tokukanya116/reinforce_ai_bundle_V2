@@ -2,11 +2,10 @@
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="347108419" List.ParentItemID="347108419">
 			<file name="alternate_sua" value="" overrideParent="True" />
-			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965" List.ParentItemID="519261965">
 			<list name="race_type_list" overrideParent="True">
-				<instance_reference name="race_type" value="racebps\ottoman" overrideParent="True" List.ItemID="943251120" />
+				<instance_reference name="race_type" value="racebps\ottoman" overrideParent="True" List.ItemID="1804752651" />
 			</list>
 			<enum_table name="weapon_category_targeting_filter">
 				<bool name="1melee" value="False" overrideParent="True" />
@@ -24,29 +23,12 @@
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\global_return_to_work" List.ItemID="-1312886256" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\town_center_town_bell" List.ItemID="1604473395" />
 				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1082912072" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-600429060" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1323452231" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_main" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-554941536" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_addition" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="399717726" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\kurultai_healing_aura_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1763492063" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1442799313" />
 			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-272167440" List.ParentItemID="-272167440">
-			<file name="minimap_icon" value="minimap\capital" overrideParent="True" />
-			<instance_reference name="district_info" value="" overrideParent="True" />
-			<group name="ui_codex_info">
-				<int name="priority" value="5950" overrideParent="True" />
-				<bool name="exclusive" value="False" overrideParent="True" />
-			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1529303587" List.ParentItemID="1529303587">
-			<list name="action_state_trees">
-				<group name="container" List.ItemID="1248741447" List.ParentItemID="1248741447">
-					<string name="state_tree" value="town_center_action_apply_ott" overrideParent="True" />
-				</group>
-			</list>
-			<list name="action_state_trees_run_once">
-				<group name="container" List.ItemID="490998063" List.ListAction="Append">
+			<list name="action_state_trees_run_once" overrideParent="True">
+				<group name="container" List.ItemID="-778781310">
 					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply\set_civ_dynamic_root\ott" overrideParent="True" />
 				</group>
 			</list>
@@ -61,7 +43,7 @@
 						</template_reference>
 						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info" overrideParent="True">
 							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
-							<int name="quick_commands_priority" value="5" overrideParent="True" />
+							<int name="quick_commands_priority" value="5" />
 							<int name="quick_commands_slot_index" value="2" overrideParent="True" />
 							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
 						</template_reference>
@@ -93,32 +75,54 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-2049432204" List.ParentItemID="-2049432204">
 			<list name="standard_upgrades" overrideParent="True">
-				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_villager_health" overrideParent="True" List.ItemID="-340626035" />
-				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1348250544" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_villager_health" overrideParent="True" List.ItemID="-972714173" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-151977967" List.ParentItemID="-151977967">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-322170374">
+					<enum name="reason" value="usage" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_statemodelfloat" List.ItemID="-403271190">
+					<locstring name="ui_name" value="0" />
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<enum name="key" value="has_capital" overrideParent="True" />
+					<enum name="data_source_type" value="player_datasource" overrideParent="True" />
+					<float name="default_value" value="0" />
+					<float name="compare_to_value" value="1" overrideParent="True" />
+					<enum name="comparison" value="equal_to" />
+					<float name="ui_max_value" value="0" />
+					<float name="ui_min_value" value="0" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="1603976703" List.ParentItemID="1603976703">
 			<list name="acceptable_types" overrideParent="True">
-				<enum name="acceptable_type" value="hold_villager" List.ItemID="1579970474" />
-				<enum name="acceptable_type" value="hold_infantry" List.ItemID="449378244" />
-				<enum name="acceptable_type" value="hold_monk" List.ItemID="-2093042273" />
-				<enum name="acceptable_type" value="hold_cavalry" List.ItemID="-142428089" />
-				<enum name="acceptable_type" value="hold_infantry_ranged" List.ItemID="372569033" />
-				<enum name="acceptable_type" value="hold_khan" List.ItemID="-1907859253" />
-				<enum name="acceptable_type" value="hold_trader" List.ItemID="-898938055" />
+				<enum name="acceptable_type" value="hold_villager" List.ItemID="1984018353" />
+				<enum name="acceptable_type" value="hold_infantry" List.ItemID="1247796160" />
+				<enum name="acceptable_type" value="hold_monk" List.ItemID="-757560457" />
+				<enum name="acceptable_type" value="hold_cavalry" List.ItemID="1682342301" />
+				<enum name="acceptable_type" value="hold_infantry_ranged" List.ItemID="1698402065" />
+				<enum name="acceptable_type" value="hold_khan" List.ItemID="-1838122888" />
+				<enum name="acceptable_type" value="hold_trader" List.ItemID="-2063386198" />
 			</list>
-			<template_reference name="on_loaded_squad_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="building_hold_events\garrison_town_center" overrideParent="True" />
-			</template_reference>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1383350114" List.ParentItemID="-1383350114">
-			<instance_reference name="schema" value="statemodel_schema\buildings\town_center_capital" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-211859969" List.ParentItemID="-211859969">
 			<list name="hardpoints">
-				<group name="hardpoint" List.ItemID="-1075803228" List.ParentItemID="-1075803228">
+				<group name="hardpoint" comment="Empty. Used for enabling correct garrison slot with capital buildings." List.ItemID="741467378" List.ParentItemID="741467378">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1716508944" List.ListAction="Append">
+						<group name="weapon" List.ItemID="1331776739" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -138,7 +142,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -161,9 +165,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="1722238702" List.ParentItemID="1722238702">
+				<group name="hardpoint" comment="Empty. Used for enabling correct garrison slot with capital buildings." List.ItemID="-936296948" List.ParentItemID="-936296948">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="591221415" List.ListAction="Append">
+						<group name="weapon" List.ItemID="750692183" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -183,7 +187,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -206,9 +210,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="34971347" List.ParentItemID="34971347">
+				<group name="hardpoint" comment="Empty. Used for enabling correct garrison slot with capital buildings." List.ItemID="-568125080" List.ParentItemID="-568125080">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1744149397" List.ListAction="Append">
+						<group name="weapon" List.ItemID="-419678572" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -228,7 +232,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -251,9 +255,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="-356072741" List.ParentItemID="-356072741">
+				<group name="hardpoint" List.ItemID="544459320" List.ParentItemID="544459320">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1418872099" List.ListAction="Append">
+						<group name="weapon" List.ItemID="1096631" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -273,7 +277,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -296,9 +300,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="1065944954" List.ParentItemID="1065944954">
+				<group name="hardpoint" List.ItemID="-947691705" List.ParentItemID="-947691705">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1275661137" List.ListAction="Append">
+						<group name="weapon" List.ItemID="606079638" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -318,7 +322,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -341,9 +345,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="-1296448308" List.ParentItemID="-1296448308">
+				<group name="hardpoint" List.ItemID="-1141667366" List.ParentItemID="-1141667366">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1449446255" List.ListAction="Append">
+						<group name="weapon" List.ItemID="200214600" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -363,7 +367,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -386,9 +390,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="-193725081" List.ParentItemID="-193725081">
+				<group name="hardpoint" List.ItemID="-1669939963" List.ParentItemID="-1669939963">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-7336794" List.ListAction="Append">
+						<group name="weapon" List.ItemID="-1691614146" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -408,7 +412,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -431,9 +435,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="770006397" List.ParentItemID="770006397">
+				<group name="hardpoint" List.ItemID="-1714029137" List.ParentItemID="-1714029137">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-426774340" List.ListAction="Append">
+						<group name="weapon" List.ItemID="590956728" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -453,7 +457,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -476,9 +480,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="1097076139" List.ParentItemID="1097076139">
+				<group name="hardpoint" List.ItemID="967911333" List.ParentItemID="967911333">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1817358948" List.ListAction="Append">
+						<group name="weapon" List.ItemID="-813231605" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -498,7 +502,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -521,9 +525,9 @@
 						</group>
 					</list>
 				</group>
-				<group name="hardpoint" List.ItemID="1305784741" List.ParentItemID="1305784741">
+				<group name="hardpoint" List.ItemID="650801967" List.ParentItemID="650801967">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1479284623" List.ListAction="Append">
+						<group name="weapon" List.ItemID="1399313104" List.ListAction="Append">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -543,232 +547,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
-									<group name="attachment_flags">
-										<bool name="sim_only" value="False" />
-										<bool name="no_pathfinding" value="False" />
-										<bool name="not_snappable" value="False" />
-										<bool name="restore_snap_to_ground_on_detach" value="False" />
-										<bool name="no_sim_update" value="True" />
-										<bool name="join_parent_squad" value="False" />
-										<bool name="redirect_damage_to_parent_entity" value="True" />
-										<bool name="assign_as_attachment_combat_leader" value="False" />
-										<bool name="assign_as_attachment_movement_leader" value="False" />
-										<bool name="receive_parent_animations" value="False" />
-										<bool name="receive_parent_death" value="False" />
-									</group>
-								</template_reference>
-								<list name="possible_blueprint_updates">
-								</list>
-							</template_reference>
-							<template_reference name="non_entity_weapon_wrapper" value="">
-							</template_reference>
-						</group>
-					</list>
-				</group>
-				<group name="hardpoint" List.ItemID="-1822766158" List.ParentItemID="-1822766158">
-					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1646241253" List.ListAction="Append">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0.3" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="10" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-									<template_reference name="attach_data" value="attachments\attach_data">
-										<string name="marker_name_parent" value="" />
-										<string name="parent_rigidbody_target_name" value="" />
-										<enum name="game_object_attachment_type" value="scenegraph" />
-									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
-									<group name="attachment_flags">
-										<bool name="sim_only" value="False" />
-										<bool name="no_pathfinding" value="False" />
-										<bool name="not_snappable" value="False" />
-										<bool name="restore_snap_to_ground_on_detach" value="False" />
-										<bool name="no_sim_update" value="True" />
-										<bool name="join_parent_squad" value="False" />
-										<bool name="redirect_damage_to_parent_entity" value="True" />
-										<bool name="assign_as_attachment_combat_leader" value="False" />
-										<bool name="assign_as_attachment_movement_leader" value="False" />
-										<bool name="receive_parent_animations" value="False" />
-										<bool name="receive_parent_death" value="False" />
-									</group>
-								</template_reference>
-								<list name="possible_blueprint_updates">
-								</list>
-							</template_reference>
-							<template_reference name="non_entity_weapon_wrapper" value="">
-							</template_reference>
-						</group>
-					</list>
-				</group>
-				<group name="hardpoint" List.ItemID="276208418" List.ParentItemID="276208418">
-					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-871230791" List.ListAction="Append">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0.3" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="10" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-									<template_reference name="attach_data" value="attachments\attach_data">
-										<string name="marker_name_parent" value="" />
-										<string name="parent_rigidbody_target_name" value="" />
-										<enum name="game_object_attachment_type" value="scenegraph" />
-									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
-									<group name="attachment_flags">
-										<bool name="sim_only" value="False" />
-										<bool name="no_pathfinding" value="False" />
-										<bool name="not_snappable" value="False" />
-										<bool name="restore_snap_to_ground_on_detach" value="False" />
-										<bool name="no_sim_update" value="True" />
-										<bool name="join_parent_squad" value="False" />
-										<bool name="redirect_damage_to_parent_entity" value="True" />
-										<bool name="assign_as_attachment_combat_leader" value="False" />
-										<bool name="assign_as_attachment_movement_leader" value="False" />
-										<bool name="receive_parent_animations" value="False" />
-										<bool name="receive_parent_death" value="False" />
-									</group>
-								</template_reference>
-								<list name="possible_blueprint_updates">
-								</list>
-							</template_reference>
-							<template_reference name="non_entity_weapon_wrapper" value="">
-							</template_reference>
-						</group>
-					</list>
-				</group>
-				<group name="hardpoint" List.ItemID="-470669229" List.ParentItemID="-470669229">
-					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-703315748" List.ListAction="Append">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0.3" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="10" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-									<template_reference name="attach_data" value="attachments\attach_data">
-										<string name="marker_name_parent" value="" />
-										<string name="parent_rigidbody_target_name" value="" />
-										<enum name="game_object_attachment_type" value="scenegraph" />
-									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
-									<group name="attachment_flags">
-										<bool name="sim_only" value="False" />
-										<bool name="no_pathfinding" value="False" />
-										<bool name="not_snappable" value="False" />
-										<bool name="restore_snap_to_ground_on_detach" value="False" />
-										<bool name="no_sim_update" value="True" />
-										<bool name="join_parent_squad" value="False" />
-										<bool name="redirect_damage_to_parent_entity" value="True" />
-										<bool name="assign_as_attachment_combat_leader" value="False" />
-										<bool name="assign_as_attachment_movement_leader" value="False" />
-										<bool name="receive_parent_animations" value="False" />
-										<bool name="receive_parent_death" value="False" />
-									</group>
-								</template_reference>
-								<list name="possible_blueprint_updates">
-								</list>
-							</template_reference>
-							<template_reference name="non_entity_weapon_wrapper" value="">
-							</template_reference>
-						</group>
-					</list>
-				</group>
-				<group name="hardpoint" List.ItemID="548737286" List.ParentItemID="548737286">
-					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-201516364" List.ListAction="Append">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0.3" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="10" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-									<template_reference name="attach_data" value="attachments\attach_data">
-										<string name="marker_name_parent" value="" />
-										<string name="parent_rigidbody_target_name" value="" />
-										<enum name="game_object_attachment_type" value="scenegraph" />
-									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
-									<group name="attachment_flags">
-										<bool name="sim_only" value="False" />
-										<bool name="no_pathfinding" value="False" />
-										<bool name="not_snappable" value="False" />
-										<bool name="restore_snap_to_ground_on_detach" value="False" />
-										<bool name="no_sim_update" value="True" />
-										<bool name="join_parent_squad" value="False" />
-										<bool name="redirect_damage_to_parent_entity" value="True" />
-										<bool name="assign_as_attachment_combat_leader" value="False" />
-										<bool name="assign_as_attachment_movement_leader" value="False" />
-										<bool name="receive_parent_animations" value="False" />
-										<bool name="receive_parent_death" value="False" />
-									</group>
-								</template_reference>
-								<list name="possible_blueprint_updates">
-								</list>
-							</template_reference>
-							<template_reference name="non_entity_weapon_wrapper" value="">
-							</template_reference>
-						</group>
-					</list>
-				</group>
-				<group name="hardpoint" List.ItemID="-1551695017" List.ParentItemID="-1551695017">
-					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-285092621" List.ListAction="Append">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0.3" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="10" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
-								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-									<template_reference name="attach_data" value="attachments\attach_data">
-										<string name="marker_name_parent" value="" />
-										<string name="parent_rigidbody_target_name" value="" />
-										<enum name="game_object_attachment_type" value="scenegraph" />
-									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_ott" overrideParent="True" />
+									<instance_reference name="ebp" value="ebps\races\ottoman\weapons\wpn_range_town_center_bolts_garrison_non_capital_additional_tc_ott" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -793,14 +572,14 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="1150752599" List.ListAction="Append">
+		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="-972959689" List.ListAction="Append">
 			<list name="modifiers">
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1040058487" List.ListAction="Append">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-722786198" List.ListAction="Append">
 			<list name="tier_group_list">
-				<list name="tier_group" List.ItemID="-692036337">
-					<group name="tier" List.ItemID="767569314">
+				<list name="tier_group" List.ItemID="1257632768">
+					<group name="tier" List.ItemID="-605196138">
 						<list name="tier_requirements">
 						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\town_center_ott\tier1_town_center_control_ott" overrideParent="True" />
@@ -820,9 +599,9 @@
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
-					<group name="tier" List.ItemID="-313745894">
+					<group name="tier" List.ItemID="675055308">
 						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="612571454">
+							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="254883578">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
 								<bool name="is_present" value="True" />
@@ -854,9 +633,9 @@
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
-					<group name="tier" List.ItemID="-1140149541">
+					<group name="tier" List.ItemID="1038915169">
 						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="890204822">
+							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="2135407226">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
 								<bool name="is_present" value="True" />
@@ -888,9 +667,9 @@
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
-					<group name="tier" List.ItemID="-235934526">
+					<group name="tier" List.ItemID="348795442">
 						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-1879199873">
+							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1508839617">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
 								<bool name="is_present" value="True" />
@@ -923,8 +702,8 @@
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
 				</list>
-				<list name="tier_group" overrideParent="True" List.ItemID="-362646351">
-					<group name="tier" List.ItemID="-1308718450">
+				<list name="tier_group" overrideParent="True" List.ItemID="413212827">
+					<group name="tier" List.ItemID="-443880921">
 						<list name="tier_requirements">
 						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\sultanate\outskirts\general\sul_towncenter_01" overrideParent="True" />
@@ -944,9 +723,9 @@
 						</template_reference>
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
-					<group name="tier" List.ItemID="-584939773">
+					<group name="tier" List.ItemID="3662024">
 						<list name="tier_requirements">
-							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="1939515829">
+							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="-608428138">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
 								<bool name="is_present" value="True" />
@@ -979,8 +758,8 @@
 						<string name="inventory_category_to_refresh_on_tier_up" value="" />
 					</group>
 				</list>
-				<list name="tier_group" List.ItemID="1096925115">
-					<group name="tier" List.ItemID="-1373748422">
+				<list name="tier_group" List.ItemID="-627436472">
+					<group name="tier" List.ItemID="-1765620559">
 						<list name="tier_requirements">
 						</list>
 						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\common\buildings\building_town_center_bell_arch" />
@@ -1004,6 +783,6 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="2034616" />
-	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_town_center_capital" />
+	<uniqueid name="pbgid" value="2034617" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_town_center" />
 </instance>

@@ -1,189 +1,42 @@
 <instance version="4" description="" template="ebps">
 	<list name="extensions">
-		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="347108419">
-			<file name="alternate_sua" value="" />
-			<bool name="browsable_in_editor" value="True" />
-			<bool name="always_revealed_in_fow" value="False" />
-			<bool name="is_visible_in_game" value="True" />
-			<int name="precise_size" value="-1" />
-			<enum name="default_spawn_type" value="" />
-			<instance_reference name="unit_badge" value="" />
-			<bool name="is_spawned_when_not_in_interactive_area" value="True" />
-			<bool name="is_wreck" value="False" />
-			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\buildings\building_town_center" />
-			<float name="animator_scale" value="100" />
-			<float name="entity_scale" value="100" />
-			<enum name="subclass_type" value="Building" />
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="347108419" List.ParentItemID="347108419">
+			<file name="alternate_sua" value="" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="-507020755">
-			<float name="rotate_snap" value="360" />
-			<bool name="kill_paradrop" value="False" />
-			<enum name="transferable" value="None" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-894120277">
-			<bool name="can_repair" value="True" />
-			<float name="hitpoints" value="7000" />
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-894120277" List.ParentItemID="-894120277">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="7000" overrideParent="True" />
 			<enum_table name="armor_scaler_by_damage_type">
-				<float name="Fire" value="0" />
-				<float name="True Damage" value="0" />
-				<float name="Melee" value="0" />
-				<float name="Ranged" value="50" />
-			</enum_table>
-			<bool name="cuttable" value="False" />
-			<string name="death_event_name" value="death" />
-			<float name="death_seconds" value="-1" />
-			<bool name="delete_when_dead" value="False" />
-			<bool name="force_attacker_memory" value="False" />
-			<bool name="is_invincible" value="False" />
-			<bool name="is_salvagable_wreck" value="False" />
-			<instance_reference name="rebuilt_entity" value="" />
-			<instance_reference name="rebuilt_squad" value="" />
-			<bool name="rebuilt_use_wreck_owner" value="False" />
-			<bool name="receive_weapon_cover_modifiers" value="False" />
-			<float name="regeneration" value="0" />
-			<bool name="regeneration_disabled" value="True" />
-			<bool name="remove_from_pathfinding_on_death" value="False" />
-			<bool name="reveal_to_all_on_death" value="False" />
-			<bool name="ui_can_scuttle" value="True" />
-			<float name="target_size" value="5" />
-			<float name="weapon_priority" value="80" />
-			<template_reference name="wreck_entity_option" value="options\none">
-			</template_reference>
-			<enum name="armor_type" value="None" />
-			<template_reference name="armor_layout_option" value="options\ebpextensions\healthext\armor_layouts\armor_layout_uniform">
-				<float name="armor" value="1" />
-			</template_reference>
-			<enum name="allegiance_override" value="none" />
-			<bool name="not_default_attackable" value="False" />
-			<bool name="can_be_damaged_by_ally" value="False" />
-			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\town_center_death_actions" />
-			<template_reference name="self_destruct_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="" />
-				<bool name="start_suspended" value="False" />
-			</template_reference>
-			<template_reference name="rebuilt_entity_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="" />
-				<bool name="start_suspended" value="False" />
-			</template_reference>
-			<template_reference name="on_received_damage_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="" />
-				<bool name="start_suspended" value="False" />
-			</template_reference>
-			<state_tree_node name="on_reach_invulnerable_min_cap_entity_state_tree_ref" value="" />
-			<state_tree_node name="on_reach_max_health_entity_state_tree_ref" value="" />
-			<enum_table name="percentage_reduction_armor_by_damage_type">
-				<float name="True Damage" value="0" />
-				<float name="Melee" value="0" />
-				<float name="Ranged" value="0" />
-				<float name="Fire" value="0" />
+				<float name="Fire" value="0" overrideParent="True" />
 			</enum_table>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1220052553">
-			<instance_reference name="hit_material" value="hit_material\wood" />
-			<float name="hit_chance" value="1" />
-			<template_reference name="projectile_reflect_option" value="options\none">
-			</template_reference>
-			<enum name="projectile_collision_check_type" value="internal_simboxes_only" />
-			<group name="shot_collision">
-				<enum_table name="pass_through_relation">
-					<bool name="undefined" value="False" />
-					<bool name="enemy" value="True" />
-					<bool name="ally" value="True" />
-					<bool name="neutral" value="True" />
-				</enum_table>
-				<enum_table name="pass_through_projectile">
-					<bool name="tp_artillery" value="False" />
-					<bool name="tp_collide" value="False" />
-					<bool name="tp_vehicle_collide" value="True" />
-					<bool name="tp_piercing_blockers_only" value="True" />
-				</enum_table>
-				<bool name="pass_through_weapon_ranged_non_projectile" value="False" />
-				<bool name="collide_with_missed_ranged_weapon_shots" value="True" />
-			</group>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="964116860" List.ParentItemID="964116860">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-1059927394">
-			<group name="blocking_box">
-				<float name="x" value="0.01" />
-				<float name="y" value="0.01" />
-				<float name="z" value="0.01" />
-			</group>
-			<bool name="is_shot_blocking" value="False" />
-			<bool name="use_blocking_box" value="False" />
-			<bool name="reveal_center_when_outside_is_visible" value="True" />
-			<enum name="does_block_line_of_sight" value="never" />
-			<list name="blocked_weapon_types">
-			</list>
-			<bool name="disable_shot_blocking_on_death" value="False" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\marker_ext" List.ItemID="-1553405240">
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="2070589535">
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="964116860">
-			<bool name="snap_to_construction_grid" value="True" />
-			<float name="extra_build_test_footprint_x" value="0" />
-			<bool name="snap_to_terrain" value="False" />
-			<float name="extra_build_test_footprint_z" value="0" />
-			<float name="extra_build_test_footprint_offset_x" value="0" />
-			<float name="extra_build_test_footprint_offset_z" value="0" />
-			<float name="minimum_build_test_footprint_x" value="0" />
-			<float name="minimum_build_test_footprint_z" value="0" />
-			<enum name="impass_cell_check" value="AllCellsFree" />
-			<group name="footprint_scale">
-				<float name="x" value="8" />
-				<float name="y" value="8" />
-			</group>
-			<bool name="forced_axis_aligned_footprint" value="True" />
-			<bool name="remove_if_constructed_over" value="False" />
-			<list name="snap_to_surface_types">
-				<enum name="surface_type" value="Ground" List.ItemID="-655091064" />
-			</list>
-			<bool name="despawn_if_constructed_over" value="False" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965">
-			<list name="unit_type_list">
-				<enum name="unit_type" value="building" List.ItemID="567222009" />
-				<enum name="unit_type" value="hq" List.ItemID="1447107149" />
-				<enum name="unit_type" value="town_center" List.ItemID="-795897789" />
-				<enum name="unit_type" value="resource_drop_off" List.ItemID="229581186" />
-				<enum name="unit_type" value="siegeable" List.ItemID="-846203280" />
-				<enum name="unit_type" value="emits_herding_interest" List.ItemID="981970738" />
-				<enum name="unit_type" value="town_bell_target" List.ItemID="-361708843" />
-				<enum name="unit_type" value="production_building" List.ItemID="1276817144" />
-				<enum name="unit_type" value="select_special_building" List.ItemID="2106239844" />
-				<enum name="unit_type" value="town_center_capital" List.ItemID="-739050879" />
-				<enum name="unit_type" value="landmark" List.ItemID="-2070560163" />
-				<enum name="unit_type" value="has_default_building_weapons" List.ItemID="1499963428" />
-				<enum name="unit_type" value="town_center_or_landmark" List.ItemID="1405425055" List.ParentItemID="-981125429" />
-				<enum name="unit_type" value="land_food_deposit_4_by_4" List.ItemID="1314698136" />
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965" List.ParentItemID="519261965">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="building" List.ItemID="-522425737" />
+				<enum name="unit_type" value="hq" List.ItemID="-130900096" />
+				<enum name="unit_type" value="town_center" List.ItemID="1356076666" />
+				<enum name="unit_type" value="resource_drop_off" List.ItemID="78699446" />
+				<enum name="unit_type" value="siegeable" List.ItemID="-434496799" />
+				<enum name="unit_type" value="emits_herding_interest" List.ItemID="1299690262" />
+				<enum name="unit_type" value="town_bell_target" List.ItemID="-176728124" />
+				<enum name="unit_type" value="production_building" List.ItemID="874817667" />
+				<enum name="unit_type" value="select_special_building" List.ItemID="-80424239" />
+				<enum name="unit_type" value="town_center_capital" List.ItemID="-252567108" />
+				<enum name="unit_type" value="landmark" List.ItemID="-84146615" />
+				<enum name="unit_type" value="has_default_building_weapons" List.ItemID="1299551963" />
+				<enum name="unit_type" value="town_center_or_landmark" List.ItemID="-492948631" List.ParentItemID="-981125429" />
+				<enum name="unit_type" value="land_food_deposit_4_by_4" List.ItemID="-1739119440" />
 			</list>
 			<list name="race_type_list">
-			</list>
-			<enum name="weapon_targeting" value="automatic" />
-			<enum_table name="weapon_category_targeting_filter">
-				<bool name="1melee" value="True" />
-				<bool name="2ranged" value="True" />
-				<bool name="3siege" value="True" />
-				<bool name="4charge" value="True" />
-				<bool name="5brace" value="True" />
-				<bool name="6auto_ability_cast" value="True" />
-				<bool name="7single_cast_ability" value="True" />
-				<bool name="8dummy" value="True" />
-				<bool name="9idle" value="True" />
-			</enum_table>
-			<bool name="intersection_testing" value="False" />
-			<list name="attack_target_restriction_on_attacker">
-			</list>
-			<list name="attack_target_restriction_on_victim">
-				<enum name="unit_type" value="animal_gatherable" List.ItemID="735965671" />
-			</list>
-			<list name="unit_type_list_selection_keybind_only">
-			</list>
-			<list name="unit_type_list_ui_appear_as_only">
+				<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="539466368" List.ListAction="Append" />
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="565171784">
-			<list name="abilities">
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="565171784" List.ParentItemID="565171784">
+			<list name="abilities" overrideParent="True">
 				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1900787096" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\age_up_feudal" List.ItemID="-2008686911" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\age_up_castle" List.ItemID="1823090236" />
@@ -191,332 +44,60 @@
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="1873400332" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\global_return_to_work" List.ItemID="-1312886256" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\town_center_town_bell" List.ItemID="1604473395" />
-				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1082912072" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-507115326" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese\daimyo_level_manager_jpn" List.ItemID="125145886" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\japanese\shinto_sacred_object_buff_jpn" List.ItemID="191077714" />
+				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1082912072" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1649604268" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2123396873" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_main" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-820756854" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_addition" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1928499841" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\kurultai_healing_aura_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-919994027" />
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="2068490625">
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="2068490625" List.ParentItemID="2068490625">
 			<group name="on_construction_complete_state_tree_refs">
-				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\town_center_construction_complete" />
-				<string name="on_construction_complete_entity_state_tree_ref" value="" />
-				<string name="on_construction_complete_physical_state_tree_ref" value="" />
-				<string name="on_construction_complete_squad_state_tree_ref" value="" />
-				<string name="on_construction_plan_complete_global_state_tree_ref" value="" />
-				<string name="while_construction_complete_physical_state_tree_ref" value="" />
+				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\town_center_construction_complete" overrideParent="True" />
 			</group>
-			<bool name="automatic_fit_on_placement" value="False" />
-			<float name="cancel_refund_percentage" value="100" />
-			<string name="construction_state_name" value="construction_state" />
-			<float name="construction_transition_time" value="0" />
-			<bool name="force_construction" value="False" />
-			<float name="max_engineers" value="0" />
-			<instance_reference name="on_construction_squad" value="" />
-			<float name="orientation" value="0" />
-			<enum name="placement_type" value="tp_structure" />
-			<bool name="prefer_spots_on_side_with_leader" value="False" />
-			<bool name="query_abilities_for_range_ui" value="False" />
-			<bool name="show_ability_range_in_construction_item_preview" value="False" />
-			<bool name="random_rotation" value="False" />
-			<float name="replace_ghost_distance" value="5" />
-			<bool name="self_construct" value="False" />
-			<group name="field_placement_info">
-				<instance_reference name="border_entity" value="" />
-				<instance_reference name="replace_entity" value="" />
-				<int name="replace_count" value="0" />
-				<float name="replace_retry_distance" value="0" />
-			</group>
-			<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
-			<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
-			<instance_reference name="ui_range" value="ui_reticule\weapon_range" />
-			<float name="ui_range_radius" value="0" />
-			<instance_reference name="ui_setfacing" value="" />
-			<bool name="query_weapon_for_range_ui" value="True" />
-			<bool name="squad_ignore_pathfinding" value="False" />
-			<group name="placement_requirements">
-				<bool name="must_be_in_line_of_sight" value="False" />
-				<bool name="must_not_be_in_walkable_surfaces" value="False" />
-				<bool name="must_be_on_strategic_point" value="False" />
-				<list name="requirements">
-				</list>
-				<float name="spacing_distance" value="0" />
-				<bool name="skip_impass_checks_and_ignore_immovable_entities" value="False" />
-				<string name="state_tree_conditions" value="" />
-				<bool name="must_be_in_explored_area" value="True" />
-				<bool name="must_be_on_movement_node" value="False" />
-				<list name="placement_requirement_options">
-					<template_reference name="placement_requirement_option" value="options\placement\requirements\placement_requirement_pass_types_option" List.ItemID="1173578782">
-						<list name="required_pass_types">
-							<group name="pass_type_data" List.ItemID="2013471456">
-								<instance_reference name="pass_type" value="pass_types\infantry" />
-								<int name="minimum_contiguous_cell_count" value="1" />
-							</group>
-						</list>
-						<list name="forbidden_pass_types">
-							<instance_reference name="pass_type" value="pass_types\water_default" List.ItemID="1666291469" />
-						</list>
-						<bool name="use_simbox_scale_as_footprint" value="False" />
-					</template_reference>
-				</list>
-				<locstring name="ui_usage_txt" value="0" />
-			</group>
-			<bool name="can_be_cancelled" value="True" />
-			<state_tree_node name="can_be_cancelled_state_tree_conditions" value="" />
-			<template_reference name="construction_health_option" value="options\ebpextensions\constructionext\construction_health_option">
-				<float name="initial_health" value="240" />
-			</template_reference>
-			<float name="min_music_intensity" value="0" />
-			<string name="tooltip_data_template" value="ConstructionItemTooltipDataTemplate" />
-			<enum name="placement_set_facing_style" value="disabled" />
-			<group name="facing_quadrants">
-				<int name="search_radius_metres" value="0" />
-				<int name="radius_metres" value="32" />
-				<group name="quadrants">
-					<enum name="front" value="Facing" />
-					<enum name="rear" value="Facing" />
-					<enum name="left" value="Facing" />
-					<enum name="right" value="Facing" />
-				</group>
-			</group>
-			<bool name="facing_surface_normal" value="False" />
-			<group name="fixed_rotation_impass_avoidance">
-				<int name="minimum_search_radius_cells" value="7" />
-				<bool name="use_impass_avoidance" value="True" />
-			</group>
-			<bool name="query_movement_node_modifier_for_range_ui" value="True" />
-			<enum name="entity_placement_class" value="" />
-			<bool name="construction_site_erase_inactive" value="False" />
-			<group name="preview_upgrade_effects">
-				<template_reference name="area_info" value="">
-				</template_reference>
-				<list name="preview_upgrade_effects_list">
-				</list>
-				<bool name="ignore_depleted_resources" value="False" />
-			</group>
-			<bool name="placement_position_ignores_walkable_surfaces" value="False" />
-			<int name="aqueduct_network_increment_amount" value="0" />
-			<list name="ignorable_entity_types">
-			</list>
-			<float name="aqueduct_cistern_proximity_test_square_scale" value="0" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="268370002">
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="268370002" List.ParentItemID="268370002">
 			<group name="time_cost">
 				<enum_table name="cost">
-					<float name="wood" value="0" />
-					<float name="stone" value="0" />
-					<float name="action" value="0" />
-					<float name="command" value="0" />
-					<float name="popcap" value="0" />
-					<float name="food" value="0" />
-					<float name="gold" value="0" />
-					<float name="militia_hre" value="0" />
-					<float name="merc_byz" value="0" />
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="stone" value="0" overrideParent="True" />
 				</enum_table>
-				<float name="time_seconds" value="150" />
-				<int name="time_turns" value="0" />
 			</group>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="129906091">
-			<bool name="cant_build" value="True" />
-			<group name="impass_simboxes">
-				<bool name="default_simbox" value="True" />
-				<list name="named_simboxes">
-				</list>
-			</group>
-			<list name="block_path">
-				<instance_reference name="path_type" value="pass_types\infantry" List.ItemID="-1381747809" />
-				<instance_reference name="path_type" value="pass_types\vehicle" List.ItemID="-1666660771" />
-			</list>
-			<bool name="should_rasterize_partial_cells" value="False" />
-			<enum name="blocker_lifetime_type" value="match_entity" />
-			<file name="stamp_blockers" value="" />
-			<group name="center_cell">
-				<bool name="cant_build" value="False" />
-				<list name="block_path">
-				</list>
-			</group>
-			<bool name="attach_gap_fillers" value="False" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1340280905">
+		<template_reference name="exts" value="ebpextensions\sight_ext" List.ItemID="-1340280905" List.ParentItemID="-1340280905">
 			<group name="stealth_detection">
-				<bool name="enabled" value="True" />
-				<float name="radius" value="32" />
-				<float name="throttle" value="0" />
+				<bool name="enabled" value="True" overrideParent="True" />
+				<float name="radius" value="32" overrideParent="True" />
 			</group>
-			<group name="detect_camouflage">
-				<float name="tp_global" value="10" />
-				<float name="tp_mine" value="0" />
-				<float name="tp_unit" value="0" />
-			</group>
-			<bool name="extended_sight" value="False" />
-			<float name="extended_sight_radius" value="0" />
-			<float name="reveal_area_on_death_time" value="1.5" />
-			<group name="sight_package">
-				<float name="inner_height" value="10" />
-				<float name="inner_radius" value="28" />
-				<float name="outer_height" value="-15" />
-				<float name="outer_radius" value="52" />
-				<float name="cone_angle" value="360" />
-				<float name="cone_start_radius" value="0" />
-			</group>
-			<list name="extended_sight_target_requirements">
-			</list>
-			<list name="specific_detector_actions">
-			</list>
-			<group name="vertical_truesight">
-				<bool name="enable" value="False" />
-				<float name="tolerance" value="1" />
-				<float name="eye_height" value="2.5" />
-			</group>
-			<bool name="blockers_check_bounding_box" value="False" />
-			<bool name="camouflage_detection_enabled" value="False" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-272167440">
-			<file name="minimap_icon" value="minimap\capital" />
-			<float name="minimap_icon_scale" value="0.45" />
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-272167440" List.ParentItemID="-272167440">
+			<file name="minimap_icon" value="minimap\capital" overrideParent="True" />
+			<float name="minimap_icon_scale" value="0.45" overrideParent="True" />
 			<group name="ui_codex_info">
-				<int name="priority" value="5950" />
-				<bool name="exclusive" value="True" />
-				<group name="ui_position">
-					<int name="ui_position_column" value="-1" />
-					<int name="ui_position_row" value="-1" />
-				</group>
+				<int name="priority" value="5950" overrideParent="True" />
+				<bool name="exclusive" value="True" overrideParent="True" />
 			</group>
-			<bool name="ap_killed_kicker" value="True" />
-			<bool name="ap_loss_kicker" value="True" />
-			<float name="decorator_height" value="8" />
-			<string name="extra_text_deprecated" value="" />
-			<bool name="ghost_enable" value="True" />
-			<locstring name="help_text" value="11146360" />
-			<string name="hotkey_name" value="W" />
-			<file name="icon_name" value="races\common\buildings\town_center" />
-			<enum name="kill_type" value="building" />
-			<colour name="minimap_color" value="*" />
-			<bool name="minimap_enable" value="True" />
-			<bool name="minimap_team_only" value="False" />
-			<bool name="minimap_teamcolor" value="True" />
-			<string name="overlay_name" value="" />
-			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11119069" />
-			<enum name="selection_name" value="building" />
-			<float name="selection_scale" value="1" />
-			<enum name="selection_type" value="multi_entity_select" />
-			<locstring name="tooltip_txt" value="0" />
-			<int name="ui_priority" value="0" />
-			<file name="portrait_icon" value="" />
-			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="11155635" />
-			<locstring name="screen_name_short" value="0" />
-			<bool name="show_in_build_log" value="True" />
-			<bool name="show_entity_appearance" value="True" />
-			<locstring name="screen_name_world" value="0" />
-			<locstring name="help_text_world" value="0" />
-			<locstring name="extra_text_world" value="0" />
-			<enum name="map_rotation_type_override" value="no_override" />
-			<file name="symbol_icon_name" value="minimap\structure" />
-			<enum name="occlusion_state" value="terrain_layer" />
-			<enum name="decorator_visibility" value="visible" />
-			<bool name="skin_pack_override" value="False" />
-			<string name="skin_summer" value="" />
-			<string name="skin_winter" value="" />
-			<enum name="targeting_and_bandbox_selection_priority" value="lowest" />
-			<enum name="selection_method" value="obb_adjusted_to_terrain" />
-			<group name="terrain_info_display_offset">
-				<float name="x" value="-225" />
-				<float name="y" value="-175" />
-			</group>
-			<string name="decorator_ledger_key" value="" />
-			<instance_reference name="decorator_ledger_bar_style" value="" />
-			<enum name="selection_name_squad_override" value="" />
-			<string name="selection_grouping_ledger_key" value="" />
-			<string name="debug_text" value="" />
-			<string name="selection_datatemplate" value="DropOffSelectionDataTemplate" />
-			<bool name="use_construction_range_on_selection" value="True" />
-			<bool name="use_combat_range_on_selection" value="False" />
-			<bool name="is_armoured" value="False" />
-			<string name="decorator_data_template" value="" />
-			<enum name="ui_combine_type" value="intersection" />
-			<bool name="spotted_on_spawn" value="False" />
-			<instance_reference name="district_info" value="" />
-			<bool name="force_facing_and_range_visual_to_center_on_entity" value="False" />
-			<bool name="is_unique_to_race" value="False" />
-			<float name="kicker_offset" value="0" />
-			<file name="portrait_name" value="" />
-			<group name="selection_secondary_bounds_scale">
-				<float name="x" value="1" />
-				<float name="y" value="1" />
-				<float name="z" value="1" />
-			</group>
-			<enum name="decorator" value="" />
-			<int name="map_layer" value="0" />
-			<enum name="map_mark" value="CustomStructure" />
-			<list name="custom_selection_obbs">
-			</list>
-			<list name="ui_extra_infos">
-			</list>
-			<template_reference name="help_text_formatter" value="">
-			</template_reference>
-			<template_reference name="extra_text_formatter" value="">
-			</template_reference>
-			<template_reference name="extra_text_world_formatter" value="">
-			</template_reference>
-			<template_reference name="help_text_world_formatter" value="">
-			</template_reference>
-			<template_reference name="screen_name_formatter" value="">
-			</template_reference>
-			<template_reference name="screen_name_short_formatter" value="">
-			</template_reference>
-			<template_reference name="screen_name_world_formatter" value="">
-			</template_reference>
-			<template_reference name="brief_text_formatter" value="">
-			</template_reference>
-			<string name="sound" value="" />
-			<string name="sound_alternative" value="" />
-			<string name="telemetry_name" value="Town Center" />
-			<string name="selection_group" value="town_center" />
-			<group name="selection_obb_size">
-				<float name="x" value="1" />
-				<float name="y" value="1" />
-				<float name="z" value="1" />
-			</group>
-			<float name="kicker_offset_world" value="0" />
-			<int name="global_unit_control_row" value="-1" />
-			<string name="tooltip_data_template" value="" />
-			<bool name="selection_obb_size_align_to_terrain" value="True" />
-			<group name="selection_obb_size_resource_ready">
-				<float name="x" value="1" />
-				<float name="y" value="1" />
-				<float name="z" value="1" />
-			</group>
-			<bool name="reticule_override_enabled" value="False" />
-			<float name="reticule_override_size" value="0" />
-			<float name="minimap_icon_zoom_scale" value="0" />
-			<locstring name="help_text_controller" value="0" />
-			<locstring name="extra_text_controller" value="0" />
-			<bool name="static_selection_bounds" value="False" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1529303587">
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1529303587" List.ParentItemID="1529303587">
 			<list name="action_state_trees">
-				<group name="container" List.ItemID="1248741447">
-					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply" />
+				<group name="container" List.ItemID="1248741447" List.ParentItemID="1248741447">
+					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply" overrideParent="True" />
 				</group>
 			</list>
 			<list name="action_state_trees_run_once">
-			</list>
-			<bool name="reset_on_load" value="True" />
-			<list name="physical_state_trees">
-			</list>
-			<list name="deferred_action_state_trees">
-			</list>
-			<list name="deferred_action_state_trees_run_once">
-			</list>
-			<list name="physical_state_trees_run_once">
+				<group name="container" List.ItemID="947938546" List.ListAction="Append">
+					<string name="state_tree" value="building_action_apply\buildings\town_center_action_apply\set_civ_dynamic_root\jpn" overrideParent="True" />
+				</group>
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1875812947">
-			<list name="spawn_items">
-				<group name="spawn_item" List.ItemID="-391306629">
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1875812947" List.ParentItemID="-1875812947">
+			<list name="spawn_items" overrideParent="True">
+				<group name="spawn_item" List.ItemID="-1174778191">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" />
+					<instance_reference name="squad" value="sbps\races\japanese\unit_villager_1_jpn" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" />
@@ -541,8 +122,8 @@
 					<int name="number_to_queue_up_to_when_modified" value="5" />
 					<list name="additional_squads">
 					</list>
-					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_town_center\train_villager" />
-					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_town_center\train_villager" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
 						<template_reference name="command_card_info" value="ui_command_card_info">
 							<group name="ui_position">
 								<int name="ui_position_row" value="1" />
@@ -565,7 +146,7 @@
 						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
 							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
 							<int name="quick_commands_priority" value="5" />
-							<int name="quick_commands_slot_index" value="2" />
+							<int name="quick_commands_slot_index" value="2" overrideParent="True" />
 							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
 						</template_reference>
 						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
@@ -583,9 +164,9 @@
 					<file name="ui_icon_name" value="" />
 					<string name="ui_tooltip_data_template" value="" />
 				</group>
-				<group name="spawn_item" List.ItemID="-630261528">
+				<group name="spawn_item" List.ItemID="327756305">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\japanese\unit_scout_1_jpn" />
+					<instance_reference name="squad" value="sbps\races\japanese\unit_scout_1_jpn" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
 						<int name="ui_position_row" value="1" />
@@ -610,8 +191,8 @@
 					<int name="number_to_queue_up_to_when_modified" value="5" />
 					<list name="additional_squads">
 					</list>
-					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_town_center\train_scout" />
-					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+					<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_town_center\train_scout" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
 						<template_reference name="command_card_info" value="ui_command_card_info">
 							<group name="ui_position">
 								<int name="ui_position_row" value="1" />
@@ -639,7 +220,7 @@
 						</template_reference>
 						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
 							<instance_reference name="menu" value="relic_radial_menu\relic_radial_menu\default" />
-							<int name="nominal_index" value="3" />
+							<int name="nominal_index" value="3" overrideParent="True" />
 							<int name="priority" value="0" />
 							<instance_reference name="linked" value="" />
 						</template_reference>
@@ -652,13 +233,13 @@
 					<file name="ui_icon_name" value="" />
 					<string name="ui_tooltip_data_template" value="" />
 				</group>
-				<group name="spawn_item" List.ItemID="-226545978">
+				<group name="spawn_item" List.ItemID="-75712996">
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\japanese\unit_villager_free_jpn" />
+					<instance_reference name="squad" value="sbps\races\japanese\unit_villager_free_jpn" overrideParent="True" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 					<group name="ui_position">
-						<int name="ui_position_row" value="-1" />
-						<int name="ui_position_column" value="-1" />
+						<int name="ui_position_row" value="-1" overrideParent="True" />
+						<int name="ui_position_column" value="-1" overrideParent="True" />
 					</group>
 					<instance_reference name="ui_menu" value="" />
 					<int name="number_to_spawn" value="1" />
@@ -679,8 +260,8 @@
 					<int name="number_to_queue_up_to_when_modified" value="5" />
 					<list name="additional_squads">
 					</list>
-					<instance_reference name="hotkey_binding" value="" />
-					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+					<instance_reference name="hotkey_binding" value="" overrideParent="True" />
+					<template_reference name="ui_info_extended" value="tables\ui_info_ext" overrideParent="True">
 						<template_reference name="command_card_info" value="ui_command_card_info">
 							<group name="ui_position">
 								<int name="ui_position_row" value="1" />
@@ -703,7 +284,7 @@
 						<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
 							<enum name="quick_commands_hotkey" value="x_quick_command_y" />
 							<int name="quick_commands_priority" value="5" />
-							<int name="quick_commands_slot_index" value="2" />
+							<int name="quick_commands_slot_index" value="2" overrideParent="True" />
 							<enum name="quick_commands_hold_time" value="quick_command_hold_time" />
 						</template_reference>
 						<template_reference name="relic_radial_menu_info" value="relic_radial_menu\relic_radial_menu_info">
@@ -722,156 +303,24 @@
 					<string name="ui_tooltip_data_template" value="" />
 				</group>
 			</list>
-			<instance_reference name="rally_pass_type" value="pass_types\infantry" />
-			<bool name="economic_rally_points_allowed" value="False" />
-			<bool name="must_be_in_supply" value="False" />
-			<float name="reinforce_radius" value="0" />
-			<list name="bonus_xp_from_hold_list">
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+			<bool name="economic_rally_points_allowed" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-2049432204" List.ParentItemID="-2049432204">
+			<list name="standard_upgrades" overrideParent="True">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_villager_health" List.ItemID="536473667" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\buildings\upgrade_capital_tier_1_jpn" List.ItemID="1226105237" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\buildings\upgrade_capital_tier_2_jpn" List.ItemID="55674329" />
+				<instance_reference name="upgrade" value="upgrade\races\japanese\buildings\upgrade_capital_tier_3_jpn" List.ItemID="940022177" />
+				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1814481263" />
 			</list>
-			<list name="reinforce_requirements">
-			</list>
-			<bool name="spawn_to_hold_try_first" value="False" />
-			<list name="queue_requirements">
-			</list>
-			<bool name="can_rally" value="True" />
-			<template_reference name="animated_spawn_option" value="options\none">
-			</template_reference>
-			<int name="max_queue_size_override" value="-1" />
-			<string name="queue_requirements_openingbranch" value="" />
-			<string name="reinforce_requirements_openingbranch" value="" />
-			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed\Master\building_production_item_complete\building_production_item_complete_town_center" />
-			<bool name="enforce_minimum_clearance_at_spawn_positions" value="True" />
-			<bool name="enforce_minimum_clearance_if_entities_blocking" value="True" />
-			<float name="enforce_minimum_clearance_at_spawn_positions_search_range" value="30" />
-			<bool name="reset_production_progress_at_current_pop_cap" value="False" />
-			<bool name="can_spawn_if_neutral" value="False" />
-			<bool name="default_rally_points_allowed" value="True" />
-			<bool name="always_use_economic_rally_points" value="True" />
-			<bool name="use_alternative_rally_point_system" value="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\supply_ext" List.ItemID="338698593">
-			<bool name="default_on" value="True" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-2049432204">
-			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_villager_health" List.ItemID="1171143994" />
-				<instance_reference name="upgrade" value="upgrade\races\japanese\buildings\upgrade_capital_tier_1_jpn" List.ItemID="-544785527" />
-				<instance_reference name="upgrade" value="upgrade\races\japanese\buildings\upgrade_capital_tier_2_jpn" List.ItemID="-1004754298" />
-				<instance_reference name="upgrade" value="upgrade\races\japanese\buildings\upgrade_capital_tier_3_jpn" List.ItemID="657353254" />
-			</list>
-			<bool name="must_be_in_supply" value="False" />
-			<float name="number_of_standard_slots" value="-1" />
-			<int name="max_queue_size_override" value="-1" />
-			<state_tree_node name="production_item_completed_openingbranch" value="" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="-151977967">
-			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_all_in_list" List.ItemID="-503127528">
-					<enum name="reason" value="usage_and_display" />
-					<locstring name="ui_name" value="0" />
-					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_statemodelfloat" List.ItemID="991155936">
-							<locstring name="ui_name" value="0" />
-							<enum name="reason" value="usage_and_display" />
-							<enum name="key" value="has_capital" />
-							<enum name="data_source_type" value="player_datasource" />
-							<float name="default_value" value="0" />
-							<float name="compare_to_value" value="0" />
-							<enum name="comparison" value="equal_to" />
-							<float name="ui_max_value" value="0" />
-							<float name="ui_min_value" value="0" />
-						</template_reference>
-						<template_reference name="requirement" value="requirements\required_not" List.ItemID="-1691301373">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_structure" List.ItemID="949527080">
-									<enum name="reason" value="usage_and_display" />
-									<locstring name="ui_name" value="0" />
-									<instance_reference name="structure_name" value="" />
-									<int name="required_structure_count" value="1" />
-									<bool name="check_team" value="False" />
-									<bool name="require_construction_complete" value="False" />
-									<group name="include_pbg_parenting">
-										<bool name="include_child_pbgs" value="True" />
-										<bool name="include_parent_pbgs" value="False" />
-									</group>
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<locstring name="ui_name_controller" value="0" />
-				</template_reference>
-			</list>
-			<state_tree_node name="requirement_statetree" value="" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-212334701">
-			<string name="speaker_code" value="" />
-			<group name="speech_parameters">
-				<string name="class_code" value="base" />
-				<string name="name_code" value="" />
-				<string name="unit_code" value="spa_hq" />
-			</group>
-			<int name="importance" value="25" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\resource_drop_off_ext" List.ItemID="-1831636517">
-			<enum_table name="accepted_resources">
-				<bool name="action" value="False" />
-				<bool name="command" value="False" />
-				<bool name="popcap" value="False" />
-				<bool name="food" value="True" />
-				<bool name="wood" value="True" />
-				<bool name="stone" value="True" />
-				<bool name="gold" value="True" />
-				<bool name="militia_hre" value="False" />
-				<bool name="merc_byz" value="False" />
-			</enum_table>
-			<enum_table name="drop_off_time_seconds">
-				<float name="action" value="1" />
-				<float name="command" value="1" />
-				<float name="popcap" value="1" />
-				<float name="food" value="0" />
-				<float name="wood" value="0" />
-				<float name="stone" value="0" />
-				<float name="gold" value="0" />
-				<float name="militia_hre" value="1" />
-				<float name="merc_byz" value="1" />
-			</enum_table>
-			<bool name="allow_any_resource_after_construct" value="True" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="397306917">
+		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="397306917" List.ParentItemID="397306917">
 			<list name="type_list">
-				<group name="type" List.ItemID="-854504645">
-					<enum name="interaction_type" value="resource_drop_off" />
-					<int name="prefer_number" value="-1" />
-					<int name="max_number" value="-1" />
-					<enum name="interaction_target_type" value="entity" />
-					<template_reference name="node_list_option" value="options\none">
-					</template_reference>
-					<bool name="block_pathing_when_interacted" value="False" />
-				</group>
-				<group name="type" List.ItemID="1547914576">
-					<enum name="interaction_type" value="repair" />
-					<int name="prefer_number" value="-1" />
-					<int name="max_number" value="-1" />
-					<enum name="interaction_target_type" value="entity" />
-					<template_reference name="node_list_option" value="options\none">
-					</template_reference>
-					<bool name="block_pathing_when_interacted" value="False" />
-				</group>
-				<group name="type" List.ItemID="1378927744">
-					<enum name="interaction_type" value="construct" />
-					<int name="prefer_number" value="-1" />
-					<int name="max_number" value="-1" />
-					<enum name="interaction_target_type" value="entity" />
-					<template_reference name="node_list_option" value="options\none">
-					</template_reference>
-					<bool name="block_pathing_when_interacted" value="False" />
-				</group>
-				<group name="type" List.ItemID="95921244">
-					<enum name="interaction_type" value="seek_shelter_destination" />
-					<int name="prefer_number" value="2" />
-					<int name="max_number" value="-1" />
+				<group name="type" List.ItemID="-653464882" List.ListAction="Append">
+					<enum name="interaction_type" value="deposit_relic" />
+					<int name="prefer_number" value="-1" overrideParent="True" />
+					<int name="max_number" value="1" overrideParent="True" />
 					<enum name="interaction_target_type" value="entity" />
 					<template_reference name="node_list_option" value="options\none">
 					</template_reference>
@@ -879,206 +328,22 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\burn_ext" List.ItemID="1891606235">
-			<float name="on_fire_damage_per_sec" value="5" />
-			<float name="on_fire_decay_amount_per_sec" value="0" />
-			<float name="on_fire_threshold" value="59" />
-			<float name="max_fire_damage_per_second" value="10000" />
-			<float name="on_fire_health_percentage" value="0.25" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="1603976703">
-			<float name="num_slots" value="15" />
-			<float name="num_squad_slots" value="15" />
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="1603976703" List.ParentItemID="1603976703">
+			<float name="num_slots" value="15" overrideParent="True" />
+			<float name="num_squad_slots" value="15" overrideParent="True" />
 			<template_reference name="on_loaded_squad_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="building_hold_events\garrison_town_center" />
-				<bool name="start_suspended" value="False" />
+				<state_tree_node name="ActionTree_OpeningBranch" value="building_hold_events\garrison_town_center" overrideParent="True" />
 			</template_reference>
-			<list name="acceptable_types">
-				<enum name="acceptable_type" value="hold_villager" List.ItemID="-67295810" />
-				<enum name="acceptable_type" value="hold_infantry" List.ItemID="-1872451494" />
-				<enum name="acceptable_type" value="hold_monk" List.ItemID="1246779217" />
-				<enum name="acceptable_type" value="hold_cavalry" List.ItemID="-1996365754" />
-				<enum name="acceptable_type" value="hold_infantry_ranged" List.ItemID="494765199" />
-				<enum name="acceptable_type" value="hold_khan" List.ItemID="964126661" />
-			</list>
-			<bool name="attach_passenger_animator" value="False" />
-			<bool name="can_attack_occupant" value="False" />
-			<bool name="invulnerable_in_hold" value="False" />
-			<bool name="disable_area_effect_on_overflow_slot" value="False" />
-			<bool name="disable_unload" value="False" />
-			<bool name="disallow_load_command" value="False" />
-			<bool name="enable_trigger_abilities_in_hold" value="True" />
-			<bool name="enable_trigger_attack_in_hold" value="False" />
-			<bool name="holds_produced_squads" value="False" />
-			<bool name="keep_abandoned_team_weapon" value="False" />
-			<float name="load_seconds" value="0" />
-			<float name="max_load_seconds" value="0" />
-			<float name="min_hold_seconds" value="0" />
-			<float name="percent_unload_on_death" value="1" />
-			<bool name="revert_ownership" value="False" />
-			<bool name="scavenge_enabled" value="False" />
-			<enum_table name="scavenge_resource">
-				<float name="action" value="0" />
-				<float name="command" value="0" />
-				<float name="popcap" value="0" />
-				<float name="food" value="0" />
-				<float name="wood" value="0" />
-				<float name="stone" value="0" />
-				<float name="gold" value="0" />
-				<float name="militia_hre" value="0" />
-				<float name="merc_byz" value="0" />
-			</enum_table>
-			<bool name="shared_with_other_same_type_units" value="False" />
-			<float name="unload_seconds" value="0" />
-			<bool name="use_building_target_scan_radius" value="True" />
-			<bool name="use_crouching_posture" value="False" />
-			<list name="on_loading_modifiers">
-			</list>
-			<bool name="despawn_on_load" value="False" />
-			<float name="load_distance" value="5" />
-			<bool name="maintain_selection" value="True" />
-			<template_reference name="on_loaded_hold_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="" />
-				<bool name="start_suspended" value="False" />
-			</template_reference>
-			<template_reference name="on_unloaded_squad_instant_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="building_hold_events\unload_town_center" />
-				<bool name="start_suspended" value="False" />
-			</template_reference>
-			<bool name="convert_garrision_on_owner_change" value="False" />
-			<bool name="move_on_remove_hold" value="False" />
-			<bool name="load_separate_entrances" value="False" />
-			<bool name="can_issue_retreat_to_hold_contents" value="True" />
-			<bool name="ensure_pathability_to_hold_for_unload" value="False" />
-			<float name="unload_path_distance_max" value="0" />
-			<bool name="is_indoors" value="True" />
-			<bool name="right_click_garrison_always_enabled" value="False" />
-			<bool name="exclude_allied_units" value="False" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\stimulus_emission_ext" List.ItemID="-680457074">
-			<list name="emittable_stimulus_types">
-				<enum name="stimulus_type" value="herding_interest" List.ItemID="197327890" />
-			</list>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1383350114" List.ParentItemID="-1383350114">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\japanese\town_center_capital_jpn" overrideParent="True" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="542296085">
-			<state_tree_node name="ActionTree_OpeningBranch" value="unit_building" />
-			<bool name="start_suspended" value="False" />
-			<state_tree_node name="fallback_default_move_command_conditions" value="" />
-			<list name="events">
-			</list>
-			<enum name="stop_on_death" value="Default" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-573952914">
-			<state_tree_node name="ActionTree_OpeningBranch" value="building" />
-			<bool name="use_root_motion" value="False" />
-			<bool name="start_suspended" value="False" />
-			<enum name="entity_statetree_sort_tag" value="Default" />
-			<float name="speed_scale_threshold" value="100" />
-			<string name="default_animation" value="" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="1456682258">
-			<bool name="allow_weapon_target_scanning" value="False" />
-			<int name="history_size" value="2" />
-			<bool name="allow_entity_scan_close_enemies" value="False" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1383350114">
-			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\japanese\town_center_capital_jpn" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\hit_react_tree_ext" List.ItemID="-156183637">
-			<state_tree_node name="ActionTree_OpeningBranch" value="building_hit_tree" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\audio_ext" List.ItemID="-1776733768">
-			<list name="rtpc_events">
-			</list>
-			<list name="sound_banks">
-			</list>
-			<string name="single_select_event" value="sfx_ui_tech_unit_town_center_building_selection_play" />
-			<int name="music_importance" value="40" />
-			<int name="combat_importance" value="-40" />
-			<list name="select_audible_to_relation_list">
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="1979586199">
-			<list name="roads">
-				<template_reference name="road" value="roads\road_properties" List.ItemID="-1166283248">
-					<instance_reference name="required_upgrade" value="upgrade\dev\ages\dark_age" />
-					<list name="curb_splines">
-					</list>
-					<list name="road_splines">
-						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1900180284">
-							<int name="draw_sort_order" value="0" />
-							<float name="end_fade" value="0.4" />
-							<float name="width" value="4" />
-							<int name="texture_tiling" value="1" />
-							<file name="texture_filename" value="civilizations\dirt\road_4m_dirt_trail_a" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="road" value="roads\road_properties" List.ItemID="-789487511">
-					<instance_reference name="required_upgrade" value="upgrade\dev\ages\feudal_age" />
-					<list name="curb_splines">
-					</list>
-					<list name="road_splines">
-						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="-862846820">
-							<int name="draw_sort_order" value="0" />
-							<float name="end_fade" value="0.2" />
-							<float name="width" value="4" />
-							<int name="texture_tiling" value="1" />
-							<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_02_5m" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="road" value="roads\road_properties" List.ItemID="1649721501">
-					<instance_reference name="required_upgrade" value="upgrade\dev\ages\castle_age" />
-					<list name="curb_splines">
-					</list>
-					<list name="road_splines">
-						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1051364722">
-							<int name="draw_sort_order" value="0" />
-							<float name="end_fade" value="0.2" />
-							<float name="width" value="5" />
-							<int name="texture_tiling" value="1" />
-							<file name="texture_filename" value="civilizations\roads\roads_eng_common_a_age_03_5m" />
-						</template_reference>
-					</list>
-				</template_reference>
-				<template_reference name="road" value="roads\road_properties" List.ItemID="1131598403">
-					<instance_reference name="required_upgrade" value="upgrade\dev\ages\imperial_age" />
-					<list name="curb_splines">
-					</list>
-					<list name="road_splines">
-						<template_reference name="road_spline" value="options\placement\spline\placement_spline_strip_option" List.ItemID="1594123228">
-							<int name="draw_sort_order" value="0" />
-							<float name="end_fade" value="0.2" />
-							<float name="width" value="5" />
-							<int name="texture_tiling" value="1" />
-							<file name="texture_filename" value="civilizations\roads\roads_eng_fishscale_a_age_04_5m" />
-						</template_reference>
-					</list>
-				</template_reference>
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\boundary_cells_ext" List.ItemID="-2003395638">
-			<list name="additional_boundary_simboxes">
-			</list>
-			<list name="waypoint_caching">
-				<group name="pass_type_data" List.ItemID="-1043382337">
-					<instance_reference name="pass_type" value="pass_types\infantry" />
-					<int name="min_clearance" value="1" />
-					<int name="max_clearance" value="1" />
-				</group>
-			</list>
-			<bool name="allow_cells_across_impasse" value="True" />
-			<bool name="allow_cells_on_wall" value="True" />
-			<list name="center_cells">
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-211859969">
-			<list name="hardpoints">
-				<group name="hardpoint" comment="Default Arrows" List.ItemID="2016592346">
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-211859969" List.ParentItemID="-211859969">
+			<list name="hardpoints" overrideParent="True">
+				<group name="hardpoint" comment="Default Arrows" List.ItemID="-1111001922">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="946469852">
+						<group name="weapon" List.ItemID="1519681800">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0" />
@@ -1098,7 +363,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_town_center_arrows" />
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_town_center_arrows" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -1125,35 +390,35 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-415679821" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="389295696" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="713093127" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="1174729364" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="1135256640" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-1915778608" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-1503593690" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="1478283125" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Empty" List.ItemID="1798377743">
+				<group name="hardpoint" comment="Empty" List.ItemID="-534981895">
 					<float name="parent_hardpoint" value="-1" />
-					<list name="weapon_table">
+					<list name="weapon_table" overrideParent="True">
 					</list>
 					<bool name="receives_attack_commands" value="True" />
 					<string name="base_marker" value="" />
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="1222038597" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-379191727" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="94871060" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-2049295986" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-322836350" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-473300738" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="1621542480" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="48534097" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1179038452">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-581003395">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1064996474">
+						<group name="weapon" List.ItemID="788178048">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1200,18 +465,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="565172358" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-1012387270" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-815343186" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="105942616" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-918682102" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="845748357" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-385800983" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="1589969854" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1401861732">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1475899132">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="405435412">
+						<group name="weapon" List.ItemID="1065423416">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1258,18 +523,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="1143355674" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-674777776" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="1177598820" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-973438220" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="1534456833" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="373357784" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="1516633681" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-1706404308" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1123981410">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="265327167">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="2093966308">
+						<group name="weapon" List.ItemID="1441472319">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1316,18 +581,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="1721494090" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-428099011" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-124993437" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-1836478359" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-2124693283" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-351456431" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="1605002694" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="1105489952" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-2006223992">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1171651858">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-687584353">
+						<group name="weapon" List.ItemID="-18382484">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1374,18 +639,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="1592110157" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="342073561" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="1662783684" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-1089560598" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-1403514920" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-62282261" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="1590871420" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="483110196" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="2011377222">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-213113146">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-95102524">
+						<group name="weapon" List.ItemID="-1191346630">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1432,18 +697,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="99575010" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="461844584" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1901173652" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="1610543245" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-31746323" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-519971054" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-2083222353" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-1523676077" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="659675649">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="161180005">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1836256663">
+						<group name="weapon" List.ItemID="1526271315">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1490,18 +755,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-725586580" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="72248934" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1377005072" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="400676773" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-427355891" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-1085306774" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-1201456497" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-2134915959" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1402440616">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="542222786">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-545135744">
+						<group name="weapon" List.ItemID="-799951993">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1548,18 +813,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="1626287055" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="1321168604" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1072887813" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="1672486071" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-1560755456" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="523047731" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-824676792" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="1368639726" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-354043574">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1207249408">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1639629753">
+						<group name="weapon" List.ItemID="-2071872533">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1606,18 +871,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="195390584" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-870503518" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="600773495" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-485168079" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-1702719302" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-1477827294" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="1201055417" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="946517560" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="2074429781">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1223187807">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1388597701">
+						<group name="weapon" List.ItemID="-635203807">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1664,18 +929,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-180624122" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-1671154274" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1650608703" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="644920259" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-1415058392" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="1846435784" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-1573861560" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="1746372389" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-280997725">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1250917036">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1381873021">
+						<group name="weapon" List.ItemID="200683754">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1722,18 +987,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-397149991" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="1234698625" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-913198494" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="1621317918" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="357649925" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-81122291" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-333493056" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="1980495507" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1119878513">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="248168630">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="455935400">
+						<group name="weapon" List.ItemID="-483026504">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1780,18 +1045,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-1923690150" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="1154476110" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1311411230" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-2131055738" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="851975409" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="1283279223" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="40035600" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="437321755" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-670424454">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1105759831">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="600573116">
+						<group name="weapon" List.ItemID="1317378042">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1838,18 +1103,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-1277817786" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-603327787" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="843090640" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="2082467421" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="1869529439" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-709045814" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="1184641540" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-1323521016" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1106764124">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1159091817">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1749521697">
+						<group name="weapon" List.ItemID="1186691545">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1896,18 +1161,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-1232349735" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="1762550943" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1595725538" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="394548873" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="2046382222" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-806614266" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-2146511950" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-1746960826" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1901421761">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-392699328">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1528018887">
+						<group name="weapon" List.ItemID="-1350058612">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -1954,18 +1219,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-892860356" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="1068568539" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1976109785" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-919295252" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="822198604" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="1924361006" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="292246409" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="1217378645" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="53054899">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-701160092">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1406252107">
+						<group name="weapon" List.ItemID="-1191577975">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -2012,18 +1277,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="656350740" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-1390395081" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1235521838" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="1838805250" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="301933046" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-708177127" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-1155523182" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-780530015" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="680479911">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="362050121">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="195709460">
+						<group name="weapon" List.ItemID="173770080">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -2070,18 +1335,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="809182401" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-363485279" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-644437053" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="237600805" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="937723628" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-391675608" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="1912544051" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="998292146" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1635395534">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="1470663360">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1121705680">
+						<group name="weapon" List.ItemID="1273474362">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -2128,18 +1393,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-207713757" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-2008896359" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="1992411361" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="264453769" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="473767699" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-820180320" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="283664208" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-2137007336" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="2080400363">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1453000367">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1101660872">
+						<group name="weapon" List.ItemID="823901212">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -2186,18 +1451,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="184077014" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="133097420" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="642699370" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="1214025222" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="94995662" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-1217205503" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="2132842407" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-363600419" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1665830234">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-838203176">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1323979985">
+						<group name="weapon" List.ItemID="1604480179">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -2244,18 +1509,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="949249752" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-784233478" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1685849705" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-368723573" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-1261013875" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="-1223049611" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-800803208" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="1721155636" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="601418678">
+				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1866745796">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1253681281">
+						<group name="weapon" List.ItemID="1559445325">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0.3" />
@@ -2302,18 +1567,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="-1052790928" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-1933902373" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="1764927153" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="-1660238677" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-149638144" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="1026285397" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="487577507" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-421901121" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Daimyo Upgrade" List.ItemID="1900918322">
+				<group name="hardpoint" comment="Daimyo Upgrade" List.ItemID="398700567">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="-1383708712">
+						<group name="weapon" List.ItemID="598583695">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0" />
@@ -2333,7 +1598,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_town_center_arrows" />
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_town_center_arrows" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -2360,18 +1625,18 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="587792931" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-1830332766" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="-1472871683" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="1355545843" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="896808204" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="146955217" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="-37703420" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="-925304199" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Daimyo Upgrade" List.ItemID="1229204891">
+				<group name="hardpoint" comment="Daimyo Upgrade" List.ItemID="523288133">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="927499683">
+						<group name="weapon" List.ItemID="463601118">
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0" />
@@ -2391,7 +1656,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_town_center_arrows" />
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_range_town_center_arrows" overrideParent="True" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -2418,20 +1683,20 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="wep_hardpoint01" List.ItemID="982102521" />
-						<string name="marker" value="wep_hardpoint02" List.ItemID="-796142412" />
-						<string name="marker" value="wep_hardpoint03" List.ItemID="2120177801" />
-						<string name="marker" value="wep_hardpoint04" List.ItemID="1449260989" />
+						<string name="marker" value="wep_hardpoint01" List.ItemID="-127285241" />
+						<string name="marker" value="wep_hardpoint02" List.ItemID="2141445893" />
+						<string name="marker" value="wep_hardpoint03" List.ItemID="1789238785" />
+						<string name="marker" value="wep_hardpoint04" List.ItemID="596184332" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
-				<group name="hardpoint" comment="Daimyo Upgrade Rocket" List.ItemID="829752403" List.ParentItemID="-32169129">
+				<group name="hardpoint" comment="Daimyo Upgrade Rocket" List.ItemID="-1620069369" List.ParentItemID="-32169129">
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="2036258101" List.ParentItemID="1725951526">
+						<group name="weapon" List.ItemID="261560264" List.ParentItemID="1725951526">
 							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
 								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
-									<instance_reference name="ebp" value="ebps\races\japanese\weapons\wpn_range_tc_rocket_jpn" />
+									<instance_reference name="ebp" value="ebps\races\japanese\weapons\wpn_range_tc_rocket_jpn" overrideParent="True" />
 									<template_reference name="attach_data" value="attachments\attach_data">
 										<string name="marker_name_parent" value="" />
 										<string name="parent_rigidbody_target_name" value="" />
@@ -2476,80 +1741,125 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="fx_muz_arrow_00" List.ItemID="1908979567" List.ParentItemID="-2106376321" />
-						<string name="marker" value="fx_muz_arrow_01" List.ItemID="1366870194" List.ParentItemID="1433067073" />
-						<string name="marker" value="fx_muz_arrow_02" List.ItemID="1997863575" List.ParentItemID="1296180818" />
-						<string name="marker" value="fx_muz_arrow_03" List.ItemID="497068687" List.ParentItemID="1578928633" />
-						<string name="marker" value="fx_muz_arrow_04" List.ItemID="1095947599" List.ParentItemID="1444379684" />
-						<string name="marker" value="fx_muz_arrow_05" List.ItemID="1544890384" List.ParentItemID="278514094" />
-						<string name="marker" value="fx_muz_arrow_06" List.ItemID="-385072474" List.ParentItemID="-1942015261" />
-						<string name="marker" value="fx_muz_arrow_07" List.ItemID="-282605738" List.ParentItemID="-1719646273" />
+						<string name="marker" value="fx_muz_arrow_00" List.ItemID="1162468334" List.ParentItemID="-2106376321" />
+						<string name="marker" value="fx_muz_arrow_01" List.ItemID="1565899173" List.ParentItemID="1433067073" />
+						<string name="marker" value="fx_muz_arrow_02" List.ItemID="1481190875" List.ParentItemID="1296180818" />
+						<string name="marker" value="fx_muz_arrow_03" List.ItemID="2059367593" List.ParentItemID="1578928633" />
+						<string name="marker" value="fx_muz_arrow_04" List.ItemID="-1282452981" List.ParentItemID="1444379684" />
+						<string name="marker" value="fx_muz_arrow_05" List.ItemID="-92974535" List.ParentItemID="278514094" />
+						<string name="marker" value="fx_muz_arrow_06" List.ItemID="-1130207804" List.ParentItemID="-1942015261" />
+						<string name="marker" value="fx_muz_arrow_07" List.ItemID="-847957223" List.ParentItemID="-1719646273" />
 					</list>
 					<string name="offhand_marker" value="" />
 					<bool name="initialize_weapons_on_creation" value="False" />
 				</group>
 			</list>
-			<bool name="reject_attack_command" value="False" />
-			<int name="sight_hardpoint" value="-1" />
-			<float name="block_frontal_arc" value="0" />
-			<int name="block_melee_blocks_per_sequence" value="0" />
-			<int name="block_melee_incoming_attack_sequence_length" value="1" />
-			<group name="attack_move">
-				<float name="attack_move_targeting_range" value="30" />
-				<float name="attack_move_priority_per_distance_meter" value="-1" />
-			</group>
-			<group name="idle_targeting">
-				<float name="idle_priority_per_angle_degree" value="-1.5" />
-				<float name="idle_priority_per_distance_meter" value="-1" />
-				<float name="idle_targeting_range" value="15" />
-				<float name="idle_priority_per_distance_unit_angle_multiplier" value="0" />
-			</group>
-			<float name="scan_interval_cached_target_invalid" value="2" />
-			<float name="scan_interval_cached_target_valid" value="2" />
-			<template_reference name="kill_action_tree" value="state_tree_reference_info">
-				<state_tree_node name="ActionTree_OpeningBranch" value="" />
-				<bool name="start_suspended" value="False" />
-			</template_reference>
-			<string name="combat_choice_tree" value="" />
-			<int name="block_ranged_blocks_per_sequence" value="0" />
-			<int name="block_ranged_incoming_attack_sequence_length" value="1" />
-			<int name="block_projectile_incoming_attack_sequence_length" value="1" />
-			<int name="block_projectile_blocks_per_sequence" value="0" />
-			<bool name="unequip_weapons_on_death" value="True" />
-			<group name="combat_scan_intervals">
-				<group name="attack_move_scan_intervals">
-					<float name="interval_with_invalid_target" value="1" />
-					<float name="interval_with_valid_target" value="2" />
-					<float name="interval_with_valid_target_frequent" value="0.5" />
-					<float name="frequent_scan_radius" value="0" />
-				</group>
-				<group name="forced_engagement_scan_intervals">
-					<float name="interval_with_invalid_target" value="0.375" />
-					<float name="interval_with_valid_target" value="2" />
-				</group>
-				<group name="idle_scan_intervals">
-					<float name="interval_with_invalid_target" value="1" />
-					<float name="interval_with_valid_target" value="2" />
-					<float name="interval_with_valid_target_frequent" value="0.5" />
-					<float name="frequent_scan_radius" value="0" />
-				</group>
-			</group>
-			<bool name="ui_show_most_progressed_weapon_reload" value="False" />
-			<list name="target_scanning_priority_override">
-				<group name="override" List.ItemID="-458207620">
-					<enum name="target_type" value="ram" />
-					<float name="priority_value" value="90" />
-				</group>
-			</list>
-			<list name="block_ignore_damage_types">
-			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\building_presentation_ext" List.ItemID="1428297537">
-			<file name="construction_stamp" value="art\stamps\scaffolding\west\west_towncenter" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\trigger_volume_ext" List.ItemID="-195660600">
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-854321019" List.ListAction="Append">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="1233170338">
+					<group name="tier" List.ItemID="855723988">
+						<list name="tier_requirements">
+						</list>
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\buildings\town_center_jpn\tier1_town_center_control_jpn" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+				</list>
+				<list name="tier_group" overrideParent="True" List.ItemID="-1126283782">
+					<group name="tier" List.ItemID="1403269079">
+						<list name="tier_requirements">
+						</list>
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\chinese\outskirts\general\chi_towncenter_01" comment="Outskirts go here. Removed until a fix for selection is in. To add back, copy and paste the following into this field:&#xD;&#xA;&#xD;&#xA;&lt;instance_reference name=&quot;attachments&quot; value=&quot;attachments\attachment_lists\civilizations\chinese\outskirts\general\chi_towncenter_01&quot; /&gt;" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+					<group name="tier" List.ItemID="-539768202">
+						<list name="tier_requirements">
+							<template_reference name="requirement" value="requirements\required_player_upgrade" List.ItemID="2051537365">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<bool name="is_present" value="True" />
+								<int name="max_completed" value="100" />
+								<int name="min_completed" value="1" />
+								<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" />
+								<bool name="include_queued" value="False" />
+								<group name="include_pbg_parenting">
+									<bool name="include_child_pbgs" value="False" />
+									<bool name="include_parent_pbgs" value="False" />
+								</group>
+								<bool name="include_completed" value="True" />
+							</template_reference>
+						</list>
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\outskirts\general\jpn_towncenter_03" comment="Outskirts go here. Removed until a fix for selection is in. To add back, copy and paste the following into this field:&#xD;&#xA;&#xD;&#xA;&lt;instance_reference name=&quot;attachments&quot; value=&quot;attachments\attachment_lists\civilizations\english\outskirts\general\towncenter_03&quot; /&gt;" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+				</list>
+				<list name="tier_group" List.ItemID="-716279160">
+					<group name="tier" List.ItemID="-254963305">
+						<list name="tier_requirements">
+						</list>
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\common\buildings\building_town_center_bell_arch" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="False" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+				</list>
+			</list>
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="5982052" />
-	<instance_reference name="parent_pbg" value="" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_town_center_capital" />
 </instance>
