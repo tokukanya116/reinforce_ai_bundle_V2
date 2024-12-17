@@ -91,34 +91,34 @@
 			<bool name="pathing_detects_min_firing_range" value="True" />
 			<float name="pathing_threat_memory_duration" value="30" />
 		</group>
-		<group name="fallback">
-			<float name="fallback_capacity_ratio" value="0.5" />
+		<group name="fallback" comment="撤退">
+			<float name="fallback_capacity_ratio" value="-1" comment="战损撤退比例(战损剩余到这个百分比就撤退)" />
 			<float name="retreat_health_ratio" value="-1" />
-			<float name="retreat_capacity_ratio" value="0" comment="完全不允许后退" />
+			<float name="retreat_capacity_ratio" value="0" comment="撤退百分比：完全不允许后退" />
 			<bool name="retreat_on_suppression" value="False" />
 			<bool name="retreat_on_pinned" value="False" />
 			<float name="retreat_on_suppression_reaction_time" value="15" comment="被压制多少秒才可以撤退" />
-			<float name="retreat_delay_time_min" value="0" />
-			<float name="retreat_delay_time_max" value="3" />
-			<float name="reinforce_wait_time" value="15" />
-			<float name="reinforce_failed_retry_wait_time" value="60" />
+			<float name="retreat_delay_time_min" value="3" />
+			<float name="retreat_delay_time_max" value="6" comment="进入撤退状态的判定时间(持续最久这个时间都是该撤退的状态就会撤退)" />
+			<float name="reinforce_wait_time" value="20" comment="在这个时间内会等待增兵(超过这个时间还没增援就会撤退)" />
+			<float name="reinforce_failed_retry_wait_time" value="30" comment="增援失败后的重试增兵冷却时间" />
 			<float name="reinforce_max_distance" value="-1" />
-			<float name="reinforce_health_ratio" value="0.3" />
-			<bool name="reinforce_during_combat" value="True" />
-			<bool name="reinforce_enabled" value="True" />
+			<float name="reinforce_health_ratio" value="-1" comment="增援血量比例" />
+			<bool name="reinforce_during_combat" value="True" comment="离开当前战斗去支援(意思是没打过拉走回家补兵吧)" />
+			<bool name="reinforce_enabled" value="True" comment="强化小队(可能是指拉僧侣那些)" />
 			<float name="reinforce_min_health_ratio_to_reach_reinforce_point" value="-1" />
 			<float name="fallback_squad_health_ratio_start" value="0.5" />
 			<float name="fallback_squad_health_ratio_end" value="0.99" />
-			<float name="fallback_vehicle_health_ratio_start" value="0.5" />
-			<float name="fallback_vehicle_health_ratio_end" value="0.99" />
+			<float name="fallback_vehicle_health_ratio_start" value="-1" />
+			<float name="fallback_vehicle_health_ratio_end" value="-1" comment="车辆" />
 			<float name="fallback_squad_shield_ratio_start" value="-1" />
 			<float name="fallback_squad_shield_ratio_end" value="-1" />
-			<float name="fallback_encounter_squad_remaining_ratio" value="-1" />
-			<float name="fallback_encounter_squad_ratio" value="1" />
-			<float name="fallback_combat_rating" value="0" />
-			<float name="retreat_combat_rating" value="1" />
+			<float name="fallback_encounter_squad_remaining_ratio" value="-1" comment="战损百分比(也会导致撤退 -1表示不使用)" />
+			<float name="fallback_encounter_squad_ratio" value="1" comment="遭遇战中撤退的小队百分比(1表示不使用这个值)" />
+			<float name="fallback_combat_rating" value="0.25" />
+			<float name="retreat_combat_rating" value="0.25" />
 		</group>
-		<group name="skirmish_settings">
+		<group name="skirmish_settings" comment="遭遇战设置">
 			<group name="capture">
 				<float name="capture_max_territory_ratio" value="1" />
 				<float name="capture_max_territory_relative_ratio" value="-1" />
@@ -136,20 +136,20 @@
 				<float name="catchup_max_resource_deficit" value="1000" />
 			</group>
 			<group name="combat_eval">
-				<float name="desired_ratio" value="0.3" comment="不适合的部队也照打" />
+				<float name="desired_ratio" value="0.2" comment="不适合的部队也照打" />
 			</group>
 			<group name="tasks">
 				<int name="max_num_attack_objectives" value="100" />
 				<int name="max_num_capture_tasks" value="100" />
-				<int name="max_num_construction_tasks" value="20" />
+				<int name="max_num_construction_tasks" value="100" />
 			</group>
 			<group name="army">
-				<float name="max_army_combat_ratio" value="3" />
-				<int name="min_num_units" value="3" />
-				<int name="min_num_capturing_units" value="4" />
-				<int name="min_num_non_support_units" value="3" />
-				<float name="max_capture_points_to_capturing_units_ratio" value="1" />
-				<float name="min_non_support_units_to_support_units_ratio" value="2" />
+				<float name="max_army_combat_ratio" value="5" />
+				<int name="min_num_units" value="8" comment="军队最少数量比例" />
+				<int name="min_num_capturing_units" value="2" comment="占领单位" />
+				<int name="min_num_non_support_units" value="8" comment="非支援单位比例" />
+				<float name="max_capture_points_to_capturing_units_ratio" value="2" />
+				<float name="min_non_support_units_to_support_units_ratio" value="2" comment="支援与正式军对比" />
 			</group>
 			<bool name="use_offensive_player_abilities" value="True" />
 			<enum_table name="resource_multipliers">
@@ -172,7 +172,7 @@
 			<float name="encounter_pos_in_combat_setup_weapon_distance_scale" value="0.1" />
 		</group>
 		<bool name="should_update_threat_map" value="True" />
-		<float name="attack_objective_replan_time" value="20" />
+		<float name="attack_objective_replan_time" value="10" />
 		<group name="combat_ratings">
 			<enum_table name="cover_table">
 				<template_reference name="tp_defcover" value="combat_ratings_cover_info">
@@ -245,19 +245,19 @@
 			<float name="militia_hre" value="0" />
 			<float name="merc_byz" value="0" />
 		</enum_table>
-		<enum_table name="tactic_enabled">
+		<enum_table name="tactic_enabled" comment="使用策略">
 			<bool name="ability" value="True" />
 			<bool name="cover" value="False" />
 			<bool name="hold" value="False" />
 			<bool name="avoid" value="False" />
 			<bool name="vehicle" value="False" />
-			<bool name="force_attack" value="False" />
+			<bool name="force_attack" value="True" />
 			<bool name="pickup" value="False" />
 			<bool name="capture_team_weapon" value="False" />
 			<bool name="recrew" value="False" />
 			<bool name="provide_reinforcement_point" value="False" />
 			<bool name="finish_healing" value="False" />
-			<bool name="capture_point" value="False" />
+			<bool name="capture_point" value="True" />
 			<bool name="warm_up" value="False" />
 			<bool name="min_range" value="False" />
 			<bool name="vehicle_decrew" value="False" />
