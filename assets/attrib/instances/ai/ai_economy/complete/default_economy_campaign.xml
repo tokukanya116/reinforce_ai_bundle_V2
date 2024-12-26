@@ -1151,7 +1151,7 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Scouts&#xD;&#xA;" List.ItemID="-1771350795">
 				<list name="members" comment="Don't add mongol double production because that will mess up the count - when they are produced they cause 2 normal mongol scouts to spawn. This can be fix by using group counting on the population scorer, but for now we'll do it this way.">
-					<instance_reference name="member" value="sbps\races\abbasid\unit_scout_1_abb" List.ItemID="-860792400" />
+					<instance_reference name="member" value="sbps\races\abbasid\unit_scout_1_abb" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-860792400" />
 					<instance_reference name="member" value="sbps\races\chinese\unit_scout_1_chi" List.ItemID="-1253062729" />
 					<instance_reference name="member" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="1161261774" />
 					<instance_reference name="member" value="sbps\races\sultanate\unit_scout_1_sul" List.ItemID="-197435329" />

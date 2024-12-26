@@ -85,7 +85,7 @@
 					</template_reference>
 				</group>
 				<group name="spawn_item" List.ItemID="-430274810" List.ParentItemID="-430274810">
-					<instance_reference name="squad" value="sbps\races\abbasid\unit_scout_1_abb" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_scout_1_abb" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
 						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
 							<int name="quick_commands_slot_index" value="1" overrideParent="True" />

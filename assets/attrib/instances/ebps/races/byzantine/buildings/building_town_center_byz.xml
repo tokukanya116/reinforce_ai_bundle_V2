@@ -203,6 +203,15 @@
 		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-1383350114" List.ParentItemID="-1383350114">
 			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\byzantine\town_center_byz" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-211859969" List.ParentItemID="-211859969">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="-936296948" List.ParentItemID="-936296948">
+					<list name="firing_offset_markers">
+						<string name="marker" value="wep_hardpoint01" overrideParent="True" List.ItemID="-426008542" List.ParentItemID="-426008542" />
+					</list>
+				</group>
+			</list>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="763381982" List.ListAction="Append">
 			<list name="tier_group_list">
 				<list name="tier_group" List.ItemID="298305744">

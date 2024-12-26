@@ -105,7 +105,7 @@
 					<int name="int_value" value="1" overrideParent="True" List.ItemID="1384162038" />
 					<int name="int_value" value="20" overrideParent="True" List.ItemID="-437097041" />
 				</list>
-				<locstring name="formatter" value="11226784" />
+				<locstring name="formatter" value="11226784" overrideParent="True" />
 			</template_reference>
 			<string name="telemetry_name" value="Kurultai" overrideParent="True" />
 			<locstring name="screen_name" value="11147007" overrideParent="True" />

@@ -46,11 +46,11 @@
 				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\medical_centers_abb" List.ItemID="-466105743" />
 				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-2067658572" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-19206888" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="971536192" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-383951562" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_main" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="16743390" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\white_stupa_stone_generation_addition" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="2109654913" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\kurultai_healing_aura_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-366217086" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_dmg" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-366217086" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\test_inspired_ally" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="700325126" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-272167440" List.ParentItemID="-272167440">
@@ -101,7 +101,7 @@
 					</template_reference>
 				</group>
 				<group name="spawn_item" List.ItemID="-430274810" List.ParentItemID="-430274810">
-					<instance_reference name="squad" value="sbps\races\abbasid\unit_scout_1_abb" overrideParent="True" />
+					<instance_reference name="squad" value="sbps\races\abbasid\unit_scout_1_abb" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 					<template_reference name="ui_info_extended" value="tables\ui_info_ext">
 						<template_reference name="quick_commands_info" value="ui_quick_commands_info" overrideParent="True">
 							<int name="quick_commands_slot_index" value="1" overrideParent="True" />
