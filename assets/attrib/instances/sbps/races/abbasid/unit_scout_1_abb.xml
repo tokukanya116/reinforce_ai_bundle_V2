@@ -1,0 +1,92 @@
+<instance version="6" description="English Dark Age Scout" template="sbps">
+	<list name="extensions">
+		<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1499754086" List.ParentItemID="-1499754086">
+			<list name="unit_list">
+				<group name="loadout_data" List.ItemID="-2060525959" List.ParentItemID="-2060525959">
+					<instance_reference name="type" value="ebps\races\abbasid\units\unit_scout_1_abb" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext" List.ItemID="686782623" List.ParentItemID="686782623">
+			<float name="last_seen_reset_delay_secs" value="10" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext" List.ItemID="-271506405" List.ParentItemID="-271506405">
+			<list name="abilities">
+				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_dmg_1" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2070825489" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-635621643" List.ParentItemID="-635621643">
+			<list name="squad_race_type_list" overrideParent="True">
+				<instance_reference name="squad_race_type" value="racebps\abbasid" overrideParent="True" List.ItemID="-1362342949" />
+			</list>
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="665401286" List.ParentItemID="665401286">
+			<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_targeting_system_ext" List.ItemID="1084764942" List.ListAction="Append">
+			<bool name="allow_squad_scan_close_enemies" value="False" />
+			<int name="history_size" value="2" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199733" />
+	<instance_reference name="parent_pbg" value="sbps\races\core\unit_scout_1" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="932093985" List.ParentItemID="932093985">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-1532815144" List.ParentItemID="-1532815144">
+						<instance_reference name="type" value="ebps\races\abbasid\units\unit_scout_1_abb" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-1196023065" List.ParentItemID="-1196023065">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\abbasid" overrideParent="True" List.ItemID="-598897197" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="900789724" List.ParentItemID="900789724">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_targeting_system_ext" List.ItemID="-98355209" List.ListAction="Append">
+				<bool name="allow_squad_scan_close_enemies" value="False" />
+				<int name="history_size" value="2" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199733" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_scout_1" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="squadexts" value="sbpextensions\squad_blueprint_ext" List.ItemID="-2056667985" List.ParentItemID="-2056667985">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext" List.ItemID="-1499754086" List.ParentItemID="-1499754086">
+				<list name="unit_list">
+					<group name="loadout_data" List.ItemID="-2060525959" List.ParentItemID="-2060525959">
+						<instance_reference name="type" value="ebps\races\abbasid\units\unit_scout_1_abb" overrideParent="True" />
+					</group>
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_attention_ext" List.ItemID="686782623" List.ParentItemID="686782623">
+				<float name="last_seen_reset_delay_secs" value="10" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_type_ext" List.ItemID="-635621643" List.ParentItemID="-635621643">
+				<list name="squad_race_type_list" overrideParent="True">
+					<instance_reference name="squad_race_type" value="racebps\abbasid" overrideParent="True" List.ItemID="1338023362" />
+				</list>
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_formation_group_ext" List.ItemID="665401286" List.ParentItemID="665401286">
+				<instance_reference name="default_formation_group_spot_generator" value="formation_group_spot_generator\land\land_box_fill_spot_generator" overrideParent="True" />
+			</template_reference>
+			<template_reference name="squadexts" value="sbpextensions\squad_targeting_system_ext" List.ItemID="-1381430151" List.ListAction="Append">
+				<bool name="allow_squad_scan_close_enemies" value="False" />
+				<int name="history_size" value="2" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199733" />
+		<instance_reference name="parent_pbg" value="sbps\races\core\unit_scout_1" />
+	</variant>
+</instance>
