@@ -1073,7 +1073,7 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_palantine_chapel_hre\building_landmark_age1_palantine_chapel_hre" List.ItemID="-1804543934" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_golden_gate_vladimir_rus\building_landmark_age1_golden_gate_vladimir_control_rus" List.ItemID="1627875458" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_quwwat_ul_islam_sul\building_landmark_age1_quwwat_ul_islam_control_sul" List.ItemID="887870481" />
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" List.ItemID="179165247" />
+					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="179165247" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarkb_mal" List.ItemID="-904324492" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age1_cifte_minareli_medrese_ott" List.ItemID="982767179" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age1_han_caravanserai_ott" List.ItemID="789271737" />
@@ -1111,7 +1111,7 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_imperial_palace_of_paderborn_hre" List.ItemID="2058145126" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" List.ItemID="-905851881" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_qutub_minar_sul\building_landmark_age1_qutub_minar_control_sul" List.ItemID="1765117550" />
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" List.ItemID="1364102266" />
+					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1364102266" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarka_mal" List.ItemID="-1273088018" />
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">

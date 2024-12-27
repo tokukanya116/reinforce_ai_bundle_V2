@@ -45,6 +45,11 @@
 						</group>
 					</list>
 				</group>
+				<group name="hardpoint" List.ItemID="-1887457150" List.ParentItemID="-1887457150">
+					<list name="firing_offset_markers">
+						<string name="marker" value="fx_muz_cannon_00" overrideParent="True" List.ItemID="-774946691" List.ParentItemID="-774946691" />
+					</list>
+				</group>
 				<group name="hardpoint" comment="Garrison Arrows Slot" List.ItemID="-1319836977" List.ParentItemID="-1319836977">
 					<list name="weapon_table">
 						<group name="weapon" List.ItemID="1790803669" List.ParentItemID="1790803669">
@@ -103,7 +108,6 @@
 				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="13825675" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="-574502903" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\building_generate_tax_chi" List.ItemID="1500340602" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="477241079" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\interactive_object_ext" List.ItemID="1887967718" List.ParentItemID="1887967718">

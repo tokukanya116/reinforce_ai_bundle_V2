@@ -31,7 +31,7 @@
 		<bool name="initial_recharge" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="40" />
+		<float name="range" value="50" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="0" />
 		<bool name="refundable" value="True" />
@@ -51,7 +51,7 @@
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
-			<file name="icon_name" value="races\english\upgrades\network_of_citadels" />
+			<file name="icon_name" value="races\english\abilities\network_of_castles" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="7" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
@@ -69,9 +69,9 @@
 			</template_reference>
 			<template_reference name="help_text_formatter" value="ui_text_formatter">
 				<list name="formatter_arguments">
-					<int name="int_value" value="15" List.ItemID="2091420321" />
+					<int name="int_value" value="20" List.ItemID="1038688423" />
 				</list>
-				<locstring name="formatter" value="6" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+				<locstring name="formatter" value="11189148" />
 			</template_reference>
 			<template_reference name="help_text_alternate_formatter" value="">
 			</template_reference>
@@ -115,7 +115,7 @@
 		<locstring name="ui_usage_txt" value="0" />
 		<bool name="validate_actions" value="False" />
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="-1203299597">
+			<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="1190312187">
 				<locstring name="ui_name" value="0" />
 				<enum name="reason" value="usage_and_display" />
 				<enum name="key" value="landmark_active" />
@@ -207,17 +207,17 @@
 		<bool name="ui_visibility_ignore_prerequisite" value="False" />
 		<bool name="use_simbox_to_simbox_range" value="True" />
 		<list name="ui_contextual_info">
-			<group name="context" List.ItemID="1357488160">
+			<group name="context" List.ItemID="1635582722">
 				<locstring name="screen_name" value="0" />
 				<locstring name="help_text" value="11199547" />
 				<list name="requirements">
-					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1348630122">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1377542317">
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
 						<bool name="is_present" value="True" />
 						<int name="max_completed" value="100" />
 						<int name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\races\english\research\upgrade_network_of_citadels_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+						<instance_reference name="upgrade_name" value="upgrade\races\english\research\upgrade_network_of_citadels_eng" />
 						<bool name="include_completed" value="True" />
 						<bool name="include_queued" value="False" />
 						<group name="include_pbg_parenting">
@@ -252,10 +252,6 @@
 		<bool name="can_passive_ability_create_formation_squad_group" value="False" />
 		<bool name="can_cast_again_whilst_pending" value="False" />
 		<list name="float_properties">
-			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-285040776">
-				<float name="value" value="15" />
-				<enum name="id" value="attack_speed" />
-			</template_reference>
 		</list>
 		<list name="int_properties">
 		</list>

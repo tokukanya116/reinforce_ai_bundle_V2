@@ -788,7 +788,6 @@
 				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-986776564" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="-989877954" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\rus\wooden_fortress_influence_rus" List.ItemID="1077890475" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1212574896" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\district_generator_ext" List.ItemID="700444599" List.ListAction="Append">

@@ -6,9 +6,6 @@
 5,,,screen_name,,,Empire Rising
 6,,,formatter,,,Units that are close to each other gain the Home Guard effect.\r\nattack speed +%1%%%.
 7,,,screen_name,,,Home Guard(attack speed)
-8,,,formatter,,,Units that are close to each other gain the Home Guard effect.\r\nHeal +%1%%% per second.\r\nDamage increased by %2%.
+8,,,formatter,,,Units that are close to each other gain the Home Guard effect.\r\nHeal +%1%%%/%2%%% .\r\nDamage +%3%%%.
 9,,,screen_name,,,Home Guard(damage & heal)
-10,,,help_text,,,Home Guard.  Units gain a buff that heals 4HP per second.
-11,,,screen_name,,,Home Guard(Healing)
-12,,,formatter,,,家园守卫(治疗强化)
-13,,,formatter,,,单位获得每秒治愈4HP的buff
+10,,,screen_name,,,Home Guard(Healing Out of combat)

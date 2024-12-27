@@ -1073,7 +1073,7 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_palantine_chapel_hre\building_landmark_age1_palantine_chapel_hre" List.ItemID="1789652072" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_golden_gate_vladimir_rus\building_landmark_age1_golden_gate_vladimir_control_rus" List.ItemID="909406363" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_quwwat_ul_islam_sul\building_landmark_age1_quwwat_ul_islam_control_sul" List.ItemID="497046511" />
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" List.ItemID="-61915732" />
+					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-61915732" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarkb_mal" List.ItemID="921492129" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age1_cifte_minareli_medrese_ott" List.ItemID="-759685221" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age1_han_caravanserai_ott" List.ItemID="-2048963378" />
@@ -1111,7 +1111,7 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_imperial_palace_of_paderborn_hre" List.ItemID="1668340374" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" List.ItemID="-1121309540" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_qutub_minar_sul\building_landmark_age1_qutub_minar_control_sul" List.ItemID="-1053481768" />
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" List.ItemID="-1464116832" />
+					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1464116832" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarka_mal" List.ItemID="1535091096" />
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
@@ -2523,7 +2523,6 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Scouts&#xD;&#xA;" List.ItemID="-246879875">
 				<list name="members" comment="Don't add mongol double production because that will mess up the count - when they are produced they cause 2 normal mongol scouts to spawn. This can be fix by using group counting on the population scorer, but for now we'll do it this way.">
-					<instance_reference name="member" value="sbps\races\abbasid\unit_scout_1_abb" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1979223846" />
 					<instance_reference name="member" value="sbps\races\chinese\unit_scout_1_chi" List.ItemID="-1935070136" />
 					<instance_reference name="member" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="282457237" />
 					<instance_reference name="member" value="sbps\races\sultanate\unit_scout_1_sul" List.ItemID="-1544594622" />
@@ -2685,7 +2684,7 @@
 				<list name="members">
 					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age2_white_tower_eng\building_landmark_age2_white_tower_eng" List.ItemID="431192803" />
 					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_landmark_age2_siri_fort_sul\building_landmark_age2_siri_fort_control_sul" List.ItemID="1687319786" />
-					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" List.ItemID="-1574303334" />
+					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1574303334" />
 					<instance_reference name="member" value="ebps\races\french\buildings\building_landmark_age2_la_chateau_rouge_fre\building_landmark_age2_la_chateau_rouge_fre" List.ItemID="1381348956" />
 					<instance_reference name="member" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" List.ItemID="-1020611228" />
 					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age3_windsor_castle_eng\building_landmark_age3_windsor_castle_eng" List.ItemID="-1154108611" />
@@ -3254,7 +3253,6 @@
 					<instance_reference name="member" value="sbps\races\rus\unit_trebuchet_4_cw_rus" List.ItemID="1404672925" />
 					<instance_reference name="member" value="sbps\races\sultanate\unit_trebuchet_4_cw_sul" List.ItemID="-880179296" />
 					<instance_reference name="member" value="ebps\races\abbasid\units\unit_ram_3_abb" List.ItemID="1189676472" />
-					<instance_reference name="member" value="ebps\races\chinese\units\unit_ram_3_chi" List.ItemID="-1269471342" />
 					<instance_reference name="member" value="ebps\races\english\units\unit_ram_3_eng" List.ItemID="-1778327443" />
 					<instance_reference name="member" value="ebps\races\french\units\unit_ram_3_fre" List.ItemID="1450398064" />
 					<instance_reference name="member" value="ebps\races\hre\units\unit_ram_3_hre" List.ItemID="495076171" />
@@ -3281,8 +3279,6 @@
 					<instance_reference name="member" value="sbps\races\byzantine\mercenaries\set_landmark_siege\unit_khaganate_great_trebuchet_merc_byz" List.ItemID="-781391686" />
 					<instance_reference name="member" value="sbps\races\byzantine\unit_bombard_4_byz" List.ItemID="-289867810" />
 					<instance_reference name="member" value="sbps\races\byzantine\unit_trebuchet_4_cw_byz" List.ItemID="-214481249" />
-					<instance_reference name="member" value="ebps\races\byzantine\units\unit_ram_3_byz" List.ItemID="-22986099" />
-					<instance_reference name="member" value="ebps\races\byzantine\units\unit_ram_fire_3_byz" List.ItemID="1374249278" />
 					<instance_reference name="member" value="ebps\races\japanese\units\unit_ram_3_jpn" List.ItemID="-1136930995" />
 					<instance_reference name="member" value="sbps\races\japanese\unit_bombard_4_jpn" List.ItemID="-380742062" />
 					<instance_reference name="member" value="sbps\races\japanese\unit_trebuchet_4_cw_jpn" List.ItemID="1978125254" />

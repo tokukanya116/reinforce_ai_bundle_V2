@@ -121,7 +121,6 @@
 				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-814008967" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="-242989263" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\malian\trade_cart_taxation_aura_mal" List.ItemID="-2051661626" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1534501896" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="646421220" List.ListAction="Append">

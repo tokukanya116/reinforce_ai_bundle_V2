@@ -1002,7 +1002,6 @@
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Rams" List.ItemID="-1575456306">
 				<list name="members">
 					<instance_reference name="member" value="ebps\races\abbasid\units\unit_ram_3_abb" List.ItemID="952434602" />
-					<instance_reference name="member" value="ebps\races\chinese\units\unit_ram_3_chi" List.ItemID="-2044210502" />
 					<instance_reference name="member" value="ebps\races\sultanate\units\unit_ram_3_sul" List.ItemID="-14171627" />
 					<instance_reference name="member" value="ebps\races\french\units\unit_ram_3_fre" List.ItemID="-187357129" />
 					<instance_reference name="member" value="ebps\races\hre\units\unit_ram_3_hre" List.ItemID="-1834820704" />
@@ -1151,7 +1150,6 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Scouts&#xD;&#xA;" List.ItemID="-1771350795">
 				<list name="members" comment="Don't add mongol double production because that will mess up the count - when they are produced they cause 2 normal mongol scouts to spawn. This can be fix by using group counting on the population scorer, but for now we'll do it this way.">
-					<instance_reference name="member" value="sbps\races\abbasid\unit_scout_1_abb" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-860792400" />
 					<instance_reference name="member" value="sbps\races\chinese\unit_scout_1_chi" List.ItemID="-1253062729" />
 					<instance_reference name="member" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="1161261774" />
 					<instance_reference name="member" value="sbps\races\sultanate\unit_scout_1_sul" List.ItemID="-197435329" />
@@ -1332,7 +1330,7 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Mongol Landmarks" List.ItemID="-2097926912">
 				<list name="members">
-					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" List.ItemID="727214993" />
+					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="727214993" />
 					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age1_deer_stones_mon" List.ItemID="828284465" />
 				</list>
 				<float name="base_scale" value="1100" />

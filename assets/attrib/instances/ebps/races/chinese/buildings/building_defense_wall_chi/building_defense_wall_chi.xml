@@ -10,6 +10,24 @@
 				<float name="Fire" value="0" overrideParent="True" />
 			</enum_table>
 			<float name="hitpoints" value="4500" overrideParent="True" text_template="4500" />
+			<float name="regeneration" value="30" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" overrideParent="True" List.ItemID="392658917" List.ParentItemID="392658917">
+			<list name="modifiers">
+				<template_reference name="modifier" value="modifiers\entity_modifier" List.ItemID="1886851698">
+					<enum name="type" value="health_regeneration_modifier" overrideParent="True" />
+					<enum name="application_type" value="apply_to_entity" />
+					<enum name="usage_type" value="multiply_add" overrideParent="True" />
+					<float name="value" value="0" />
+					<instance_reference name="tooltip" value="" />
+					<bool name="exclusive" value="False" />
+					<string name="modifier_id" value="" />
+					<instance_reference name="target_type_name" value="" />
+					<instance_reference name="description_pbg" value="" />
+					<enum name="description_storage_index" value="" />
+				</template_reference>
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
 			<list name="race_type_list" overrideParent="True">

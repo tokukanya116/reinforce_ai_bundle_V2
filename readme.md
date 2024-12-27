@@ -76,6 +76,8 @@ ebps字段
 ```
 time_seconds 建造时间
 hitpoints 生命值
+regeneration 生命值再生
+weapon_table 武器表
 ```
 
 ```
@@ -96,5 +98,10 @@ hitpoints 生命值
 
 edit 可以拷贝mod guid
 win condition可以直接改游戏开局模式 statingCondition
+```
+
+```
+拜占庭 初始拍子，两门炮
+其他 1拍子(升级)，2门炮
 ```
 

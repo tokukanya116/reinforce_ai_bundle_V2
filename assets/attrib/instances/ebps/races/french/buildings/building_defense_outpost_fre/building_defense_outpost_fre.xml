@@ -36,11 +36,6 @@
 				</group>
 			</list>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-589861990" List.ParentItemID="-589861990">
-			<list name="abilities">
-				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2066632341" List.ListAction="Append" />
-			</list>
-		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="132680" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" />

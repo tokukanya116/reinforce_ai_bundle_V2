@@ -69,10 +69,11 @@
 			</template_reference>
 			<template_reference name="help_text_formatter" value="ui_text_formatter">
 				<list name="formatter_arguments">
-					<int name="int_value" value="3" List.ItemID="455357457" />
-					<float name="float_value" value="1.5" List.ItemID="898844703" />
+					<int name="int_value" value="1" List.ItemID="455357457" />
+					<int name="int_value" value="1" List.ItemID="-355169636" />
+					<float name="float_value" value="20" List.ItemID="898844703" />
 				</list>
-				<locstring name="formatter" value="6" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+				<locstring name="formatter" value="8" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 			</template_reference>
 			<template_reference name="help_text_alternate_formatter" value="">
 			</template_reference>
@@ -228,12 +229,16 @@
 		<bool name="can_cast_again_whilst_pending" value="False" />
 		<list name="float_properties">
 			<template_reference name="float" value="abilitybag_float_property" List.ItemID="821124754">
-				<float name="value" value="1.5" />
+				<float name="value" value="1.2" />
 				<enum name="id" value="melee_damage_amplification" />
 			</template_reference>
 			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-450196151">
-				<float name="value" value="30" />
+				<float name="value" value="40" />
 				<enum name="id" value="cooldown" comment="Aura size" />
+			</template_reference>
+			<template_reference name="float" value="abilitybag_float_property" List.ItemID="1127049960">
+				<float name="value" value="4" />
+				<enum name="id" value="modifier" />
 			</template_reference>
 		</list>
 		<list name="int_properties">

@@ -42,11 +42,6 @@
 				<instance_reference name="depends_on_blueprint" value="" overrideParent="True" />
 			</template_reference>
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-349461896" List.ParentItemID="-349461896">
-			<list name="abilities">
-				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1520544877" List.ListAction="Append" />
-			</list>
-		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="133439" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_tower" />

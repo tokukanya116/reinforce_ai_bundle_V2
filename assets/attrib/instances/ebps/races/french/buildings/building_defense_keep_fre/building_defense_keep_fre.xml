@@ -122,7 +122,6 @@
 				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="11349069" />
 				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="-1041345890" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\french\keep_influence_fre" List.ItemID="-14081613" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\chinese\tower_repair_nearby_walls_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="2026157560" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\road_ext" List.ItemID="1512634950" List.ParentItemID="1512634950">
