@@ -2812,8 +2812,8 @@
 					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_watch_rus" List.ItemID="1299789234" />
 					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" List.ItemID="-1614952984" />
 					<instance_reference name="member" value="upgrade\races\common\research\upgrade_naval_arrowslits" List.ItemID="1843227131" />
-					<instance_reference name="member" value="upgrade\races\byzantine\research\upgrade_keep_mangonel_byz" List.ItemID="718845361" />
-					<instance_reference name="member" value="upgrade\races\byzantine\research\upgrade_outpost_mangonel_byz" List.ItemID="-1324065639" />
+					<instance_reference name="member" value="upgrade\races\common\upgrade_keep_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="718845361" />
+					<instance_reference name="member" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1324065639" />
 					<instance_reference name="member" value="upgrade\races\ottoman\research\upgrade_keep_great_bombard" List.ItemID="1554339075" />
 					<instance_reference name="member" value="upgrade\races\chinese\research\upgrade_barbican_cannon_chi" List.ItemID="786112927" />
 					<instance_reference name="member" value="upgrade\races\chinese\research\upgrade_barbican_springald_chi" List.ItemID="1165931473" />
@@ -3048,7 +3048,7 @@
 					<instance_reference name="member" value="ebps\races\japanese\buildings\building_defense_wall_jpn\building_defense_tower_jpn" List.ItemID="1074852888" />
 					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_defense_wall_byz\building_defense_tower_byz" List.ItemID="-452678917" />
 				</list>
-				<float name="base_scale" value="1000" />
+				<float name="base_scale" value="10000" />
 				<float name="minimum_score_to_produce" value="1" />
 				<string name="lua_binding" value="ScoringFunctions_WallTower" />
 				<int name="max_current" value="-1" />

@@ -40,9 +40,76 @@
 				</template_reference>
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="536671903" List.ParentItemID="536671903">
+			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-370629295" List.ParentItemID="-370629295" />
+			</list>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="32036034" List.ParentItemID="32036034">
 			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
 			<bool name="reset_production_progress_at_current_pop_cap" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="2086910227" List.ParentItemID="2086910227">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Springald Slot" overrideParent="True" List.ItemID="-194830544" List.ParentItemID="-194830544">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="1875558711" List.ParentItemID="1875558711">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_siege_outpost_mangonel" overrideParent="True" />
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="" />
+										<string name="parent_rigidbody_target_name" value="" />
+										<enum name="game_object_attachment_type" value="scenegraph" />
+									</template_reference>
+									<group name="attachment_flags">
+										<bool name="sim_only" value="False" />
+										<bool name="no_pathfinding" value="False" />
+										<bool name="not_snappable" value="False" />
+										<bool name="restore_snap_to_ground_on_detach" value="False" />
+										<bool name="no_sim_update" value="True" />
+										<bool name="join_parent_squad" value="False" />
+										<bool name="redirect_damage_to_parent_entity" value="True" />
+										<bool name="assign_as_attachment_combat_leader" value="False" />
+										<bool name="assign_as_attachment_movement_leader" value="False" />
+										<bool name="receive_parent_animations" value="False" />
+										<bool name="receive_parent_death" value="False" />
+									</group>
+								</template_reference>
+								<list name="possible_blueprint_updates">
+								</list>
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0.3" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="non_entity_weapon_wrapper" value="">
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+						<string name="marker" value="fx_muz_springald_00" List.ItemID="1468174525" List.ParentItemID="1468174525" />
+						<string name="marker" value="fx_muz_springald_01" List.ItemID="-1211212079" List.ParentItemID="-1211212079" />
+						<string name="marker" value="fx_muz_springald_02" List.ItemID="-1885074392" List.ParentItemID="-1885074392" />
+						<string name="marker" value="fx_muz_springald_03" List.ItemID="-92739337" List.ParentItemID="-92739337" />
+					</list>
+					<bool name="initialize_weapons_on_creation" value="False" />
+					<string name="offhand_marker" value="" />
+				</group>
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-589861990" List.ParentItemID="-589861990">
 			<list name="abilities" overrideParent="True">

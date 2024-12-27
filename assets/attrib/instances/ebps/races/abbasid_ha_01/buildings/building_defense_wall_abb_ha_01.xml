@@ -6,6 +6,8 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1930986963" List.ParentItemID="-1930986963">
 			<float name="hitpoints" value="4500" overrideParent="True" />
+			<float name="regeneration" value="30" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
 			<list name="race_type_list" overrideParent="True">

@@ -8,6 +8,8 @@
 			<bool name="can_repair" value="True" overrideParent="True" />
 			<state_tree_node name="death_action_tree" value="building_death_actions\buildings\tower_death_actions\tower_death_actions_hre" overrideParent="True" />
 			<float name="hitpoints" value="4500" overrideParent="True" />
+			<float name="regeneration" value="3" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-923485527" List.ParentItemID="-923485527">
 			<list name="unit_type_list" overrideParent="True">
@@ -36,30 +38,28 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-2115950863" List.ParentItemID="-2115950863">
 			<list name="hardpoints" overrideParent="True">
-				<group name="hardpoint" comment="Springald Slot" List.ItemID="1340398208">
+				<group name="hardpoint" comment="Springald Slot" overrideParent="True" List.ItemID="1340398208">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
-						<group name="weapon" List.ItemID="1096346463">
+						<group name="weapon" List.ItemID="530902418" List.ParentItemID="530902418">
 							<group name="heading">
-								<float name="x" value="0" />
 								<float name="y" value="0" overrideParent="True" />
+								<float name="x" value="0" />
 								<float name="z" value="1" />
 							</group>
-							<float name="length" value="0" />
 							<group name="origin">
+								<float name="z" value="0" overrideParent="True" />
 								<float name="x" value="0" />
 								<float name="y" value="10" />
-								<float name="z" value="0" overrideParent="True" />
 							</group>
-							<enum name="type" value="default" />
 							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
 								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_siege_walltower_mangonel" overrideParent="True" />
 									<template_reference name="attach_data" value="attachments\attach_data">
 										<string name="marker_name_parent" value="" />
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_siege_walltower_springald" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -77,6 +77,8 @@
 								<list name="possible_blueprint_updates">
 								</list>
 							</template_reference>
+							<float name="length" value="0" />
+							<enum name="type" value="default" />
 							<template_reference name="non_entity_weapon_wrapper" value="">
 							</template_reference>
 						</group>
@@ -86,9 +88,9 @@
 					<list name="preferred_inventory_item_categories">
 					</list>
 					<list name="firing_offset_markers">
-						<string name="marker" value="fx_muz_springald_01" List.ItemID="-1042529029" />
-						<string name="marker" value="fx_muz_springald_02" List.ItemID="-186160431" />
-						<string name="marker" value="fx_muz_springald_03" List.ItemID="-359147799" />
+						<string name="marker" value="fx_muz_springald_01" List.ItemID="-332466732" List.ParentItemID="-332466732" />
+						<string name="marker" value="fx_muz_springald_02" List.ItemID="-1065016232" List.ParentItemID="-1065016232" />
+						<string name="marker" value="fx_muz_springald_03" List.ItemID="813021933" List.ParentItemID="813021933" />
 					</list>
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />

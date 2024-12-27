@@ -8,6 +8,8 @@
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="589866990" List.ParentItemID="589866990">
 			<bool name="can_repair" value="True" overrideParent="True" />
 			<float name="hitpoints" value="5000" overrideParent="True" />
+			<float name="regeneration" value="30" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1573617786" List.ParentItemID="1573617786">
 			<list name="race_type_list" overrideParent="True">

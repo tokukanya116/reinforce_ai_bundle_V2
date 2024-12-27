@@ -3047,8 +3047,8 @@
 					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_watch_rus" List.ItemID="-191087351" />
 					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" List.ItemID="339882615" />
 					<instance_reference name="member" value="upgrade\races\common\research\upgrade_naval_arrowslits" List.ItemID="683704022" />
-					<instance_reference name="member" value="upgrade\races\byzantine\research\upgrade_keep_mangonel_byz" List.ItemID="1491792549" />
-					<instance_reference name="member" value="upgrade\races\byzantine\research\upgrade_outpost_mangonel_byz" List.ItemID="2054059961" />
+					<instance_reference name="member" value="upgrade\races\common\upgrade_keep_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1491792549" />
+					<instance_reference name="member" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="2054059961" />
 					<instance_reference name="member" value="upgrade\races\ottoman\research\upgrade_keep_great_bombard" List.ItemID="-818663650" />
 					<instance_reference name="member" value="upgrade\races\chinese\research\upgrade_barbican_cannon_chi" List.ItemID="1346345075" />
 					<instance_reference name="member" value="upgrade\races\chinese\research\upgrade_barbican_springald_chi" List.ItemID="-1059825336" />
