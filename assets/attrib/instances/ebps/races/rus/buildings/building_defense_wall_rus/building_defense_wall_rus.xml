@@ -1,0 +1,125 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1184830763" List.ParentItemID="-1184830763">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="Wall" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1930986963" List.ParentItemID="-1930986963">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="hitpoints" value="4500" overrideParent="True" />
+			<float name="regeneration" value="30" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1904526622" List.ParentItemID="1904526622">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\rus" List.ItemID="-1326917250" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-2134914382" List.ParentItemID="-2134914382">
+			<group name="ui_codex_info">
+				<int name="priority" value="3753" overrideParent="True" />
+				<bool name="exclusive" value="True" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1226421349" List.ParentItemID="1226421349">
+			<list name="requirement_table" overrideParent="True">
+				<template_reference name="required" value="requirements\required_player_upgrade" overrideParent="True" List.ItemID="-1052674929">
+					<enum name="reason" value="usage_and_display" overrideParent="True" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<int name="max_completed" value="100" />
+					<int name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\races\rus\research\upgrade_spasskaya_tower_active" overrideParent="True" />
+					<bool name="include_queued" value="False" />
+					<group name="include_pbg_parenting">
+						<bool name="include_child_pbgs" value="False" />
+						<bool name="include_parent_pbgs" value="False" />
+					</group>
+					<bool name="include_completed" value="True" />
+				</template_reference>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1904123328" List.ParentItemID="-1904123328">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+				<instance_reference name="fence_cap_entity" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_bastion_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				<template_reference name="gap_fillers" value="options\ebpextensions\hexmapext\gap_fillers">
+					<list name="visuals" overrideParent="True">
+						<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="-1357513206" List.ParentItemID="2005016817">
+							<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_1m\chi_stonewall_gapfill_1m" overrideParent="True" />
+							<float name="rotation_offset" value="90" />
+							<float name="visual_length" value="1" />
+						</template_reference>
+						<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="427927554" List.ParentItemID="1050268408">
+							<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_2m\chi_stonewall_gapfill_2m" overrideParent="True" />
+							<float name="rotation_offset" value="90" />
+							<float name="visual_length" value="2" />
+						</template_reference>
+						<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="916579194" List.ParentItemID="-1639245560">
+							<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_3m\chi_stonewall_gapfill_3m" overrideParent="True" />
+							<float name="rotation_offset" value="90" />
+							<float name="visual_length" value="3" />
+						</template_reference>
+						<template_reference name="visual" value="options\ebpextensions\hexmapext\gap_filler_visual" List.ItemID="-552785321" List.ParentItemID="1799650319">
+							<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_gapfill_4m\chi_stonewall_gapfill_4m" overrideParent="True" />
+							<float name="rotation_offset" value="90" />
+							<float name="visual_length" value="4" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="empty_cap_visual" value="options\ebpextensions\hexmapext\empty_cap_visual">
+					<file name="visual" value="civilizations\chinese\structures\stonewall\chi_stonewall_endcap\chi_stonewall_endcap" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+			<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_segments_east" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="133441" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1735264747" List.ParentItemID="1735264747">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="Wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="254499696" List.ParentItemID="254499696">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2123635899" List.ParentItemID="-2123635899">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\rus" List.ItemID="-601980824" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="1190820316" List.ParentItemID="1190820316">
+				<group name="ui_codex_info">
+					<int name="priority" value="3753" overrideParent="True" />
+				</group>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\requirement_ext" List.ItemID="1967364753" List.ParentItemID="1967364753">
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_player_upgrade" overrideParent="True" List.ItemID="557083632" List.ParentItemID="557083632">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<int name="max_completed" value="100" />
+						<int name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
+						<bool name="include_queued" value="False" />
+						<group name="include_pbg_parenting">
+							<bool name="include_child_pbgs" value="False" />
+							<bool name="include_parent_pbgs" value="False" />
+						</group>
+						<bool name="include_completed" value="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="2039514846" List.ParentItemID="2039514846">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_wall_bastion_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				</template_reference>
+				<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\common\buildings\building_defense_wall_stone_segments_east" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="133441" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_wall" />
+	</variant>
+</instance>
