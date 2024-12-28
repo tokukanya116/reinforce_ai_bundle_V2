@@ -65,7 +65,7 @@
 				<group name="construction_group" List.ItemID="1276154128" List.ParentItemID="1276154128">
 					<list name="construction_items">
 						<group name="construction_item" comment="palisade" overrideParent="True" List.ItemID="-388738150" List.ParentItemID="-388738150">
-							<instance_reference name="ebp" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_palisade_rus" />
+							<instance_reference name="ebp" value="ebps\races\mongol\buildings\building_defense_palisade_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 							<group name="ui_position">
 								<int name="ui_position_row" value="3" />
 								<int name="ui_position_column" value="2" />
@@ -74,7 +74,7 @@
 							</list>
 							<list name="alternate_ebps">
 							</list>
-							<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\villager_build_menu\age_1\build_palisade" />
+							<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\villager_build_menu\age_1\build_palisade" overrideParent="True" />
 							<template_reference name="ui_info_extended" value="tables\ui_info_ext">
 								<template_reference name="command_card_info" value="ui_command_card_info">
 									<group name="ui_position">
@@ -116,7 +116,7 @@
 							<bool name="do_requirement_check_for_construction_on_existing_item" value="False" />
 						</group>
 						<group name="construction_item" comment="palisade gate" overrideParent="True" List.ItemID="2061319790" List.ParentItemID="2061319790">
-							<instance_reference name="ebp" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_palisade_gate_rus" />
+							<instance_reference name="ebp" value="ebps\races\mongol\buildings\building_defense_palisade_gate_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 							<group name="ui_position">
 								<int name="ui_position_row" value="3" />
 								<int name="ui_position_column" value="3" />

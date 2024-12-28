@@ -162,10 +162,10 @@
 					<float name="gather_rate" value="0.75" overrideParent="True" />
 				</group>
 				<group name="gather_target" List.ItemID="1291539621" List.ParentItemID="1291539621">
-					<float name="gather_rate" value="1.25" overrideParent="True" />
+					<float name="gather_rate" value="1" overrideParent="True" />
 				</group>
-				<group name="gather_target" List.ItemID="-1922234524" List.ParentItemID="-1922234524">
-					<float name="gather_rate" value="0.75" overrideParent="True" />
+				<group name="gather_target" comment="HERDABLE 羊 或者 生成的 羊和鹿 等" List.ItemID="-1922234524" List.ParentItemID="-1922234524">
+					<float name="gather_rate" value="1" overrideParent="True" />
 				</group>
 				<group name="gather_target" comment="Replaces the normal Stone Gather which is disabled on Mongols." List.ItemID="-859779424" List.ParentItemID="-859779424">
 					<float name="gather_rate" value="0" overrideParent="True" />

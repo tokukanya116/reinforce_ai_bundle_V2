@@ -52,7 +52,7 @@
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\races\common\research\upgrade_outpost_springald" />
+				<instance_reference name="upgrade_name" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 				<bool name="include_queued" value="False" />
 				<int name="min_completed" value="1" />
 				<int name="max_completed" value="100" />
@@ -66,7 +66,7 @@
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="11246227" />
 				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\races\common\research\upgrade_outpost_springald" />
+				<instance_reference name="upgrade_name" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 				<bool name="include_queued" value="True" />
 				<int name="min_completed" value="1" />
 				<int name="max_completed" value="100" />

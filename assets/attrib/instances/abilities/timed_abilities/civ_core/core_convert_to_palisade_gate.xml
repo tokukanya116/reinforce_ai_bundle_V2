@@ -1,0 +1,13 @@
+<instance version="4" description="" template="abilities">
+	<group name="ability_bag">
+		<group name="ui_info">
+			<file name="icon_name" value="races\common\buildings\palisade_gate" overrideParent="True" />
+		</group>
+		<enum_table name="cost_to_player">
+			<float name="wood" value="18" overrideParent="True" />
+			<float name="stone" value="0" overrideParent="True" />
+		</enum_table>
+	</group>
+	<uniqueid name="pbgid" value="2151011" />
+	<instance_reference name="parent_pbg" value="abilities\timed_abilities\civ_core\core_convert_to_gate" />
+</instance>

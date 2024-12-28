@@ -1,0 +1,44 @@
+<instance version="6" description="Base tunings for offensive strategy AI" template="ai\ai_strategizer_personality">
+	<group name="ai_strategizer_personality_bag">
+		<list name="base_intention_tunings">
+			<group name="intention_tuning" List.ItemID="-1862896161">
+				<enum name="intention_type" value="offense" />
+				<float name="intention_max" value="1" />
+				<float name="intention_min" value="1" />
+			</group>
+			<group name="intention_tuning" List.ItemID="395096182">
+				<enum name="intention_type" value="combat" />
+				<float name="intention_max" value="1" />
+				<float name="intention_min" value="1" />
+			</group>
+			<group name="intention_tuning" List.ItemID="135592856">
+				<enum name="intention_type" value="wall" />
+				<float name="intention_max" value="1" />
+				<float name="intention_min" value="0.4" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073741901" />
+	<variant name="xp3">
+		<group name="ai_strategizer_personality_bag">
+			<list name="base_intention_tunings">
+				<group name="intention_tuning" List.ItemID="-1332133459">
+					<enum name="intention_type" value="offense" />
+					<float name="intention_max" value="1" />
+					<float name="intention_min" value="1" />
+				</group>
+				<group name="intention_tuning" List.ItemID="1770320741">
+					<enum name="intention_type" value="combat" />
+					<float name="intention_max" value="1" />
+					<float name="intention_min" value="1" />
+				</group>
+				<group name="intention_tuning" List.ItemID="-1445334687">
+					<enum name="intention_type" value="wall" />
+					<float name="intention_max" value="-1" />
+					<float name="intention_min" value="-1" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="1073741901" />
+	</variant>
+</instance>

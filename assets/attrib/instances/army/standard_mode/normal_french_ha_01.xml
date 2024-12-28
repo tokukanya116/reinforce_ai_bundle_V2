@@ -210,6 +210,7 @@
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="1644156131" />
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-1328333092" />
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-1184645207" />
+			<instance_reference name="squad" value="sbps\races\french\unit_scout_1_fre" List.ItemID="-1797421370" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions">
@@ -261,9 +262,13 @@
 					<float name="x" value="1.2" />
 					<float name="y" value="2.4" />
 				</group>
+				<group name="position_offset" List.ItemID="1325923669">
+					<float name="x" value="-4" />
+					<float name="y" value="10" />
+				</group>
 			</list>
 		</template_reference>
-		<instance_reference name="starting_town" value="" />
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_french_ha_01" />
 	</group>
 	<uniqueid name="pbgid" value="2126579" />
 	<instance_reference name="parent_pbg" value="" />

@@ -227,6 +227,7 @@
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-1890239416" />
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="1999201343" />
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-264879922" />
+			<instance_reference name="squad" value="sbps\races\sultanate\unit_scout_1_sul" List.ItemID="-1442552248" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions">
@@ -278,9 +279,13 @@
 					<float name="x" value="1.2" />
 					<float name="y" value="2.4" />
 				</group>
+				<group name="position_offset" List.ItemID="-1147630660">
+					<float name="x" value="-4" />
+					<float name="y" value="10" />
+				</group>
 			</list>
 		</template_reference>
-		<instance_reference name="starting_town" value="" />
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_sultanate" />
 	</group>
 	<uniqueid name="pbgid" value="2127445" />
 	<instance_reference name="parent_pbg" value="" />

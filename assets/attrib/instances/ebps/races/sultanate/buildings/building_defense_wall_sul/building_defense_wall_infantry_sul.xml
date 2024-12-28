@@ -4,7 +4,7 @@
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-1930986963" List.ParentItemID="-1930986963">
 			<float name="hitpoints" value="4500" overrideParent="True" />
-			<float name="regeneration" value="30" overrideParent="True" />
+			<float name="regeneration" value="25" overrideParent="True" />
 			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="31226680" List.ParentItemID="31226680">

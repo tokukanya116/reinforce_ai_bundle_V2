@@ -10,7 +10,7 @@
 				<float name="Melee" value="0" overrideParent="True" />
 			</enum_table>
 			<float name="hitpoints" value="4500" overrideParent="True" />
-			<float name="regeneration" value="30" overrideParent="True" />
+			<float name="regeneration" value="25" overrideParent="True" />
 			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-936535524" List.ParentItemID="-936535524">

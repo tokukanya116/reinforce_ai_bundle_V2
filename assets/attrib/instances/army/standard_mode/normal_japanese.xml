@@ -267,7 +267,7 @@
 				</group>
 			</list>
 		</template_reference>
-		<instance_reference name="starting_town" value="" />
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_japanese" />
 	</group>
 	<uniqueid name="pbgid" value="2109889" />
 	<instance_reference name="parent_pbg" value="" />

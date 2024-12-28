@@ -6,12 +6,12 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="261052378" List.ParentItemID="261052378">
 			<float name="hitpoints" value="3000" overrideParent="True" />
-			<float name="regeneration" value="30" overrideParent="True" />
+			<float name="regeneration" value="25" overrideParent="True" />
 			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-478749961" List.ParentItemID="-478749961">
 			<list name="race_type_list" overrideParent="True">
-				<instance_reference name="race_type" value="racebps\rus" List.ItemID="20597795" />
+				<instance_reference name="race_type" value="racebps\mongol" overrideParent="True" List.ItemID="20597795" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="280898031" List.ParentItemID="280898031">
@@ -22,6 +22,9 @@
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1479129305" List.ParentItemID="1479129305">
 			<group name="time_cost">
 				<float name="time_seconds" value="4" overrideParent="True" />
+				<enum_table name="cost">
+					<float name="wood" value="4" overrideParent="True" />
+				</enum_table>
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1116589513" List.ParentItemID="-1116589513">
@@ -34,9 +37,13 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1710736497" List.ParentItemID="-1710736497">
 			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
-				<instance_reference name="fence_cap_entity" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_palisade_bastion_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				<instance_reference name="fence_cap_entity" value="ebps\races\mongol\buildings\building_defense_palisade_bastion_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 			</template_reference>
-			<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\rus\buildings\building_defense_wall_rus\building_defense_palisade_segments_rus" comment="Temp replacing with English assets for M21 CC since the rus walls won't destroy correctly." overrideParent="True" />
+			<instance_reference name="segment_attachment_list" value="" comment="Temp replacing with English assets for M21 CC since the rus walls won't destroy correctly." overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-787551867" List.ParentItemID="-787551867">
+			<list name="abilities" removedIds="1212983076">
+			</list>
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741850" />

@@ -1784,7 +1784,7 @@
 				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_keep_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1264372838" />
 				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-395359755" />
 				<instance_reference name="upgrade" value="upgrade\races\english\research\upgrade_network_of_citadels_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="710931218" />
-				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="884129761" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="884129761" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-231398338" List.ParentItemID="-231398338">

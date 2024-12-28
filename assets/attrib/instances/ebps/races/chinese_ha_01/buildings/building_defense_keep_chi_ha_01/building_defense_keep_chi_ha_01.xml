@@ -187,7 +187,7 @@
 			<list name="standard_upgrades" overrideParent="True">
 				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_keep_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="1051684023" />
 				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-1559319008" />
-				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="-767466247" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-767466247" />
 			</list>
 			<state_tree_node name="production_item_completed_openingbranch" value="building_production_item_completed_chi" overrideParent="True" />
 		</template_reference>

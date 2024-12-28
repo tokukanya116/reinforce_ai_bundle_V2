@@ -151,7 +151,7 @@
 			<list name="standard_upgrades" overrideParent="True">
 				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_keep_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-291855630" />
 				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-764236550" />
-				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="306172206" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="306172206" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="687655738" List.ParentItemID="687655738">

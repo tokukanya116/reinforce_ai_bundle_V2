@@ -10,7 +10,7 @@
 				<float name="Fire" value="0" overrideParent="True" />
 			</enum_table>
 			<float name="hitpoints" value="4500" overrideParent="True" text_template="4500" />
-			<float name="regeneration" value="30" overrideParent="True" />
+			<float name="regeneration" value="25" overrideParent="True" />
 			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">

@@ -31,7 +31,7 @@
 		<bool name="initial_recharge" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="55" />
+		<float name="range" value="65" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="0" />
 		<bool name="refundable" value="True" />
@@ -69,8 +69,8 @@
 			</template_reference>
 			<template_reference name="help_text_formatter" value="ui_text_formatter">
 				<list name="formatter_arguments">
-					<int name="int_value" value="15" List.ItemID="1072151217" />
-					<int name="int_value" value="10" List.ItemID="354407135" />
+					<int name="int_value" value="15" List.ItemID="701276822" />
+					<int name="int_value" value="10" List.ItemID="-651164226" />
 				</list>
 				<locstring name="formatter" value="11219984" />
 			</template_reference>
@@ -116,7 +116,7 @@
 		<locstring name="ui_usage_txt" value="0" />
 		<bool name="validate_actions" value="False" />
 		<list name="requirements" comment="先决条件">
-			<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="-1595235624">
+			<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="-898569909">
 				<locstring name="ui_name" value="0" />
 				<enum name="reason" value="usage_and_display" />
 				<enum name="key" value="landmark_active" />
@@ -208,11 +208,11 @@
 		<bool name="ui_visibility_ignore_prerequisite" value="False" />
 		<bool name="use_simbox_to_simbox_range" value="True" />
 		<list name="ui_contextual_info">
-			<group name="context" List.ItemID="1421868758">
+			<group name="context" List.ItemID="-1552056643">
 				<locstring name="screen_name" value="0" />
 				<locstring name="help_text" value="11226343" />
 				<list name="requirements">
-					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1699774781">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="1580257797">
 						<enum name="reason" value="usage_and_display" />
 						<locstring name="ui_name" value="0" />
 						<bool name="is_present" value="False" />
@@ -234,11 +234,11 @@
 				<template_reference name="screen_name_formatter" value="">
 				</template_reference>
 			</group>
-			<group name="context" List.ItemID="-912680543">
+			<group name="context" List.ItemID="-1287577946">
 				<locstring name="screen_name" value="0" />
 				<locstring name="help_text" value="11226344" />
 				<list name="requirements">
-					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-368229784">
+					<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1107441244">
 						<enum name="reason" value="usage_and_display" />
 						<locstring name="ui_name" value="0" />
 						<bool name="is_present" value="True" />
@@ -279,14 +279,6 @@
 		<bool name="can_passive_ability_create_formation_squad_group" value="False" />
 		<bool name="can_cast_again_whilst_pending" value="False" />
 		<list name="float_properties">
-			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-977099607">
-				<float name="value" value="20" />
-				<enum name="id" value="move_speed" />
-			</template_reference>
-			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-1906938719">
-				<float name="value" value="55" />
-				<enum name="id" value="cooldown" />
-			</template_reference>
 		</list>
 		<list name="int_properties">
 		</list>

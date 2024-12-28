@@ -642,7 +642,7 @@
 					<bool name="allow_auto_work_to_enable" value="True" />
 				</group>
 				<group name="gather_target" List.ItemID="-1426518259" List.ParentItemID="1291539621">
-					<float name="gather_rate" value="1.25" />
+					<float name="gather_rate" value="1" />
 					<instance_reference name="resource_sub_type" value="resource_sub_type\farm" />
 					<float name="search_radius" value="25" />
 					<float name="resource_carry_capacity" value="10" />
@@ -651,8 +651,8 @@
 					<enum name="resource_gather_job" value="gather_farm" />
 					<bool name="allow_auto_work_to_enable" value="True" />
 				</group>
-				<group name="gather_target" List.ItemID="-432700950" List.ParentItemID="-1922234524">
-					<float name="gather_rate" value="0.75" />
+				<group name="gather_target" comment="HERDABLE 羊 或者 生成的 羊和鹿 等" List.ItemID="-432700950" List.ParentItemID="-1922234524">
+					<float name="gather_rate" value="1" />
 					<instance_reference name="resource_sub_type" value="resource_sub_type\herded_animal" />
 					<float name="search_radius" value="20" />
 					<float name="resource_carry_capacity" value="10" />

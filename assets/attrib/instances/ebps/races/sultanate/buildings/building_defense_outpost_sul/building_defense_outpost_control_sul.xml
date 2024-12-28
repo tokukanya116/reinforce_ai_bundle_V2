@@ -16,7 +16,7 @@
 			<list name="standard_upgrades" overrideParent="True">
 				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_arrowslits" List.ItemID="917106402" />
 				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-563216352" />
-				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_springald" List.ItemID="-1005412115" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_cannon" overrideParent="True" List.ItemID="-1005412115" />
 				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_stone" List.ItemID="1498922246" />
 			</list>
 		</template_reference>

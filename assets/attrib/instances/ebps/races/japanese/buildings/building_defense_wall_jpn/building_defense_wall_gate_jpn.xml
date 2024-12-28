@@ -11,7 +11,7 @@
 			</enum_table>
 			<bool name="force_attacker_memory" value="False" overrideParent="True" />
 			<float name="hitpoints" value="4500" overrideParent="True" />
-			<float name="regeneration" value="30" overrideParent="True" />
+			<float name="regeneration" value="25" overrideParent="True" />
 			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1449050468" List.ParentItemID="1449050468">

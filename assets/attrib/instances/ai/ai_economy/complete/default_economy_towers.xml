@@ -141,14 +141,14 @@
 					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_military_academy" List.ItemID="-338816121" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_architecture_4" List.ItemID="232055599" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_biology" List.ItemID="520254853" />
-					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="662190588" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="662190588" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_military_academy_improved_mon" List.ItemID="718868142" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_improved_mon" List.ItemID="-211976022" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_mon" List.ItemID="545325084" />
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_military_academy_sul" List.ItemID="1041508550" />
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_architecture_4_sul" List.ItemID="-47507508" />
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_biology_sul" List.ItemID="1203420624" />
-					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" List.ItemID="686900646" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="686900646" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_armored_hull" List.ItemID="993487207" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_explosives" List.ItemID="-225601580" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_forecastle" List.ItemID="-157292377" />

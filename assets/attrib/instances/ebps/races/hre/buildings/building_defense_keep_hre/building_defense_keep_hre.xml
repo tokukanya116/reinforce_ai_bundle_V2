@@ -186,7 +186,7 @@
 				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-1333552195" />
 				<instance_reference name="upgrade" value="upgrade\races\hre\research\upgrade_building_fire_armor_hre" List.ItemID="-860244644" />
 				<instance_reference name="upgrade" value="upgrade\races\hre\research\upgrade_reinforced_defenses_hre" List.ItemID="1845853243" />
-				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="1536511755" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1536511755" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-231398338" List.ParentItemID="-231398338">

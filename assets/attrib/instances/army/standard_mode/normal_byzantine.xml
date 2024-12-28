@@ -211,6 +211,7 @@
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-2034061772" />
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="469040712" />
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="419949929" />
+			<instance_reference name="squad" value="sbps\races\byzantine\unit_scout_1_byz" List.ItemID="966875447" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions">
@@ -262,9 +263,13 @@
 					<float name="x" value="1.2" />
 					<float name="y" value="2.4" />
 				</group>
+				<group name="position_offset" List.ItemID="-131176542">
+					<float name="x" value="-4" />
+					<float name="y" value="10" />
+				</group>
 			</list>
 		</template_reference>
-		<instance_reference name="starting_town" value="" />
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_byzantine" />
 	</group>
 	<uniqueid name="pbgid" value="2097867" />
 	<instance_reference name="parent_pbg" value="" />

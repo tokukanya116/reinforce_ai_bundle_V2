@@ -140,14 +140,14 @@
 					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_military_academy" List.ItemID="1065982590" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_architecture_4" List.ItemID="-1569647273" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_biology" List.ItemID="-421779450" />
-					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="921165139" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="921165139" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_military_academy_improved_mon" List.ItemID="1035034438" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_improved_mon" List.ItemID="1923855891" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\economy\upgrade_tech_university_biology_mon" List.ItemID="-154486292" />
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_military_academy_sul" List.ItemID="1780030135" />
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_architecture_4_sul" List.ItemID="-289695114" />
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_biology_sul" List.ItemID="-1039700889" />
-					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" List.ItemID="-1530827009" />
+					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1530827009" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_armored_hull" List.ItemID="-664350784" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_explosives" List.ItemID="1863267783" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\naval\upgrade_naval_forecastle" List.ItemID="-1932342073" />
@@ -3707,8 +3707,8 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Defensive Upgrade" List.ItemID="-1817987008">
 				<list name="members">
-					<instance_reference name="member" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" List.ItemID="-819743396" />
-					<instance_reference name="member" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" List.ItemID="-774402618" />
+					<instance_reference name="member" value="upgrade\races\common\research\economy\upgrade_tech_university_murder_holes_4" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-819743396" />
+					<instance_reference name="member" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-774402618" />
 					<instance_reference name="member" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_architecture_4_sul" List.ItemID="-1901509230" />
 					<instance_reference name="member" value="upgrade\races\common\research\economy\upgrade_tech_university_architecture_4" List.ItemID="748847335" />
 					<instance_reference name="member" value="upgrade\races\chinese\research\upgrade_architecture_chi" List.ItemID="1318441801" />

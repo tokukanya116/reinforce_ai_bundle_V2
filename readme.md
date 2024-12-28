@@ -20,7 +20,7 @@ https://support.ageofempires.com/hc/en-us/sections/4409121920276-Tuning-Packs
 
 # 模块详解
 
-## 1.abilities模块
+## abilities模块
 
 **abilities属于编辑器的核心内容之一 (包括游戏内各种单位的技能和效果包，都是在这里定义)**
 
@@ -57,6 +57,21 @@ https://support.ageofempires.com/hc/en-us/sections/4409121920276-Tuning-Packs
 ![float property](C:\Users\dell\Desktop\aoe4\标准\reinforce_ai_bundle_V2\template(教程)\abilities详解\float property.png)
 
 3.sbp是修改单位的武器模型以及小队状态，如果想直接修改一个单位类型本身，需要去ebp里的unit修改
+
+## army模块
+
+**army属于编辑器的核心内容之一 (包括游戏开始时，根据选择游戏模式，自定义生成军事单位和军队规模的内容)**
+
+比如帝国战争模式就可以在这里编辑
+
+你如果想要不添加任何改动就导出帝国战争模式
+
+修改starting_town即可
+
+需要一并生成的单位也可以在此次编辑
+注意：所有人都会获得，包括ai
+
+
 
 ## 附录
 
@@ -101,7 +116,22 @@ win condition可以直接改游戏开局模式 statingCondition
 ```
 
 ```
-拜占庭 初始拍子，两门炮
+拜占庭 初始1投石1火炮，升级 +1投石，+1炮
+
 其他 1拍子(升级)，2门炮
+```
+
+```
+城堡 
+火炮攻击力 +10
+奥斯曼 +12
+沸油 +10
+拍子 +2
+烟花 +8
+
+城墙，城门自动回血 +25/s
+城墙塔自动回血 +3/s
+
+蒙古添加木墙，木门
 ```
 

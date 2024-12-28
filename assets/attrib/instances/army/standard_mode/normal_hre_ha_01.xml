@@ -223,6 +223,7 @@
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="112076534" />
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-201369227" />
 			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="1717020605" />
+			<instance_reference name="squad" value="sbps\races\hre_ha_01\unit_scout_1_hre_ha_01" List.ItemID="-1829161960" />
 		</list>
 		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
 			<list name="spawn_positions">
@@ -270,9 +271,13 @@
 					<float name="x" value="1.2" />
 					<float name="y" value="2.4" />
 				</group>
+				<group name="position_offset" List.ItemID="1327622651">
+					<float name="x" value="-4" />
+					<float name="y" value="5" />
+				</group>
 			</list>
 		</template_reference>
-		<instance_reference name="starting_town" value="" />
+		<instance_reference name="starting_town" value="map_gen\town\map_gen_town\empirewars\empirewars_town_hre_ha_01" />
 	</group>
 	<uniqueid name="pbgid" value="2126580" />
 	<instance_reference name="parent_pbg" value="" />
