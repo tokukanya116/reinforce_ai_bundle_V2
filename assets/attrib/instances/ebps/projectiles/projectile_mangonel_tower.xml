@@ -127,7 +127,7 @@
 				<enum name="firing_angle_type" value="high_angle" comment="射击角度" />
 				<bool name="use_homing_when_no_blocker" value="True" />
 				<float name="non_collide_start_angle" value="5" comment="射击角度搜索阈值(最小)" />
-				<float name="non_collide_end_angle" value="24" comment="射击角度搜索阈值(最大)" />
+				<float name="non_collide_end_angle" value="30" comment="射击角度搜索阈值(最大)" />
 			</group>
 			<bool name="collision_building_wall_panel_ignore" value="False" />
 			<group name="collision_type">
@@ -149,11 +149,11 @@
 			<template_reference name="trajectory_option" value="options\ebpextensions\projectileext\projectile_trajectory_option" comment="弹道轨迹模板&#xD;&#xA;自定义弹道轨迹模板&#xD;&#xA;需要注意：设置这个以后，必须确保 is_artillery 选项关闭 ，否则会在控制台提示错误并把这个设置调回默认">
 				<float name="height_min" value="3" />
 				<float name="height_max" value="5" />
-				<float name="speed_min" value="5" />
-				<float name="speed_max" value="22" />
+				<float name="speed_min" value="7" />
+				<float name="speed_max" value="25" />
 				<float name="time_seconds" value="0" />
-				<float name="interpolate_distance_min" value="5" comment="用于计算弹道倾射角的最小阈值(就是和目标距离小于这个阈值时采用，会采用设置的最小射击角：angle 和 最小射速)" />
-				<float name="interpolate_distance_max" value="20" comment="用于计算弹道倾射角的最大阈值(就是和目标距离超过这个阈值时采用，会采用设置的最高射击角：angle 和 最高射速)" />
+				<float name="interpolate_distance_min" value="7" comment="用于计算弹道倾射角的最小阈值(就是和目标距离小于这个阈值时采用，会采用设置的最小射击角：angle 和 最小射速)" />
+				<float name="interpolate_distance_max" value="30" comment="用于计算弹道倾射角的最大阈值(就是和目标距离超过这个阈值时采用，会采用设置的最高射击角：angle 和 最高射速)" />
 				<float name="slope_aggression" value="0" comment="曲线有多抖" />
 				<list name="random_rotation_during_flight">
 				</list>

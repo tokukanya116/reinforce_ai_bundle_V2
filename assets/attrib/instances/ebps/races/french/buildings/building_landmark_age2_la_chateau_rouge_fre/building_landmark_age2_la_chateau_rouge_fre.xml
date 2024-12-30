@@ -80,7 +80,7 @@
 				<float name="Fire" value="6" overrideParent="True" />
 			</enum_table>
 			<state_tree_node name="death_action_tree" value="building_death_actions\landmarks\landmarks_common\common_landmark_shared_death" overrideParent="True" />
-			<float name="hitpoints" value="7500" overrideParent="True" />
+			<float name="hitpoints" value="6000" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="901697529" List.ParentItemID="901697529">
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />

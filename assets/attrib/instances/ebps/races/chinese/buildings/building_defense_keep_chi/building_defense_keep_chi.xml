@@ -312,6 +312,130 @@
 					<bool name="initialize_weapons_on_creation" value="False" />
 					<string name="offhand_marker" value="" />
 				</group>
+				<group name="hardpoint" comment="Garrison Arrows Slot" overrideParent="True" List.ItemID="315761267" List.ParentItemID="315761267">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="265853314" List.ParentItemID="265853314">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\chinese\weapons\wpn_range_keep_handcannon_chi" overrideParent="True" />
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="" />
+										<string name="parent_rigidbody_target_name" value="" />
+										<enum name="game_object_attachment_type" value="scenegraph" />
+									</template_reference>
+									<group name="attachment_flags">
+										<bool name="sim_only" value="False" />
+										<bool name="no_pathfinding" value="False" />
+										<bool name="not_snappable" value="False" />
+										<bool name="restore_snap_to_ground_on_detach" value="False" />
+										<bool name="no_sim_update" value="True" />
+										<bool name="join_parent_squad" value="False" />
+										<bool name="redirect_damage_to_parent_entity" value="True" />
+										<bool name="assign_as_attachment_combat_leader" value="False" />
+										<bool name="assign_as_attachment_movement_leader" value="False" />
+										<bool name="receive_parent_animations" value="False" />
+										<bool name="receive_parent_death" value="False" />
+									</group>
+								</template_reference>
+								<list name="possible_blueprint_updates">
+								</list>
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0.3" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="10" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="non_entity_weapon_wrapper" value="">
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+						<string name="marker" value="fx_muz_arrow_00" List.ItemID="-1826868769" List.ParentItemID="-1826868769" />
+						<string name="marker" value="fx_muz_arrow_01" List.ItemID="-557573406" List.ParentItemID="-557573406" />
+						<string name="marker" value="fx_muz_arrow_02" List.ItemID="1032023142" List.ParentItemID="1032023142" />
+						<string name="marker" value="fx_muz_arrow_03" List.ItemID="-1406543021" List.ParentItemID="-1406543021" />
+						<string name="marker" value="fx_muz_arrow_04" List.ItemID="-1975707243" List.ParentItemID="-1975707243" />
+						<string name="marker" value="fx_muz_arrow_05" List.ItemID="-1990527287" List.ParentItemID="-1990527287" />
+						<string name="marker" value="fx_muz_arrow_06" List.ItemID="1096690379" List.ParentItemID="1096690379" />
+						<string name="marker" value="fx_muz_arrow_07" List.ItemID="-1521435430" List.ParentItemID="-1521435430" />
+					</list>
+					<bool name="initialize_weapons_on_creation" value="False" />
+					<string name="offhand_marker" value="" />
+				</group>
+				<group name="hardpoint" comment="Garrison Arrows Slot" overrideParent="True" List.ItemID="-802063983" List.ParentItemID="-802063983">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="265853314" List.ParentItemID="265853314">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\chinese\weapons\wpn_range_keep_handcannon_chi" overrideParent="True" />
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="" />
+										<string name="parent_rigidbody_target_name" value="" />
+										<enum name="game_object_attachment_type" value="scenegraph" />
+									</template_reference>
+									<group name="attachment_flags">
+										<bool name="sim_only" value="False" />
+										<bool name="no_pathfinding" value="False" />
+										<bool name="not_snappable" value="False" />
+										<bool name="restore_snap_to_ground_on_detach" value="False" />
+										<bool name="no_sim_update" value="True" />
+										<bool name="join_parent_squad" value="False" />
+										<bool name="redirect_damage_to_parent_entity" value="True" />
+										<bool name="assign_as_attachment_combat_leader" value="False" />
+										<bool name="assign_as_attachment_movement_leader" value="False" />
+										<bool name="receive_parent_animations" value="False" />
+										<bool name="receive_parent_death" value="False" />
+									</group>
+								</template_reference>
+								<list name="possible_blueprint_updates">
+								</list>
+							</template_reference>
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0.3" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="10" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<template_reference name="non_entity_weapon_wrapper" value="">
+							</template_reference>
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="True" />
+					<string name="base_marker" value="" />
+					<list name="preferred_inventory_item_categories">
+					</list>
+					<list name="firing_offset_markers">
+						<string name="marker" value="fx_muz_arrow_00" List.ItemID="-1826868769" List.ParentItemID="-1826868769" />
+						<string name="marker" value="fx_muz_arrow_01" List.ItemID="-557573406" List.ParentItemID="-557573406" />
+						<string name="marker" value="fx_muz_arrow_02" List.ItemID="1032023142" List.ParentItemID="1032023142" />
+						<string name="marker" value="fx_muz_arrow_03" List.ItemID="-1406543021" List.ParentItemID="-1406543021" />
+						<string name="marker" value="fx_muz_arrow_04" List.ItemID="-1975707243" List.ParentItemID="-1975707243" />
+						<string name="marker" value="fx_muz_arrow_05" List.ItemID="-1990527287" List.ParentItemID="-1990527287" />
+						<string name="marker" value="fx_muz_arrow_06" List.ItemID="1096690379" List.ParentItemID="1096690379" />
+						<string name="marker" value="fx_muz_arrow_07" List.ItemID="-1521435430" List.ParentItemID="-1521435430" />
+					</list>
+					<bool name="initialize_weapons_on_creation" value="False" />
+					<string name="offhand_marker" value="" />
+				</group>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1174991843" List.ParentItemID="-1174991843">

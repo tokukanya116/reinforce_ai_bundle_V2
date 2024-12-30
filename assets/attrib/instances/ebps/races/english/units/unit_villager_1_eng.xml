@@ -1,4 +1,4 @@
-<instance version="6" description="English Villager" template="ebps">
+<instance version="4" description="English Villager" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="847857005" List.ParentItemID="847857005">
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
@@ -162,15 +162,27 @@
 		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="-138597253" List.ParentItemID="-138597253">
 			<list name="gather_types">
 				<group name="gather_target" List.ItemID="2049892217" List.ParentItemID="2049892217">
-					<float name="gather_rate" value="0.75" overrideParent="True" />
+					<float name="gather_rate" value="1" overrideParent="True" />
 				</group>
 				<group name="gather_target" List.ItemID="1291539621" List.ParentItemID="1291539621">
-					<float name="gather_rate" value="1" overrideParent="True" />
+					<float name="gather_rate" value="1.25" overrideParent="True" />
+					<float name="resource_carry_capacity" value="13" overrideParent="True" />
 				</group>
 				<group name="gather_target" comment="HERDABLE 羊 或者 生成的 羊和鹿 等" List.ItemID="-1922234524" List.ParentItemID="-1922234524">
-					<float name="gather_rate" value="1" overrideParent="True" />
+					<float name="gather_rate" value="1.25" overrideParent="True" />
+					<float name="resource_carry_capacity" value="13" overrideParent="True" />
+				</group>
+				<group name="gather_target" List.ItemID="-1408090057" List.ParentItemID="-1408090057">
+					<float name="gather_rate" value="1.4" overrideParent="True" />
+				</group>
+				<group name="gather_target" List.ItemID="-1518368386" List.ParentItemID="-1518368386">
+					<float name="gather_rate" value="1.3" overrideParent="True" />
 				</group>
 				<group name="gather_target" comment="STONE" List.ItemID="-859779424" List.ParentItemID="-859779424">
+					<float name="gather_rate" value="1" overrideParent="True" />
+				</group>
+				<group name="gather_target" List.ItemID="-746852428" List.ParentItemID="-746852428">
+					<float name="gather_rate" value="1" overrideParent="True" />
 				</group>
 				<group name="gather_target" comment="BERRY BUSH" List.ItemID="285750548" List.ParentItemID="285750548">
 				</group>
@@ -265,252 +277,4 @@
 	</list>
 	<uniqueid name="pbgid" value="166317" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_villager_1" />
-	<variant name="xp3">
-		<list name="extensions">
-			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="847857005" List.ParentItemID="847857005">
-				<bool name="browsable_in_editor" value="True" overrideParent="True" />
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1344123118" List.ParentItemID="-1344123118">
-				<instance_reference name="hit_material" value="hit_material\leather" overrideParent="True" />
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="125879439" List.ParentItemID="125879439">
-				<list name="race_type_list" overrideParent="True">
-					<instance_reference name="race_type" value="racebps\english" List.ItemID="-1318685775" />
-				</list>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="666654805" List.ParentItemID="666654805">
-				<list name="hardpoints">
-					<group name="hardpoint" List.ItemID="-1967166760" List.ParentItemID="-1967166760">
-						<list name="weapon_table" overrideParent="True">
-							<group name="weapon" comment="Upgraded Attack (English Bow)" List.ItemID="-1867339793">
-								<group name="heading">
-									<float name="x" value="0" />
-									<float name="y" value="0" />
-									<float name="z" value="1" />
-								</group>
-								<float name="length" value="0" />
-								<group name="origin">
-									<float name="x" value="0" />
-									<float name="y" value="0.5" />
-									<float name="z" value="0" />
-								</group>
-								<enum name="type" value="default" />
-								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
-								</template_reference>
-								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
-									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\english\ranged\weapon_villager_militarized_2_eng" overrideParent="True" />
-									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
-									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
-								</template_reference>
-							</group>
-							<group name="weapon" comment="Default Melee - Vs. Military" List.ItemID="917291939">
-								<group name="heading">
-									<float name="x" value="0" />
-									<float name="y" value="0" />
-									<float name="z" value="1" />
-								</group>
-								<float name="length" value="0" />
-								<group name="origin">
-									<float name="x" value="0" />
-									<float name="y" value="0.5" />
-									<float name="z" value="0" />
-								</group>
-								<enum name="type" value="default" />
-								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
-								</template_reference>
-								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
-									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch_weak" overrideParent="True" />
-									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_siege_torch_weak_eng" overrideParent="True" />
-									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
-								</template_reference>
-							</group>
-							<group name="weapon" comment="Siege Attack - Torch - Vs. Structures" List.ItemID="-980133374">
-								<group name="heading">
-									<float name="x" value="0" />
-									<float name="y" value="0" />
-									<float name="z" value="1" />
-								</group>
-								<float name="length" value="0" />
-								<group name="origin">
-									<float name="x" value="0" />
-									<float name="y" value="0.5" />
-									<float name="z" value="-0.5" />
-								</group>
-								<enum name="type" value="default" />
-								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
-								</template_reference>
-								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
-									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_torch" overrideParent="True" />
-									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\english\weapons\wpn_siege_torch_eng" overrideParent="True" />
-									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
-								</template_reference>
-							</group>
-							<group name="weapon" comment="Hunt Ranged - Bow - Vs. Non-Sheep Animals" overrideParent="True" List.ItemID="-41081157">
-								<group name="heading">
-									<float name="x" value="0" />
-									<float name="y" value="0" />
-									<float name="z" value="1" />
-								</group>
-								<float name="length" value="0" />
-								<group name="origin">
-									<float name="x" value="0" />
-									<float name="y" value="1.75" overrideParent="True" />
-									<float name="z" value="1" overrideParent="True" />
-								</group>
-								<enum name="type" value="default" />
-								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
-								</template_reference>
-								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
-									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\english\ranged\weapon_villager_hunt_ranged_eng" overrideParent="True" />
-									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
-									<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
-								</template_reference>
-							</group>
-							<group name="weapon" comment="Herd Attack - Crook - Vs. Sheep" List.ItemID="1772335463">
-								<group name="heading">
-									<float name="x" value="0" />
-									<float name="y" value="0" />
-									<float name="z" value="1" />
-								</group>
-								<float name="length" value="0" />
-								<group name="origin">
-									<float name="x" value="0" />
-									<float name="y" value="0.5" />
-									<float name="z" value="0" />
-								</group>
-								<enum name="type" value="default" />
-								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
-								</template_reference>
-								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
-									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_villager_hunt_herd" overrideParent="True" />
-									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
-									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
-								</template_reference>
-							</group>
-							<group name="weapon" comment="Hunt Melee - Spear - Vs. Non-Sheep Animals" List.ItemID="-1345194028">
-								<group name="heading">
-									<float name="x" value="0" />
-									<float name="y" value="0" />
-									<float name="z" value="1" />
-								</group>
-								<float name="length" value="0" />
-								<group name="origin">
-									<float name="x" value="0" />
-									<float name="y" value="0.5" />
-									<float name="z" value="0" />
-								</group>
-								<enum name="type" value="default" />
-								<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
-								</template_reference>
-								<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
-									<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\melee\weapon_villager_hunt_melee" overrideParent="True" />
-									<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\weapons\wpn_ebps_template" overrideParent="True" />
-									<string name="marker_name_parent" value="MetaRig_RArmPalmSocket" overrideParent="True" />
-								</template_reference>
-							</group>
-						</list>
-					</group>
-				</list>
-				<group name="idle_targeting">
-					<float name="idle_targeting_range" value="20" overrideParent="True" />
-				</group>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="-138597253" List.ParentItemID="-138597253">
-				<list name="gather_types">
-					<group name="gather_target" comment="STONE" List.ItemID="-859779424" List.ParentItemID="-859779424">
-					</group>
-					<group name="gather_target" comment="BERRY BUSH" List.ItemID="285750548" List.ParentItemID="285750548">
-					</group>
-				</list>
-			</template_reference>
-			<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="-1432668164" List.ListAction="Append">
-				<list name="tier_group_list" overrideParent="True">
-					<list name="tier_group" overrideParent="True" List.ItemID="-246016858">
-						<group name="tier" List.ItemID="-733735814">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
-							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier1_villager_eng" />
-							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
-								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
-								<bool name="start_suspended" value="False" />
-							</template_reference>
-							<instance_reference name="statetree_tier_requirements_pbg" value="" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
-							<string name="tier_attachment_action" value="" />
-							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
-								<bool name="reissue_commands" value="False" />
-								<bool name="continue_state_trees" value="True" />
-								<bool name="remove_from_pending_deaths" value="False" />
-								<bool name="enable_all_extensions" value="True" />
-							</template_reference>
-							<string name="inventory_category_to_refresh_on_tier_up" value="default" overrideParent="True" />
-						</group>
-						<group name="tier" List.ItemID="1482299411">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
-							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier2_villager_eng" />
-							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
-								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
-								<bool name="start_suspended" value="False" />
-							</template_reference>
-							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\feudal_age" overrideParent="True" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
-							<string name="tier_attachment_action" value="" />
-							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
-								<bool name="reissue_commands" value="False" />
-								<bool name="continue_state_trees" value="True" />
-								<bool name="remove_from_pending_deaths" value="False" />
-								<bool name="enable_all_extensions" value="True" />
-							</template_reference>
-							<string name="inventory_category_to_refresh_on_tier_up" value="default" overrideParent="True" />
-						</group>
-						<group name="tier" List.ItemID="-1962747151">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
-							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier3_villager_eng" />
-							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
-								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
-								<bool name="start_suspended" value="False" />
-							</template_reference>
-							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" overrideParent="True" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
-							<string name="tier_attachment_action" value="" />
-							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
-								<bool name="reissue_commands" value="False" />
-								<bool name="continue_state_trees" value="True" />
-								<bool name="remove_from_pending_deaths" value="False" />
-								<bool name="enable_all_extensions" value="True" />
-							</template_reference>
-							<string name="inventory_category_to_refresh_on_tier_up" value="default" overrideParent="True" />
-						</group>
-						<group name="tier" List.ItemID="1454401522">
-							<list name="tier_requirements" overrideParent="True">
-							</list>
-							<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\english\units\tier4_villager_eng" />
-							<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
-								<state_tree_node name="ActionTree_OpeningBranch" value="xp3_tier_unit_exposure_dca" overrideParent="True" />
-								<bool name="start_suspended" value="False" />
-							</template_reference>
-							<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" overrideParent="True" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
-							<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
-							<string name="tier_attachment_action" value="" />
-							<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
-								<bool name="reissue_commands" value="False" />
-								<bool name="continue_state_trees" value="True" />
-								<bool name="remove_from_pending_deaths" value="False" />
-								<bool name="enable_all_extensions" value="True" />
-							</template_reference>
-							<string name="inventory_category_to_refresh_on_tier_up" value="default" overrideParent="True" />
-						</group>
-					</list>
-				</list>
-			</template_reference>
-		</list>
-		<uniqueid name="pbgid" value="166317" />
-		<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_villager_1" />
-	</variant>
 </instance>
