@@ -1,0 +1,34 @@
+<instance version="6" description="" template="ai\ai_strategizer_personality">
+	<group name="ai_strategizer_personality_bag">
+		<list name="base_intention_tunings">
+			<group name="intention_tuning" List.ItemID="-1204545980">
+				<enum name="intention_type" value="age_up" />
+				<float name="intention_max" value="1" />
+				<float name="intention_min" value="0.4" />
+			</group>
+			<group name="intention_tuning" List.ItemID="-61736210">
+				<enum name="intention_type" value="defense" />
+				<float name="intention_max" value="1" />
+				<float name="intention_min" value="1" />
+			</group>
+			<group name="intention_tuning" List.ItemID="362610550">
+				<enum name="intention_type" value="wall" />
+				<float name="intention_max" value="1" />
+				<float name="intention_min" value="0.5" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073741907" />
+	<variant name="xp3">
+		<group name="ai_strategizer_personality_bag">
+			<list name="base_intention_tunings">
+				<group name="intention_tuning" List.ItemID="966018069">
+					<enum name="intention_type" value="offense" />
+					<float name="intention_max" value="-1" />
+					<float name="intention_min" value="-1" />
+				</group>
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="1073741907" />
+	</variant>
+</instance>
