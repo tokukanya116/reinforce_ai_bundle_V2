@@ -1,0 +1,44 @@
+<instance version="6" description="" template="weapon">
+	<group name="weapon_bag">
+		<group name="aim">
+			<group name="fire_aim_time">
+				<float name="max" value="0.5" overrideParent="True" />
+				<float name="min" value="0.5" overrideParent="True" />
+			</group>
+		</group>
+		<group name="fire">
+			<float name="wind_up" value="0.25" overrideParent="True" />
+		</group>
+		<string name="name" value="Wooden Fortress Upgrade Springald B" overrideParent="True" />
+		<group name="damage">
+			<float name="max" value="50" overrideParent="True" />
+			<float name="min" value="50" overrideParent="True" />
+			<enum name="damage_type" value="True Damage" overrideParent="True" />
+			<bool name="allow_overkill" value="True" overrideParent="True" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="196999" />
+	<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_outpost_springald" />
+	<variant name="campaign">
+		<group name="weapon_bag">
+			<group name="aim">
+				<group name="fire_aim_time">
+					<float name="max" value="0.5" overrideParent="True" />
+					<float name="min" value="0.5" overrideParent="True" />
+				</group>
+			</group>
+			<group name="fire">
+				<float name="wind_up" value="0.25" overrideParent="True" />
+			</group>
+			<string name="name" value="Wooden Fortress Upgrade Springald B" overrideParent="True" />
+			<group name="reload">
+				<group name="duration">
+					<float name="max" value="10" overrideParent="True" />
+					<float name="min" value="10" overrideParent="True" />
+				</group>
+			</group>
+		</group>
+		<uniqueid name="pbgid" value="196999" />
+		<instance_reference name="parent_pbg" value="weapon\races\common\ranged\weapon_outpost_springald" />
+	</variant>
+</instance>

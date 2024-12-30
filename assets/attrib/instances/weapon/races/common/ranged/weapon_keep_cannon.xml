@@ -174,7 +174,7 @@
 			<float name="max" value="80" />
 			<float name="min" value="80" />
 			<enum name="damage_type" value="Ranged" />
-			<bool name="allow_overkill" value="False" />
+			<bool name="allow_overkill" value="True" />
 			<list name="on_penetrated_state_trees">
 			</list>
 		</group>

@@ -38,7 +38,7 @@
 			<float name="base_personnel_cap" value="0" />
 			<float name="base_vehicle_cap" value="4" />
 			<float name="max_medic_cap" value="0" />
-			<float name="max_personnel_cap" value="200" />
+			<float name="max_personnel_cap" value="250" />
 			<float name="max_vehicle_cap" value="8" />
 		</group>
 		<list name="abilities">

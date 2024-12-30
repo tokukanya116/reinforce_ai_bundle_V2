@@ -39,7 +39,7 @@
 					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-1377524901" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_keep_springald" List.ItemID="673950314" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_arrowslits_mon" List.ItemID="-1941236829" />
-					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" List.ItemID="973276789" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="973276789" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_springald_mon" List.ItemID="1813694307" />
 				</list>
 			</group>
@@ -320,7 +320,7 @@
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_religious_monastery_ovoo_mon" List.ItemID="1751057172" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\units\upgrade_unit_scorpion_4_mon" List.ItemID="-758479962" />
 					<instance_reference name="upgrade" value="upgrade\races\hre\research\upgrade_man_at_arms_maces_hre" List.ItemID="1858472529" />
-					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" List.ItemID="-2095423293" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2095423293" />
 					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" List.ItemID="-108965875" />
 					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_turret_rus" List.ItemID="-2032919639" />
 					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_watch_rus" List.ItemID="483555569" />
@@ -1109,7 +1109,7 @@
 					<instance_reference name="entity" value="ebps\races\english\buildings\building_landmark_age1_westminster_hall_eng\building_landmark_age1_westminster_hall_eng" List.ItemID="2112235588" />
 					<instance_reference name="entity" value="ebps\races\french\buildings\building_landmark_age1_casernes_centrales_fre\building_landmark_age1_casernes_centrales_fre" List.ItemID="-124831045" />
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_imperial_palace_of_paderborn_hre" List.ItemID="1668340374" />
-					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" List.ItemID="-1121309540" />
+					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1121309540" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_qutub_minar_sul\building_landmark_age1_qutub_minar_control_sul" List.ItemID="-1053481768" />
 					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1464116832" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarka_mal" List.ItemID="1535091096" />
@@ -1331,7 +1331,7 @@
 			<group name="utility_entry" comment="Landmark Age 2  - Offensive" List.ItemID="-219628506">
 				<list name="blueprints">
 					<instance_reference name="entity" value="ebps\races\english\buildings\building_landmark_age2_westminster_palace_eng\building_landmark_age2_westminster_palace_eng" List.ItemID="-1048183981" />
-					<instance_reference name="entity" value="ebps\races\french\buildings\building_landmark_age2_la_chateau_rouge_fre\building_landmark_age2_la_chateau_rouge_fre" List.ItemID="-1198336763" />
+					<instance_reference name="entity" value="ebps\races\french\buildings\building_landmark_age2_la_chateau_rouge_fre\building_landmark_age2_la_chateau_rouge_fre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1198336763" />
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age2_bamberg_cathedral_hre\building_landmark_age2_bamberg_cathedral_hre" List.ItemID="821502108" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age2_trinity_lavra_rus\building_landmark_age2_trinity_lavra_control_rus" List.ItemID="646680115" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age2_khiji_mosque_sul\building_landmark_age2_khiji_mosque_control_sul" List.ItemID="-1096956903" />
@@ -1366,7 +1366,7 @@
 			</group>
 			<group name="utility_entry" comment="Landmark Age 2 - Defensive" List.ItemID="61137711">
 				<list name="blueprints">
-					<instance_reference name="entity" value="ebps\races\english\buildings\building_landmark_age2_white_tower_eng\building_landmark_age2_white_tower_eng" List.ItemID="113977681" />
+					<instance_reference name="entity" value="ebps\races\english\buildings\building_landmark_age2_white_tower_eng\building_landmark_age2_white_tower_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="113977681" />
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age2_nuremberg_castle_hre\building_landmark_age2_nuremberg_castle_hre" List.ItemID="1330274744" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age2_siri_fort_sul\building_landmark_age2_siri_fort_control_sul" List.ItemID="-2084670023" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age2_topkapi_palace_ott" List.ItemID="-1216299005" />
@@ -1433,7 +1433,7 @@
 			</group>
 			<group name="utility_entry" comment="Landmark Age 3 - Siege" List.ItemID="1839164169">
 				<list name="blueprints">
-					<instance_reference name="entity" value="ebps\races\english\buildings\building_landmark_age3_windsor_castle_eng\building_landmark_age3_windsor_castle_eng" List.ItemID="-1883118103" />
+					<instance_reference name="entity" value="ebps\races\english\buildings\building_landmark_age3_windsor_castle_eng\building_landmark_age3_windsor_castle_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1883118103" />
 					<instance_reference name="entity" value="ebps\races\french\buildings\building_landmark_age3_ecole_de_poudre_a_canon_fre\building_landmark_age3_ecole_de_poudre_a_canon_fre" List.ItemID="-807398105" />
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
@@ -1530,11 +1530,11 @@
 				<list name="blueprints">
 					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age3_khanbaliq_mon" List.ItemID="785928680" />
 					<instance_reference name="entity" value="ebps\races\french\buildings\building_landmark_age3_le_grande_university_fre\building_landmark_age3_le_grande_university_fre" List.ItemID="-1745799195" />
-					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" List.ItemID="-1527605732" />
-					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age3_spassakaya_tower_rus\building_landmark_age3_spassakaya_tower_control_rus" List.ItemID="541169577" />
+					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1527605732" />
+					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age3_spassakaya_tower_rus\building_landmark_age3_spassakaya_tower_control_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="541169577" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age3_bijay_mandal_palace_control_sul" List.ItemID="-797313745" />
 					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age3_sprit_way_chi\building_landmark_age3_spirit_way_control_chi" List.ItemID="33651551" />
-					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age3_kilitbahir_castle_ott" List.ItemID="-1141967590" />
+					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age3_kilitbahir_castle_ott" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1141967590" />
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
 					<float name="utility" value="800" />
@@ -2682,17 +2682,17 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Defensive Landmarks" List.ItemID="-1846654574">
 				<list name="members">
-					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age2_white_tower_eng\building_landmark_age2_white_tower_eng" List.ItemID="431192803" />
+					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age2_white_tower_eng\building_landmark_age2_white_tower_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="431192803" />
 					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_landmark_age2_siri_fort_sul\building_landmark_age2_siri_fort_control_sul" List.ItemID="1687319786" />
 					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1574303334" />
-					<instance_reference name="member" value="ebps\races\french\buildings\building_landmark_age2_la_chateau_rouge_fre\building_landmark_age2_la_chateau_rouge_fre" List.ItemID="1381348956" />
-					<instance_reference name="member" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" List.ItemID="-1020611228" />
-					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age3_windsor_castle_eng\building_landmark_age3_windsor_castle_eng" List.ItemID="-1154108611" />
-					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_landmark_age3_kilitbahir_castle_ott" List.ItemID="-1301040938" />
+					<instance_reference name="member" value="ebps\races\french\buildings\building_landmark_age2_la_chateau_rouge_fre\building_landmark_age2_la_chateau_rouge_fre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1381348956" />
+					<instance_reference name="member" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1020611228" />
+					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age3_windsor_castle_eng\building_landmark_age3_windsor_castle_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1154108611" />
+					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_landmark_age3_kilitbahir_castle_ott" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1301040938" />
 					<instance_reference name="member" value="ebps\races\malian\buildings\building_landmark_age3_landmarkf_mal" List.ItemID="-935106870" />
-					<instance_reference name="member" value="ebps\races\japanese\buildings\building_landmark_age3_treasure_jpn" List.ItemID="632545483" />
-					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_landmark_age3_eltz_castle_hre_ha_01\building_landmark_age3_eltz_castle_hre_ha_01" List.ItemID="1222445111" />
-					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_landmark_age2_la_chateau_rouge_fre_ha_01\building_landmark_age2_la_chateau_rouge_fre_ha_01" List.ItemID="-339687110" />
+					<instance_reference name="member" value="ebps\races\japanese\buildings\building_landmark_age3_treasure_jpn" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="632545483" />
+					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_landmark_age3_eltz_castle_hre_ha_01\building_landmark_age3_eltz_castle_hre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1222445111" />
+					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_landmark_age2_la_chateau_rouge_fre_ha_01\building_landmark_age2_la_chateau_rouge_fre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-339687110" />
 				</list>
 				<float name="base_scale" value="950" />
 				<float name="minimum_score_to_produce" value="200" />
@@ -2706,7 +2706,7 @@
 					<instance_reference name="member" value="ebps\races\rus\buildings\building_landmark_age2_trinity_lavra_rus\building_landmark_age2_trinity_lavra_control_rus" List.ItemID="1436499157" />
 					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age3_khanbaliq_mon" List.ItemID="-1900870671" />
 					<instance_reference name="member" value="ebps\races\french\buildings\building_landmark_age3_le_grande_university_fre\building_landmark_age3_le_grande_university_fre" List.ItemID="232729883" />
-					<instance_reference name="member" value="ebps\races\rus\buildings\building_landmark_age3_spassakaya_tower_rus\building_landmark_age3_spassakaya_tower_control_rus" List.ItemID="-628925047" />
+					<instance_reference name="member" value="ebps\races\rus\buildings\building_landmark_age3_spassakaya_tower_rus\building_landmark_age3_spassakaya_tower_control_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-628925047" />
 					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_landmark_age3_bijay_mandal_palace_control_sul" List.ItemID="-1607435706" />
 					<instance_reference name="member" value="ebps\races\hre\buildings\building_landmark_age2_nuremberg_castle_hre\building_landmark_age2_nuremberg_castle_hre" List.ItemID="-35593277" />
 					<instance_reference name="member" value="ebps\races\chinese\buildings\building_landmark_age2_clocktower_chi\building_landmark_age2_clocktower_control_chi" List.ItemID="-2091159609" />
@@ -2804,13 +2804,13 @@
 					<instance_reference name="member" value="upgrade\races\common\research\upgrade_keep_cannon" List.ItemID="-1183197637" />
 					<instance_reference name="member" value="upgrade\races\common\research\upgrade_keep_springald" List.ItemID="1987238753" />
 					<instance_reference name="member" value="upgrade\races\mongol\research\upgrade_outpost_arrowslits_mon" List.ItemID="1661393007" />
-					<instance_reference name="member" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" List.ItemID="1521916295" />
+					<instance_reference name="member" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1521916295" />
 					<instance_reference name="member" value="upgrade\races\mongol\research\upgrade_outpost_springald_mon" List.ItemID="-760118470" />
 					<instance_reference name="member" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" List.ItemID="1184149441" />
 					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" List.ItemID="-1791037192" />
 					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_turret_rus" List.ItemID="-1655576121" />
 					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_watch_rus" List.ItemID="1299789234" />
-					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" List.ItemID="-1614952984" />
+					<instance_reference name="member" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1614952984" />
 					<instance_reference name="member" value="upgrade\races\common\research\upgrade_naval_arrowslits" List.ItemID="1843227131" />
 					<instance_reference name="member" value="upgrade\races\common\upgrade_keep_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="718845361" />
 					<instance_reference name="member" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1324065639" />
@@ -4289,13 +4289,13 @@
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Dark Age Landmarks B (Dark Age landmarks are split into two groups to be randomly chosen)" List.ItemID="-749054173">
 				<list name="members">
 					<instance_reference name="member" value="upgrade\races\abbasid\research\house_of_wisdom\upgrade_add_military_wing" List.ItemID="1002675029" />
-					<instance_reference name="member" value="ebps\races\chinese\buildings\building_landmark_age1_gatehouse_chi\building_landmark_age1_gatehouse_control_chi" List.ItemID="1831056305" />
+					<instance_reference name="member" value="ebps\races\chinese\buildings\building_landmark_age1_gatehouse_chi\building_landmark_age1_gatehouse_control_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1831056305" />
 					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age1_westminster_abbey_eng\building_landmark_age1_westminster_abbey_eng" List.ItemID="910430457" />
 					<instance_reference name="member" value="ebps\races\french\buildings\building_landmark_age1_chamber_of_commerce_fre\building_landmark_age1_chamber_of_commerce_fre" List.ItemID="-99274860" />
 					<instance_reference name="member" value="ebps\races\hre\buildings\building_landmark_age1_imperial_palace_of_paderborn_hre" List.ItemID="490095523" />
 					<instance_reference name="member" value="ebps\races\malian\buildings\building_landmark_age1_landmarka_mal" List.ItemID="-1089473468" />
 					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_landmark_age1_han_caravanserai_ott" List.ItemID="-1103204015" />
-					<instance_reference name="member" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" List.ItemID="-1780233019" />
+					<instance_reference name="member" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1780233019" />
 					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_landmark_age1_quwwat_ul_islam_sul\building_landmark_age1_quwwat_ul_islam_control_sul" List.ItemID="291232307" />
 					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age2_karakorum_mon" List.ItemID="1450171154" />
 					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_landmark_age1_winery_byz" List.ItemID="1326866196" />

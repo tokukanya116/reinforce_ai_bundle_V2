@@ -26,9 +26,9 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="536671903" List.ParentItemID="536671903">
 			<list name="standard_upgrades" overrideParent="True">
-				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_arrowslits_mon" overrideParent="True" List.ItemID="1160723882" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" overrideParent="True" List.ItemID="1160723882" />
 				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1231212114" />
-				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" overrideParent="True" List.ItemID="-491692856" />
+				<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-491692856" />
 				<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_ortoo_all_units_mon" List.ItemID="770854847" />
 				<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_ortoo_all_units_improved_mon" overrideParent="True" List.ItemID="-2146193769" />
 			</list>
@@ -44,6 +44,17 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="2086910227" List.ParentItemID="2086910227">
 			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="378635352" List.ParentItemID="378635352">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-1650401036" List.ParentItemID="-1650401036">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\rus\weapons\wpn_range_wooden_fort_springald_b_rus" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
 				<group name="hardpoint" comment="Springald Slot" overrideParent="True" List.ItemID="-194830544" List.ParentItemID="-194830544">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
@@ -225,7 +236,7 @@
 				<list name="standard_upgrades" overrideParent="True">
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_arrowslits_mon" overrideParent="True" List.ItemID="2105176710" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_springald_mon" overrideParent="True" List.ItemID="-1500684455" />
-					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" overrideParent="True" List.ItemID="1556211418" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="1556211418" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_khan_signal_arrow_mon" List.ItemID="1977214297" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_mangudai_weapon_damage_mon" List.ItemID="-1811392584" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_ortoo_all_units_mon" List.ItemID="-2060421298" />
@@ -358,7 +369,7 @@
 				<list name="standard_upgrades" overrideParent="True">
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_arrowslits_mon" overrideParent="True" List.ItemID="1715311736" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_springald_mon" overrideParent="True" List.ItemID="-1142406798" />
-					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" overrideParent="True" List.ItemID="2117132979" />
+					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="2117132979" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_ortoo_all_units_mon" List.ItemID="-1254370209" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\unique\upgrade_ortoo_all_units_improved_mon" overrideParent="True" List.ItemID="1204110415" />
 				</list>

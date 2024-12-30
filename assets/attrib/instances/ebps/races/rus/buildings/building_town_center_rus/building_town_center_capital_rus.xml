@@ -336,7 +336,7 @@
 							<group name="satisfying_entity_group" List.ItemID="2052478301">
 								<list name="satisfying_entities" overrideParent="True">
 									<instance_reference name="entity" value="ebps\races\rus\buildings\building_defense_wooden_fort_rus\building_defense_wooden_fort_rus" List.ItemID="741144248" />
-									<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" List.ItemID="-1008069581" />
+									<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1008069581" />
 									<instance_reference name="entity" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="101930239" />
 									<instance_reference name="entity" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_capital_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="693555642" />
 								</list>

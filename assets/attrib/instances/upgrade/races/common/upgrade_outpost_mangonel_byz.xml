@@ -132,6 +132,34 @@
 				</group>
 				<bool name="include_completed" value="True" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" overrideParent="True" List.ItemID="-1063391607">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11246227" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+				<bool name="include_completed" value="True" />
+				<bool name="include_queued" value="True" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" overrideParent="True" List.ItemID="-685217600">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+				<bool name="include_completed" value="True" />
+				<bool name="include_queued" value="False" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+			</template_reference>
 		</list>
 		<group name="state_tree_references">
 			<template_reference name="on_action_tree" value="state_tree_reference_info">

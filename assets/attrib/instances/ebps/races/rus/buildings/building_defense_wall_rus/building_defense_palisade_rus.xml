@@ -36,7 +36,7 @@
 			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
 				<instance_reference name="fence_cap_entity" value="ebps\races\rus\buildings\building_defense_wall_rus\building_defense_palisade_bastion_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 			</template_reference>
-			<instance_reference name="segment_attachment_list" value="attachments\attachment_lists\civilizations\rus\buildings\building_defense_wall_rus\building_defense_palisade_segments_rus" comment="Temp replacing with English assets for M21 CC since the rus walls won't destroy correctly." overrideParent="True" />
+			<instance_reference name="segment_attachment_list" comment="Temp replacing with English assets for M21 CC since the rus walls won't destroy correctly." />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="133573" />
