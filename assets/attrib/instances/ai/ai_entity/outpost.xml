@@ -1,0 +1,50 @@
+<instance version="4" description="" template="ai\ai_entity">
+	<uniqueid name="pbgid" value="1073741855" />
+	<group name="ai_entity_bag">
+		<list name="applicable_blueprints">
+			<instance_reference name="applicable_blueprint" value="ebps\races\abbasid\buildings\building_defense_outpost_control_abb" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1585348003" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\core\buildings\building_defense_outpost" List.ItemID="-1732244755" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\abbasid_ha_01\buildings\building_defense_outpost_control_abb_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1627837778" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\sultanate\buildings\building_defense_outpost_sul\building_defense_outpost_control_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1352717567" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\ottoman\buildings\building_defense_outpost_ott" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1979429097" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\chinese_ha_01\buildings\building_defense_outpost_chi_ha_01\building_defense_outpost_chi_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1160026092" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\byzantine\buildings\building_defense_outpost_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1520399614" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\mongol\buildings\building_defense_outpost_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1425418145" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\chinese\buildings\building_defense_outpost_chi\building_defense_outpost_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-971704626" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\english\buildings\building_defense_outpost_eng\building_defense_outpost_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1995567938" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\french\buildings\building_defense_outpost_fre\building_defense_outpost_fre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-397044369" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\french_ha_01\buildings\building_defense_outpost_fre_ha_01\building_defense_outpost_fre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1121719918" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\hre\buildings\building_defense_outpost_hre\building_defense_outpost_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-909821007" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\hre_ha_01\buildings\building_defense_outpost_hre_ha_01\building_defense_outpost_hre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2075847616" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\japanese\buildings\building_defense_outpost_jpn" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="27355758" />
+			<instance_reference name="applicable_blueprint" value="ebps\races\malian\buildings\building_defense_outpost_mal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1120174339" />
+		</list>
+		<group name="construction">
+			<string name="placement_function" value="" />
+			<bool name="can_build_multiple_in_parallel" value="True" comment="允许同时构建吗" />
+			<int name="max_num_additional_builders" value="8" />
+			<int name="max_num_incomplete_structures_builders" value="-1" />
+			<list name="near_to_structures">
+				<instance_reference name="structure" value="ebps\races\abbasid\buildings\building_town_center_capital_abb" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-81638169" />
+				<instance_reference name="structure" value="ebps\races\abbasid_ha_01\buildings\building_town_center_capital_abb_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="27453920" />
+				<instance_reference name="structure" value="ebps\races\core\buildings\building_town_center_capital" List.ItemID="-1100488111" />
+				<instance_reference name="structure" value="ebps\races\sultanate\buildings\building_town_center_sul\building_town_center_capital_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1434041766" />
+				<instance_reference name="structure" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_capital_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="352150579" />
+				<instance_reference name="structure" value="ebps\races\ottoman\buildings\building_town_center_capital_ott" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-476771163" />
+				<instance_reference name="structure" value="ebps\races\mongol\buildings\building_town_center_capital_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1983052889" />
+				<instance_reference name="structure" value="ebps\races\byzantine\buildings\building_town_center_capital_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-294016475" />
+				<instance_reference name="structure" value="ebps\races\malian\buildings\building_town_center_capital_mal" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="585100372" />
+				<instance_reference name="structure" value="ebps\races\japanese\buildings\building_town_center_capital_jpn" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-557776532" />
+				<instance_reference name="structure" value="ebps\races\hre_ha_01\buildings\building_town_center_hre_ha_01\building_town_center_capital_hre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1569349717" />
+				<instance_reference name="structure" value="ebps\races\hre\buildings\building_town_center_hre\building_town_center_capital_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="642161713" />
+				<instance_reference name="structure" value="ebps\races\french_ha_01\buildings\building_town_center_fre_ha_01\building_town_center_capital_fre_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1940841027" />
+				<instance_reference name="structure" value="ebps\races\french\buildings\building_town_center_fre\building_town_center_capital_fre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-229871987" />
+				<instance_reference name="structure" value="ebps\races\english\buildings\building_town_center_burh_eng\building_town_center_capital_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1351073154" />
+				<instance_reference name="structure" value="ebps\races\chinese_ha_01\buildings\building_town_center_chi_ha_01\building_town_center_capital_chi_ha_01" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1016346447" />
+				<instance_reference name="structure" value="ebps\races\chinese\buildings\building_town_center_chi\building_town_center_capital_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="519109790" />
+			</list>
+			<list name="requires_structures">
+			</list>
+		</group>
+	</group>
+</instance>

@@ -153,13 +153,13 @@
 			</group>
 			<bool name="use_offensive_player_abilities" value="True" />
 			<enum_table name="resource_multipliers">
-				<float name="action" value="2" />
+				<float name="action" value="1" />
 				<float name="popcap" value="1" />
-				<float name="command" value="2" />
-				<float name="food" value="2" />
-				<float name="wood" value="2" />
-				<float name="stone" value="2" />
-				<float name="gold" value="2" />
+				<float name="command" value="1" />
+				<float name="food" value="2.5" />
+				<float name="wood" value="2.5" />
+				<float name="stone" value="2.5" />
+				<float name="gold" value="2.5" />
 				<float name="militia_hre" value="1" />
 				<float name="merc_byz" value="1" />
 			</enum_table>

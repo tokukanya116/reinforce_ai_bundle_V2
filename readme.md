@@ -17,10 +17,27 @@ https://support.ageofempires.com/hc/en-us/sections/4409121920276-Tuning-Packs
 调整包视频详解：[Age of Empires IV Content Editor (1.3): Tuning Packs](https://www.youtube.com/watch?v=GN-4k5ry8S8)
 
 ## 目录
-#### ai
-###### ai_ability 技能调整
-###### ai_economy 生产
+
+### AI
+
 ```
+ai_ability
+ai_economy
+ai_economy_group
+ai_entity
+ai_formation_coordinator
+ai_formation_path
+ai_formation_target_priority
+ai_loadoutai_personality
+ai_personality_per_difficulty_info
+ai_prefab_intents
+ai_sequence_tactic
+ai_settings
+ai_squad
+ai_statemodel_tunings
+ai_strategizer_personality
+ai_updater  
+  
   ai_economy_bag 生产包（基本着重于让ai升本优先就行，因为你加入的所有升级部分他都会点）
     abilities 技能(不太有用,一般放捡圣物优先级,主要是你并不知道他的函数模板在哪找的 所以默认就行)
 		base_utility 基础权重(基本上改 weight_strategic_intention 即可)

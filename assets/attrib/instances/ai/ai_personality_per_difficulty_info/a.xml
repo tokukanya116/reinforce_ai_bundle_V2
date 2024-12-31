@@ -1,0 +1,9 @@
+<instance version="4" description="a" template="ai\ai_personality_per_difficulty_info">
+	<file name="lua_script" value="" />
+	<instance_reference name="settings" value="" />
+	<instance_reference name="economy" value="" />
+	<state_tree_node name="planner_statetree_node" value="" />
+	<state_tree_node name="strategizer_statetree_node" value="" />
+	<instance_reference name="statemodel_tunings_pc" value="" />
+	<instance_reference name="statemodel_tunings_xbox" value="" />
+</instance>

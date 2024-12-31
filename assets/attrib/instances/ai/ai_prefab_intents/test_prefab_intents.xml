@@ -1,0 +1,16 @@
+<instance version="4" description="" template="ai\ai_prefab_intents">
+	<group name="ai_prefab_intent_bag">
+		<list name="include_squad_types">
+		</list>
+		<list name="include_unit_types">
+			<enum name="unit_class" value="scar_outpost" List.ItemID="1253021763" />
+			<enum name="unit_class" value="outpost" List.ItemID="183945258" />
+		</list>
+		<list name="required_upgrades">
+			<instance_reference name="upgrade" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1480726645" />
+			<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_cannon" List.ItemID="1792364337" />
+			<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_stone" List.ItemID="738423682" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073741856" />
+</instance>

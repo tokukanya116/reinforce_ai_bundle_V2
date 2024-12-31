@@ -4,7 +4,7 @@
 			<template_reference name="easy" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />
 				<instance_reference name="settings" value="ai\ai_settings\default_skirmish_easy" />
-				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_easy" />
@@ -13,7 +13,7 @@
 			<template_reference name="standard" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />
 				<instance_reference name="settings" value="ai\ai_settings\default_skirmish_standard" />
-				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_standard" />
@@ -22,7 +22,7 @@
 			<template_reference name="hard" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />
 				<instance_reference name="settings" value="ai\ai_settings\default_skirmish_hard" />
-				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_hard" />
@@ -31,7 +31,7 @@
 			<template_reference name="hardest" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />
 				<instance_reference name="settings" value="ai\ai_settings\default_skirmish_hardest" />
-				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_expert" />
@@ -40,7 +40,7 @@
 			<template_reference name="cheat1" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />
 				<instance_reference name="settings" value="ai\ai_settings\default_skirmish_cheat3" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
-				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3" />
@@ -49,7 +49,7 @@
 			<template_reference name="cheat2" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />
 				<instance_reference name="settings" value="ai\ai_settings\default_skirmish_cheat3" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
-				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3" />
@@ -58,7 +58,7 @@
 			<template_reference name="cheat3" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />
 				<instance_reference name="settings" value="ai\ai_settings\default_skirmish_cheat3" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
-				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+				<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3" />
@@ -73,7 +73,7 @@
 				<template_reference name="easy" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_easy" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="campaignMod_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="campaignMod_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="" />
@@ -82,7 +82,7 @@
 				<template_reference name="standard" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_standard" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="campaignMod_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="campaignMod_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="" />
@@ -91,7 +91,7 @@
 				<template_reference name="hard" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_hard" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="campaignMod_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="campaignMod_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="" />
@@ -100,7 +100,7 @@
 				<template_reference name="hardest" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_hardest" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="campaignMod_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="campaignMod_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="" />
@@ -143,7 +143,7 @@
 				<template_reference name="easy" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_easy" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="xp3_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="xp3_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_easy" />
@@ -152,7 +152,7 @@
 				<template_reference name="standard" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_standard" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="xp3_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="xp3_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_standard" />
@@ -161,7 +161,7 @@
 				<template_reference name="hard" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_hard" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="xp3_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="xp3_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_hard" />
@@ -170,7 +170,7 @@
 				<template_reference name="hardest" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_hardest" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="xp3_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="xp3_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_expert" />
@@ -179,7 +179,7 @@
 				<template_reference name="cheat1" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_cheat1" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="xp3_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="xp3_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat1" />
@@ -188,7 +188,7 @@
 				<template_reference name="cheat2" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_cheat2" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="xp3_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="xp3_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat2" />
@@ -197,7 +197,7 @@
 				<template_reference name="cheat3" value="ai\ai_personality_per_difficulty_info">
 					<file name="lua_script" value="cardinal_default_skirmish" />
 					<instance_reference name="settings" value="ai\ai_settings\default_skirmish_cheat3" />
-					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" />
+					<instance_reference name="economy" value="ai\ai_economy_group\default_economy_group" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 					<state_tree_node name="planner_statetree_node" value="xp3_ai_skirmish_default" />
 					<state_tree_node name="strategizer_statetree_node" value="xp3_ai_strategy_default" />
 					<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3" />

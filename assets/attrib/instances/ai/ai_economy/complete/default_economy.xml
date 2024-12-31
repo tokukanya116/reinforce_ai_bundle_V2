@@ -1266,7 +1266,7 @@
 							<float name="strategic_intention_weight" value="1" />
 						</group>
 					</list>
-					<bool name="inherit_utility" value="False" />
+					<bool name="inherit_utility" value="True" />
 					<float name="requested_production_scale" value="200" />
 					<bool name="consider_time_to_acquire" value="False" />
 					<float name="minimum_final_utility_to_produce" value="-1" />
@@ -1322,24 +1322,32 @@
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
 					<float name="utility" value="1000" />
-					<float name="utility_random_range_offset" value="-1" />
+					<float name="utility_random_range_offset" value="1000" />
 					<string name="utility_function" value="" />
-					<float name="per_unit_scale" value="0" />
+					<float name="per_unit_scale" value="100" />
 					<float name="per_unit_scale_produced" value="50" />
 					<int name="max_num" value="-1" />
 					<int name="max_num_produced" value="-1" />
 					<list name="weighted_strategic_intentions">
-						<group name="weighted_intention" List.ItemID="-390702961">
-							<enum name="strategic_intention_type" value="defense" />
-							<float name="strategic_intention_weight" value="1" />
-						</group>
-						<group name="weighted_intention" List.ItemID="-1264521253">
+						<group name="weighted_intention" List.ItemID="373620460">
 							<enum name="strategic_intention_type" value="offense" />
 							<float name="strategic_intention_weight" value="1" />
 						</group>
+						<group name="weighted_intention" List.ItemID="1769375726">
+							<enum name="strategic_intention_type" value="age_up" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
+						<group name="weighted_intention" List.ItemID="456268788">
+							<enum name="strategic_intention_type" value="combat" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
+						<group name="weighted_intention" List.ItemID="1847270852">
+							<enum name="strategic_intention_type" value="defense" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
 					</list>
-					<bool name="inherit_utility" value="False" />
-					<float name="requested_production_scale" value="1E+17" />
+					<bool name="inherit_utility" value="True" />
+					<float name="requested_production_scale" value="-1" />
 					<bool name="consider_time_to_acquire" value="False" />
 					<float name="minimum_final_utility_to_produce" value="10000" />
 					<float name="minimum_placement_utility_to_produce" value="1" />
@@ -1374,20 +1382,24 @@
 					<int name="max_num" value="-1" />
 					<int name="max_num_produced" value="-1" />
 					<list name="weighted_strategic_intentions">
-						<group name="weighted_intention" List.ItemID="-2089525500">
-							<enum name="strategic_intention_type" value="defense" />
-							<float name="strategic_intention_weight" value="1" />
-						</group>
-						<group name="weighted_intention" List.ItemID="1672289573">
+						<group name="weighted_intention" List.ItemID="161974904">
 							<enum name="strategic_intention_type" value="offense" />
 							<float name="strategic_intention_weight" value="1" />
 						</group>
-						<group name="weighted_intention" List.ItemID="1965132201">
+						<group name="weighted_intention" List.ItemID="-2097952430">
 							<enum name="strategic_intention_type" value="age_up" />
-							<float name="strategic_intention_weight" value="0.3" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
+						<group name="weighted_intention" List.ItemID="1324528590">
+							<enum name="strategic_intention_type" value="combat" />
+							<float name="strategic_intention_weight" value="1" />
+						</group>
+						<group name="weighted_intention" List.ItemID="1278528597">
+							<enum name="strategic_intention_type" value="defense" />
+							<float name="strategic_intention_weight" value="1" />
 						</group>
 					</list>
-					<bool name="inherit_utility" value="False" />
+					<bool name="inherit_utility" value="True" />
 					<float name="requested_production_scale" value="1E+15" />
 					<bool name="consider_time_to_acquire" value="False" />
 					<float name="minimum_final_utility_to_produce" value="10000" />
@@ -1677,19 +1689,23 @@
 			</group>
 		</list>
 		<template_reference name="default_entity_utility" value="ai\economy\production_instance_utility">
-			<float name="utility" value="-1" />
+			<float name="utility" value="1000" />
 			<float name="utility_random_range_offset" value="-1" />
 			<string name="utility_function" value="" />
-			<float name="per_unit_scale" value="-1" />
-			<float name="per_unit_scale_produced" value="-1" />
+			<float name="per_unit_scale" value="100" />
+			<float name="per_unit_scale_produced" value="100" />
 			<int name="max_num" value="-1" />
 			<int name="max_num_produced" value="-1" />
 			<list name="weighted_strategic_intentions">
+				<group name="weighted_intention" List.ItemID="1515276425">
+					<enum name="strategic_intention_type" value="economy" />
+					<float name="strategic_intention_weight" value="1" />
+				</group>
 			</list>
-			<bool name="inherit_utility" value="True" />
-			<float name="requested_production_scale" value="-1" />
-			<bool name="consider_time_to_acquire" value="True" />
-			<float name="minimum_final_utility_to_produce" value="-1" />
+			<bool name="inherit_utility" value="False" />
+			<float name="requested_production_scale" value="3.402823E+38" />
+			<bool name="consider_time_to_acquire" value="False" />
+			<float name="minimum_final_utility_to_produce" value="10000" />
 			<float name="minimum_placement_utility_to_produce" value="-1" />
 			<bool name="recalculate_utility_when_produced" value="True" />
 		</template_reference>
@@ -2428,33 +2444,6 @@
 				<int name="max_current" value="-1" />
 				<int name="max_produced_ever" value="-1" />
 			</template_reference>
-			<template_reference name="production_group" value="ai\economy\production_group" comment="Trade Carts" List.ItemID="1492199493">
-				<list name="members">
-					<instance_reference name="member" value="sbps\races\abbasid\unit_trade_cart_abb" List.ItemID="231953614" />
-					<instance_reference name="member" value="sbps\races\chinese\unit_trade_cart_chi" List.ItemID="-1322183209" />
-					<instance_reference name="member" value="sbps\races\english\unit_trade_cart_eng" List.ItemID="-1073591306" />
-					<instance_reference name="member" value="sbps\races\french\unit_trade_cart_fre" List.ItemID="1779878996" />
-					<instance_reference name="member" value="sbps\races\hre\unit_trade_cart_hre" List.ItemID="-1930397169" />
-					<instance_reference name="member" value="sbps\races\mongol\unit_trade_cart_double_mon" List.ItemID="-1162109389" />
-					<instance_reference name="member" value="sbps\races\mongol\unit_trade_cart_mon" List.ItemID="932728436" />
-					<instance_reference name="member" value="sbps\races\rus\unit_trade_cart_rus" List.ItemID="-1131081362" />
-					<instance_reference name="member" value="sbps\races\sultanate\unit_trade_cart_sul" List.ItemID="-1445666477" />
-					<instance_reference name="member" value="sbps\races\malian\unit_trade_cart_mal" List.ItemID="-676464519" />
-					<instance_reference name="member" value="sbps\races\ottoman\unit_trade_cart_ott" List.ItemID="1007544799" />
-					<instance_reference name="member" value="sbps\races\byzantine\unit_trade_cart_byz" List.ItemID="-1999644333" />
-					<instance_reference name="member" value="sbps\races\japanese\unit_trade_cart_jpn" List.ItemID="1076428475" />
-					<instance_reference name="member" value="sbps\races\abbasid_ha_01\unit_trade_cart_abb_ha_01" List.ItemID="1547246446" />
-					<instance_reference name="member" value="sbps\races\chinese_ha_01\unit_trade_cart_chi_ha_01" List.ItemID="960125533" />
-					<instance_reference name="member" value="sbps\races\hre_ha_01\unit_trade_cart_hre_ha_01" List.ItemID="-1567465922" />
-					<instance_reference name="member" value="sbps\races\french_ha_01\unit_trade_cart_fre_ha_01" List.ItemID="665153051" />
-					<instance_reference name="member" value="sbps\races\french\unit_trade_cart_chamber_of_commerce_fre" List.ItemID="1729430405" />
-				</list>
-				<float name="base_scale" value="100" />
-				<float name="minimum_score_to_produce" value="1" />
-				<string name="lua_binding" value="ScoringFunctions_Trader" />
-				<int name="max_current" value="-1" />
-				<int name="max_produced_ever" value="-1" />
-			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Siege Towers" List.ItemID="1130429491">
 				<list name="members" comment="These are specifically ebps because that's what they are build as. They transform into sbps on construction completion.">
 					<instance_reference name="member" value="ebps\races\chinese\units\unit_siege_tower_3_chi" List.ItemID="1807599052" />
@@ -2710,49 +2699,49 @@
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Keeps&#xD;&#xA;" List.ItemID="-1844853486">
 				<list name="members">
-					<instance_reference name="member" value="ebps\races\chinese\buildings\building_defense_keep_chi\building_defense_keep_chi" List.ItemID="-375761162" />
-					<instance_reference name="member" value="ebps\races\core\buildings\building_defense_keep" List.ItemID="-1012161873" />
-					<instance_reference name="member" value="ebps\races\english\buildings\building_defense_keep_eng\building_defense_keep_eng" List.ItemID="1459249507" />
-					<instance_reference name="member" value="ebps\races\french\buildings\building_defense_keep_fre\building_defense_keep_fre" List.ItemID="1384880731" />
-					<instance_reference name="member" value="ebps\races\hre\buildings\building_defense_keep_hre\building_defense_keep_hre" List.ItemID="-19201640" />
-					<instance_reference name="member" value="ebps\races\rus\buildings\building_defense_keep_rus\building_defense_keep_control_rus" List.ItemID="1286973098" />
-					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_defense_keep_sul\building_defense_keep_control_sul" List.ItemID="-1086787893" />
-					<instance_reference name="member" value="ebps\races\abbasid\buildings\building_defense_keep_control_abb" List.ItemID="1753024285" />
-					<instance_reference name="member" value="ebps\races\malian\buildings\building_defense_keep_mal" List.ItemID="1041167568" />
-					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_defense_keep_ott" List.ItemID="-1194484927" />
-					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_defense_keep_byz" List.ItemID="-1482040967" />
-					<instance_reference name="member" value="ebps\races\japanese\buildings\building_defense_keep_jpn" List.ItemID="784810858" />
-					<instance_reference name="member" value="ebps\races\abbasid_ha_01\buildings\building_defense_keep_control_abb_ha_01" List.ItemID="-1184735384" />
-					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_defense_keep_chi_ha_01\building_defense_keep_chi_ha_01" List.ItemID="1465208018" />
-					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_defense_keep_hre_ha_01\building_defense_keep_hre_ha_01" List.ItemID="-1390110204" />
-					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_defense_keep_fre_ha_01\building_defense_keep_fre_ha_01" List.ItemID="-970906298" />
+					<instance_reference name="member" value="ebps\races\chinese\buildings\building_defense_keep_chi\building_defense_keep_chi" List.ItemID="-801293490" />
+					<instance_reference name="member" value="ebps\races\core\buildings\building_defense_keep" List.ItemID="931706420" />
+					<instance_reference name="member" value="ebps\races\english\buildings\building_defense_keep_eng\building_defense_keep_eng" List.ItemID="-910605940" />
+					<instance_reference name="member" value="ebps\races\french\buildings\building_defense_keep_fre\building_defense_keep_fre" List.ItemID="-1765641452" />
+					<instance_reference name="member" value="ebps\races\hre\buildings\building_defense_keep_hre\building_defense_keep_hre" List.ItemID="-911635566" />
+					<instance_reference name="member" value="ebps\races\rus\buildings\building_defense_keep_rus\building_defense_keep_control_rus" List.ItemID="547373981" />
+					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_defense_keep_sul\building_defense_keep_control_sul" List.ItemID="566988375" />
+					<instance_reference name="member" value="ebps\races\abbasid\buildings\building_defense_keep_control_abb" List.ItemID="-134757698" />
+					<instance_reference name="member" value="ebps\races\malian\buildings\building_defense_keep_mal" List.ItemID="932585215" />
+					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_defense_keep_ott" List.ItemID="422958537" />
+					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_defense_keep_byz" List.ItemID="-449896803" />
+					<instance_reference name="member" value="ebps\races\japanese\buildings\building_defense_keep_jpn" List.ItemID="-1587939388" />
+					<instance_reference name="member" value="ebps\races\abbasid_ha_01\buildings\building_defense_keep_control_abb_ha_01" List.ItemID="-57714381" />
+					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_defense_keep_chi_ha_01\building_defense_keep_chi_ha_01" List.ItemID="1527267999" />
+					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_defense_keep_hre_ha_01\building_defense_keep_hre_ha_01" List.ItemID="329350353" />
+					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_defense_keep_fre_ha_01\building_defense_keep_fre_ha_01" List.ItemID="883555828" />
 				</list>
-				<float name="base_scale" value="100" />
-				<float name="minimum_score_to_produce" value="20" />
+				<float name="base_scale" value="3.402823E+38" />
+				<float name="minimum_score_to_produce" value="1000" />
 				<string name="lua_binding" value="ScoringFunctions_Keeps" />
 				<int name="max_current" value="-1" />
 				<int name="max_produced_ever" value="-1" />
 			</template_reference>
 			<template_reference name="production_group" value="ai\economy\production_group" comment="Outposts" List.ItemID="682940992">
 				<list name="members">
-					<instance_reference name="member" value="ebps\races\chinese\buildings\building_defense_outpost_chi\building_defense_outpost_chi" List.ItemID="-1858588680" />
-					<instance_reference name="member" value="ebps\races\core\buildings\building_defense_outpost" List.ItemID="1835253897" />
-					<instance_reference name="member" value="ebps\races\english\buildings\building_defense_outpost_eng\building_defense_outpost_eng" List.ItemID="-496116183" />
-					<instance_reference name="member" value="ebps\races\french\buildings\building_defense_outpost_fre\building_defense_outpost_fre" List.ItemID="404961462" />
-					<instance_reference name="member" value="ebps\races\hre\buildings\building_defense_outpost_hre\building_defense_outpost_hre" List.ItemID="610917753" />
-					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_defense_outpost_sul\building_defense_outpost_control_sul" List.ItemID="-687328948" />
-					<instance_reference name="member" value="ebps\races\abbasid\buildings\building_defense_outpost_control_abb" List.ItemID="-1846536932" />
-					<instance_reference name="member" value="ebps\races\malian\buildings\building_defense_outpost_mal" List.ItemID="-866870565" />
-					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_defense_outpost_ott" List.ItemID="1949797948" />
-					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_defense_outpost_byz" List.ItemID="-446489922" />
-					<instance_reference name="member" value="ebps\races\japanese\buildings\building_defense_outpost_jpn" List.ItemID="150215027" />
-					<instance_reference name="member" value="ebps\races\abbasid_ha_01\buildings\building_defense_outpost_control_abb_ha_01" List.ItemID="-1965082819" />
-					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_defense_outpost_chi_ha_01\building_defense_outpost_chi_ha_01" List.ItemID="-987150674" />
-					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_defense_outpost_hre_ha_01\building_defense_outpost_hre_ha_01" List.ItemID="148416355" />
-					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_defense_outpost_fre_ha_01\building_defense_outpost_fre_ha_01" List.ItemID="974688778" />
+					<instance_reference name="member" value="ebps\races\chinese\buildings\building_defense_outpost_chi\building_defense_outpost_chi" List.ItemID="-1999418321" />
+					<instance_reference name="member" value="ebps\races\core\buildings\building_defense_outpost" List.ItemID="278268292" />
+					<instance_reference name="member" value="ebps\races\english\buildings\building_defense_outpost_eng\building_defense_outpost_eng" List.ItemID="1625490209" />
+					<instance_reference name="member" value="ebps\races\french\buildings\building_defense_outpost_fre\building_defense_outpost_fre" List.ItemID="1288577824" />
+					<instance_reference name="member" value="ebps\races\hre\buildings\building_defense_outpost_hre\building_defense_outpost_hre" List.ItemID="1994335974" />
+					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_defense_outpost_sul\building_defense_outpost_control_sul" List.ItemID="2062534332" />
+					<instance_reference name="member" value="ebps\races\abbasid\buildings\building_defense_outpost_control_abb" List.ItemID="1979539984" />
+					<instance_reference name="member" value="ebps\races\malian\buildings\building_defense_outpost_mal" List.ItemID="-1463606341" />
+					<instance_reference name="member" value="ebps\races\ottoman\buildings\building_defense_outpost_ott" List.ItemID="-1373489942" />
+					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_defense_outpost_byz" List.ItemID="-2003479896" />
+					<instance_reference name="member" value="ebps\races\japanese\buildings\building_defense_outpost_jpn" List.ItemID="-1825669233" />
+					<instance_reference name="member" value="ebps\races\abbasid_ha_01\buildings\building_defense_outpost_control_abb_ha_01" List.ItemID="168292015" />
+					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_defense_outpost_chi_ha_01\building_defense_outpost_chi_ha_01" List.ItemID="1444295068" />
+					<instance_reference name="member" value="ebps\races\hre_ha_01\buildings\building_defense_outpost_hre_ha_01\building_defense_outpost_hre_ha_01" List.ItemID="-223878217" />
+					<instance_reference name="member" value="ebps\races\french_ha_01\buildings\building_defense_outpost_fre_ha_01\building_defense_outpost_fre_ha_01" List.ItemID="47599919" />
 				</list>
-				<float name="base_scale" value="100" />
-				<float name="minimum_score_to_produce" value="50" />
+				<float name="base_scale" value="3.402823E+38" />
+				<float name="minimum_score_to_produce" value="1000" />
 				<string name="lua_binding" value="ScoringFunctions_Outposts" />
 				<int name="max_current" value="-1" />
 				<int name="max_produced_ever" value="-1" />
@@ -3151,7 +3140,7 @@
 					<instance_reference name="member" value="ebps\races\byzantine\buildings\building_defense_wall_byz\building_defense_tower_byz" List.ItemID="-452678917" />
 				</list>
 				<float name="base_scale" value="10000" />
-				<float name="minimum_score_to_produce" value="1" />
+				<float name="minimum_score_to_produce" value="1000" />
 				<string name="lua_binding" value="ScoringFunctions_WallTower" />
 				<int name="max_current" value="-1" />
 				<int name="max_produced_ever" value="-1" />
@@ -3354,47 +3343,21 @@
 					<instance_reference name="member" value="sbps\races\mongol\unit_trebuchet_4_tr_mon" List.ItemID="1271311174" />
 					<instance_reference name="member" value="sbps\races\rus\unit_trebuchet_4_cw_rus" List.ItemID="1404672925" />
 					<instance_reference name="member" value="sbps\races\sultanate\unit_trebuchet_4_cw_sul" List.ItemID="-880179296" />
-					<instance_reference name="member" value="ebps\races\abbasid\units\unit_ram_3_abb" List.ItemID="1189676472" />
-					<instance_reference name="member" value="ebps\races\english\units\unit_ram_3_eng" List.ItemID="-1778327443" />
-					<instance_reference name="member" value="ebps\races\french\units\unit_ram_3_fre" List.ItemID="1450398064" />
-					<instance_reference name="member" value="ebps\races\hre\units\unit_ram_3_hre" List.ItemID="495076171" />
-					<instance_reference name="member" value="ebps\races\mongol\units\unit_ram_3_mon" List.ItemID="1843880128" />
-					<instance_reference name="member" value="ebps\races\rus\units\unit_ram_3_rus" List.ItemID="-156242199" />
-					<instance_reference name="member" value="ebps\races\sultanate\units\unit_ram_3_sul" List.ItemID="1811975390" />
-					<instance_reference name="member" value="ebps\races\ottoman\units\unit_ram_3_ott" List.ItemID="1691427558" />
-					<instance_reference name="member" value="ebps\races\malian\units\unit_ram_3_mal" List.ItemID="1230125579" />
 					<instance_reference name="member" value="sbps\races\malian\unit_trebuchet_4_cw_mal" List.ItemID="572838117" />
 					<instance_reference name="member" value="sbps\races\malian\unit_bombard_4_mal" List.ItemID="1190892683" />
 					<instance_reference name="member" value="sbps\races\ottoman\unit_trebuchet_4_cw_ott" List.ItemID="1586567915" />
-					<instance_reference name="member" value="sbps\races\abbasid\unit_workshop_ram_3_abb" List.ItemID="-244211872" />
-					<instance_reference name="member" value="sbps\races\chinese\unit_workshop_ram_3_chi" List.ItemID="-351024318" />
-					<instance_reference name="member" value="sbps\races\english\unit_workshop_ram_3_eng" List.ItemID="-196398890" />
-					<instance_reference name="member" value="sbps\races\french\unit_workshop_ram_3_fre" List.ItemID="1985274494" />
-					<instance_reference name="member" value="sbps\races\hre\unit_workshop_ram_3_hre" List.ItemID="-957251853" />
-					<instance_reference name="member" value="sbps\races\malian\unit_workshop_ram_3_mal" List.ItemID="-1587360730" />
-					<instance_reference name="member" value="sbps\races\mongol\unit_workshop_ram_3_double_mon" List.ItemID="1758259049" />
-					<instance_reference name="member" value="sbps\races\mongol\unit_workshop_ram_3_mon" List.ItemID="1821847092" />
-					<instance_reference name="member" value="sbps\races\ottoman\unit_workshop_ram_3_ott" List.ItemID="-701342095" />
-					<instance_reference name="member" value="sbps\races\rus\unit_workshop_ram_3_rus" List.ItemID="232062519" />
-					<instance_reference name="member" value="sbps\races\sultanate\unit_workshop_ram_3_sul" List.ItemID="2091927466" />
 					<instance_reference name="member" value="sbps\races\byzantine\mercenaries\set_landmark_siege\unit_cannon_4_royal_merc_byz" List.ItemID="1827945949" />
 					<instance_reference name="member" value="sbps\races\byzantine\mercenaries\set_landmark_siege\unit_khaganate_great_trebuchet_merc_byz" List.ItemID="-781391686" />
 					<instance_reference name="member" value="sbps\races\byzantine\unit_bombard_4_byz" List.ItemID="-289867810" />
 					<instance_reference name="member" value="sbps\races\byzantine\unit_trebuchet_4_cw_byz" List.ItemID="-214481249" />
-					<instance_reference name="member" value="ebps\races\japanese\units\unit_ram_3_jpn" List.ItemID="-1136930995" />
 					<instance_reference name="member" value="sbps\races\japanese\unit_bombard_4_jpn" List.ItemID="-380742062" />
 					<instance_reference name="member" value="sbps\races\japanese\unit_trebuchet_4_cw_jpn" List.ItemID="1978125254" />
 					<instance_reference name="member" value="sbps\races\byzantine\unit_ram_fire_3_byz" List.ItemID="1455357928" />
-					<instance_reference name="member" value="sbps\races\japanese\unit_ram_3_jpn" List.ItemID="359288358" />
 					<instance_reference name="member" value="sbps\races\abbasid_ha_01\unit_bombard_4_abb_ha_01" List.ItemID="-2028444599" />
-					<instance_reference name="member" value="ebps\races\abbasid_ha_01\units\unit_ram_3_abb_ha_01" List.ItemID="1813848157" />
 					<instance_reference name="member" value="sbps\races\abbasid_ha_01\unit_trebuchet_4_cw_abb_ha_01" List.ItemID="1264004384" />
 					<instance_reference name="member" value="sbps\races\chinese_ha_01\unit_bombard_4_chi_ha_01" List.ItemID="-2050452817" />
 					<instance_reference name="member" value="sbps\races\chinese_ha_01\unit_trebuchet_4_cw_chi_ha_01" List.ItemID="-1396104301" />
 					<instance_reference name="member" value="sbps\races\byzantine\unit_workshop_fire_ram_3_byz" List.ItemID="1539938149" />
-					<instance_reference name="member" value="sbps\races\japanese\unit_workshop_ram_3_jpn" List.ItemID="1797073346" />
-					<instance_reference name="member" value="ebps\races\hre_ha_01\units\unit_ram_3_hre_ha_01" List.ItemID="867502305" />
-					<instance_reference name="member" value="ebps\races\chinese_ha_01\units\unit_ram_3_chi_ha_01" List.ItemID="-1035215628" />
 					<instance_reference name="member" value="sbps\races\hre_ha_01\unit_bombard_4_hre_ha_01" List.ItemID="-1395276959" />
 					<instance_reference name="member" value="sbps\races\hre_ha_01\unit_trebuchet_4_cw_hre_ha_01" List.ItemID="1569962323" />
 					<instance_reference name="member" value="sbps\races\french_ha_01\unit_bombard_4_fre_ha_01" List.ItemID="-69862325" />
@@ -3402,16 +3365,11 @@
 					<instance_reference name="member" value="sbps\races\french_ha_01\unit_trebuchet_4_cw_fre_ha_01" List.ItemID="-368095491" />
 					<instance_reference name="member" value="sbps\races\japanese\tanegashima_spawn\unit_bombard_tanegashima_4_jpn" List.ItemID="-1805530166" />
 					<instance_reference name="member" value="sbps\races\french_ha_01\royal_artillery\unit_cannon_4_royal_fre_ha_01" List.ItemID="45580644" />
-					<instance_reference name="member" value="sbps\races\abbasid_ha_01\unit_workshop_ram_3_abb_ha_01" List.ItemID="-1205376331" />
-					<instance_reference name="member" value="sbps\races\chinese_ha_01\unit_workshop_ram_3_chi_ha_01" List.ItemID="-353676445" />
-					<instance_reference name="member" value="sbps\races\french_ha_01\unit_workshop_ram_3_fre_ha_01" List.ItemID="474256725" />
-					<instance_reference name="member" value="sbps\races\hre_ha_01\unit_workshop_ram_3_hre_ha_01" List.ItemID="238259087" />
 					<instance_reference name="member" value="ebps\races\mongol\units\unit_trebuchet_4_cw_field_construct_mon" List.ItemID="-573988137" />
 					<instance_reference name="member" value="ebps\races\mongol\units\unit_trebuchet_4_tr_field_construct_mon" List.ItemID="1872687200" />
-					<instance_reference name="member" value="sbps\races\chinese\clocktower\unit_ram_3_clocktower_chi" List.ItemID="-341718575" />
 				</list>
-				<float name="base_scale" value="600" />
-				<float name="minimum_score_to_produce" value="100" />
+				<float name="base_scale" value="20000" />
+				<float name="minimum_score_to_produce" value="1000" />
 				<string name="lua_binding" value="ScoringFunctions_Siege" />
 				<int name="max_current" value="-1" />
 				<int name="max_produced_ever" value="-1" />
@@ -3598,6 +3556,7 @@
 					<instance_reference name="member" value="upgrade\races\sultanate\research\landmark_new\upgrade_landmark_keep_defense_compond_sul" List.ItemID="1221546926" />
 					<instance_reference name="member" value="upgrade\races\sultanate\research\landmark_new\upgrade_tech_university_architecture_compound_sul" List.ItemID="746691257" />
 					<instance_reference name="member" value="upgrade\races\mongol\research\unique\upgrade_outpost_stone_mon" List.ItemID="1730675715" />
+					<instance_reference name="member" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-786976287" />
 				</list>
 				<float name="base_scale" value="700" />
 				<float name="minimum_score_to_produce" value="1" />
@@ -3913,8 +3872,8 @@
 					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_defense_wall_chi_ha_01\building_defense_wall_chi_ha_01" List.ItemID="-1278455584" />
 					<instance_reference name="member" value="ebps\races\chinese_ha_01\buildings\building_defense_wall_chi_ha_01\building_defense_wall_gate_chi_ha_01" List.ItemID="87949741" />
 				</list>
-				<float name="base_scale" value="1" />
-				<float name="minimum_score_to_produce" value="0" />
+				<float name="base_scale" value="100" />
+				<float name="minimum_score_to_produce" value="20" />
 				<string name="lua_binding" value="ScoringFunctions_WallAndGate" />
 				<int name="max_current" value="-1" />
 				<int name="max_produced_ever" value="-1" />

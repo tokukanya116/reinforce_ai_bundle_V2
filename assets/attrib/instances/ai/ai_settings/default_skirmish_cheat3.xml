@@ -136,7 +136,7 @@
 				<float name="catchup_max_resource_deficit" value="1000" />
 			</group>
 			<group name="combat_eval">
-				<float name="desired_ratio" value="0.2" comment="不适合的部队也照打" />
+				<float name="desired_ratio" value="0.1" comment="不适合的部队也照打" />
 			</group>
 			<group name="tasks">
 				<int name="max_num_attack_objectives" value="100" />
@@ -144,7 +144,7 @@
 				<int name="max_num_construction_tasks" value="100" />
 			</group>
 			<group name="army">
-				<float name="max_army_combat_ratio" value="5" comment="军力对比(电脑会和你的军力比达到某种程度才会停止造兵)" />
+				<float name="max_army_combat_ratio" value="1E+10" comment="军力对比(电脑会和你的军力比达到某种程度才会停止造兵)" />
 				<int name="min_num_units" value="8" comment="军队最少数量比例" />
 				<int name="min_num_capturing_units" value="2" comment="占领单位" />
 				<int name="min_num_non_support_units" value="8" comment="非支援单位比例" />
@@ -153,13 +153,13 @@
 			</group>
 			<bool name="use_offensive_player_abilities" value="True" />
 			<enum_table name="resource_multipliers">
-				<float name="action" value="2" />
+				<float name="action" value="1" />
 				<float name="popcap" value="1" />
-				<float name="command" value="2" />
-				<float name="food" value="3" />
+				<float name="command" value="1" />
+				<float name="food" value="5" />
 				<float name="wood" value="3" />
 				<float name="stone" value="3" />
-				<float name="gold" value="3" />
+				<float name="gold" value="5" />
 				<float name="militia_hre" value="1" />
 				<float name="merc_byz" value="1" />
 			</enum_table>
@@ -194,9 +194,9 @@
 					<float name="class_rating_multiplier" value="1" />
 				</template_reference>
 			</enum_table>
-			<enum name="weapon_stance_mode" value="highest_delta_dps_against_enemy" />
+			<enum name="weapon_stance_mode" value="highest_dps_stance" comment="ai武器姿态调整" />
 			<bool name="should_attack_target_in_heavy_cover_when_cant_enter" value="True" />
-			<bool name="allow_builders_to_enter_combat" value="True" />
+			<bool name="allow_builders_to_enter_combat" value="False" />
 		</group>
 		<group name="tactics">
 			<float name="avoidance_delay_time_min" value="0" />
@@ -216,7 +216,7 @@
 				</list>
 			</group>
 		</group>
-		<float name="combat_task_retargeting_time" value="5" />
+		<float name="combat_task_retargeting_time" value="15" comment="每秒更新多少次意图" />
 		<bool name="designer_lock_squads_by_default" value="False" />
 		<group name="features">
 			<bool name="kiting_enabled" value="True" />
@@ -234,10 +234,10 @@
 			<bool name="can_leave_heavy_cover_to_chase_target" value="False" />
 		</group>
 		<enum name="production_mode" value="full_production" />
-		<enum_table name="starting_resource_bonuses">
+		<enum_table name="starting_resource_bonuses" comment="初始额外奖励">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="popcap" value="0" />
+			<float name="popcap" value="35" />
 			<float name="food" value="0" />
 			<float name="wood" value="0" />
 			<float name="stone" value="0" />
@@ -248,14 +248,14 @@
 		<enum_table name="tactic_enabled" comment="使用策略">
 			<bool name="ability" value="True" />
 			<bool name="cover" value="False" />
-			<bool name="hold" value="False" />
+			<bool name="hold" value="True" />
 			<bool name="avoid" value="False" />
-			<bool name="vehicle" value="False" />
+			<bool name="vehicle" value="True" />
 			<bool name="force_attack" value="True" />
 			<bool name="pickup" value="False" />
 			<bool name="capture_team_weapon" value="False" />
 			<bool name="recrew" value="False" />
-			<bool name="provide_reinforcement_point" value="False" />
+			<bool name="provide_reinforcement_point" value="True" />
 			<bool name="finish_healing" value="False" />
 			<bool name="capture_point" value="True" />
 			<bool name="warm_up" value="False" />
@@ -273,8 +273,8 @@
 			<string name="decide_squad_military_target_type_function" value="CARDINAL_DetermineAIStatsMilitaryPointTypeSquad" />
 			<string name="military_target_scoring_function" value="CARDINAL_ScoreMilitaryTarget" />
 		</group>
-		<float name="scouting_location_cached_path_refresh_time" value="60" />
-		<float name="scouting_location_cached_path_extra_refresh_time_random_percent" value="0.3" />
+		<float name="scouting_location_cached_path_refresh_time" value="30" comment="侦查意图刷新时间间隔" />
+		<float name="scouting_location_cached_path_extra_refresh_time_random_percent" value="0.9" comment="侦查意图" />
 	</group>
 	<uniqueid name="pbgid" value="2134267" />
 	<variant name="xp3">
