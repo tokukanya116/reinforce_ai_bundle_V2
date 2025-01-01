@@ -8,6 +8,8 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-894120277" List.ParentItemID="-894120277">
 			<float name="hitpoints" value="7000" overrideParent="True" />
+			<float name="regeneration" value="20" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="964116860" List.ParentItemID="964116860">
 			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />

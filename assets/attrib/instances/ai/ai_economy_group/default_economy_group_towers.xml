@@ -1,6 +1,6 @@
 <instance version="4" description="" template="ai\ai_economy_group">
 	<group name="ai_economy_group_bag">
-		<instance_reference name="default" value="ai\ai_economy\complete\default_economy_towers" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+		<instance_reference name="default" value="ai\ai_economy\complete\default_economy" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 		<list name="overrides">
 		</list>
 	</group>

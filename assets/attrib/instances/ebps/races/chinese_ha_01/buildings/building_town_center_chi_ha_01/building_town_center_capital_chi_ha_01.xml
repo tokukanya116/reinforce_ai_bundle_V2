@@ -10,6 +10,8 @@
 			<enum_table name="armor_scaler_by_damage_type">
 				<float name="Fire" value="0" overrideParent="True" />
 			</enum_table>
+			<float name="regeneration" value="20" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="964116860" List.ParentItemID="964116860">
 			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />

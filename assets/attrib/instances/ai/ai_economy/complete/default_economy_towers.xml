@@ -1578,7 +1578,7 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" List.ItemID="1421127589" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age3_spassakaya_tower_rus\building_landmark_age3_spassakaya_tower_control_rus" List.ItemID="-2070726808" />
 					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_chi" List.ItemID="-549896586" />
-					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" List.ItemID="439497800" />
+					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="439497800" />
 					<instance_reference name="entity" value="ebps\races\hre_ha_01\buildings\building_landmark_age3_eltz_castle_hre_ha_01\building_landmark_age3_eltz_castle_hre_ha_01" List.ItemID="966871629" />
 					<instance_reference name="entity" value="ebps\races\japanese\buildings\building_landmark_age3_treasure_jpn" List.ItemID="1764063782" />
 					<instance_reference name="entity" value="ebps\races\english\buildings\building_landmark_age3_windsor_castle_eng\building_landmark_age3_windsor_castle_eng" List.ItemID="593500389" />
@@ -1620,7 +1620,7 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" List.ItemID="1937039441" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age3_spassakaya_tower_rus\building_landmark_age3_spassakaya_tower_control_rus" List.ItemID="193850265" />
 					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_defense_wall_chi\building_defense_wall_chi" List.ItemID="290801498" />
-					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" List.ItemID="1240088913" />
+					<instance_reference name="entity" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1240088913" />
 					<instance_reference name="entity" value="ebps\races\hre_ha_01\buildings\building_landmark_age3_eltz_castle_hre_ha_01\building_landmark_age3_eltz_castle_hre_ha_01" List.ItemID="-1570607537" />
 					<instance_reference name="entity" value="ebps\races\japanese\buildings\building_landmark_age3_treasure_jpn" List.ItemID="548876272" />
 					<instance_reference name="entity" value="ebps\races\english\buildings\building_landmark_age3_windsor_castle_eng\building_landmark_age3_windsor_castle_eng" List.ItemID="1546213547" />

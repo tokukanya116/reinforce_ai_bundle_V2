@@ -1,0 +1,19 @@
+<instance version="4" description="" template="ai\ai_entity">
+	<uniqueid name="pbgid" value="1073741858" />
+	<group name="ai_entity_bag">
+		<list name="applicable_blueprints">
+			<instance_reference name="applicable_blueprint" value="ebps\races\byzantine\buildings\building_defense_keep_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1620168241" />
+		</list>
+		<group name="construction">
+			<string name="placement_function" value="" />
+			<bool name="can_build_multiple_in_parallel" value="True" comment="允许同时构建吗" />
+			<int name="max_num_additional_builders" value="8" />
+			<int name="max_num_incomplete_structures_builders" value="-1" />
+			<list name="near_to_structures">
+				<instance_reference name="structure" value="ebps\races\byzantine\buildings\building_town_center_capital_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-294016475" />
+			</list>
+			<list name="requires_structures">
+			</list>
+		</group>
+	</group>
+</instance>

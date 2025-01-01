@@ -1,0 +1,24 @@
+<instance version="6" description="Base tunings for offensive strategy AI" template="ai\ai_strategizer_personality">
+	<group name="ai_strategizer_personality_bag">
+		<list name="base_intention_tunings">
+			<group name="intention_tuning" List.ItemID="233836026">
+				<enum name="intention_type" value="defense" />
+				<float name="intention_max" value="1" />
+				<float name="intention_min" value="1" />
+			</group>
+			<group name="intention_tuning" List.ItemID="-102246220">
+				<enum name="intention_type" value="economy" />
+				<float name="intention_max" value="1" />
+				<float name="intention_min" value="1" />
+			</group>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073741907" />
+	<variant name="xp3">
+		<group name="ai_strategizer_personality_bag">
+			<list name="base_intention_tunings">
+			</list>
+		</group>
+		<uniqueid name="pbgid" value="1073741907" />
+	</variant>
+</instance>
