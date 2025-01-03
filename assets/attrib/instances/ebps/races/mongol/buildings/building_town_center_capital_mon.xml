@@ -7,9 +7,15 @@
 			<enum name="subclass_type" value="MongolBuilding" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-894120277" List.ParentItemID="-894120277">
-			<float name="hitpoints" value="7000" overrideParent="True" />
+			<float name="hitpoints" value="15000" overrideParent="True" />
 			<float name="regeneration" value="20" overrideParent="True" />
-			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+			<bool name="regeneration_disabled" value="True" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="True Damage" value="30" overrideParent="True" />
+				<float name="Melee" value="30" overrideParent="True" />
+				<float name="Ranged" value="80" overrideParent="True" />
+				<float name="Fire" value="30" overrideParent="True" />
+			</enum_table>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="964116860" List.ParentItemID="964116860">
 			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />

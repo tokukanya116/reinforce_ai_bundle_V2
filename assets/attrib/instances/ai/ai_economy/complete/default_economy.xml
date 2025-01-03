@@ -38,6 +38,7 @@
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1945392425" />
 					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1170676061" />
 					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1013835251" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" List.ItemID="-1355977765" />
 				</list>
 			</group>
 			<group name="utility_entry" comment="econ" List.ItemID="1058485965">
@@ -427,6 +428,9 @@
 					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1753702819" />
 					<instance_reference name="upgrade" value="upgrade\races\mongol\research\upgrade_outpost_cannon_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1270041161" />
 					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_keep_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="479839542" />
+					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-914967238" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_cannon" List.ItemID="-2110747062" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" List.ItemID="1214717729" />
 				</list>
 			</group>
 		</list>
@@ -4154,7 +4158,7 @@
 				<list name="members">
 					<instance_reference name="member" value="ebps\races\chinese\buildings\building_landmark_age3_great_wall_chi\building_landmark_age3_great_wall_control_chi" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1893192432" />
 				</list>
-				<float name="base_scale" value="950" />
+				<float name="base_scale" value="1E+13" />
 				<float name="minimum_score_to_produce" value="1" />
 				<string name="lua_binding" value="ScoringFunctions_LandmarkGreatWall" />
 				<int name="max_current" value="1" />

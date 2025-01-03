@@ -1322,35 +1322,35 @@
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
 					<float name="utility" value="1000" />
-					<float name="utility_random_range_offset" value="-1" />
+					<float name="utility_random_range_offset" value="1000" />
 					<string name="utility_function" value="" />
-					<float name="per_unit_scale" value="0" />
-					<float name="per_unit_scale_produced" value="50" />
+					<float name="per_unit_scale" value="100" />
+					<float name="per_unit_scale_produced" value="100" />
 					<int name="max_num" value="-1" />
-					<int name="max_num_produced" value="100" />
+					<int name="max_num_produced" value="-1" />
 					<list name="weighted_strategic_intentions">
-						<group name="weighted_intention" List.ItemID="1668198422">
+						<group name="weighted_intention" List.ItemID="-1293296686">
 							<enum name="strategic_intention_type" value="offense" />
 							<float name="strategic_intention_weight" value="1" />
 						</group>
-						<group name="weighted_intention" List.ItemID="1168436">
+						<group name="weighted_intention" List.ItemID="-194323014">
 							<enum name="strategic_intention_type" value="age_up" />
 							<float name="strategic_intention_weight" value="1" />
 						</group>
-						<group name="weighted_intention" List.ItemID="-462446575">
+						<group name="weighted_intention" List.ItemID="-782179531">
 							<enum name="strategic_intention_type" value="combat" />
 							<float name="strategic_intention_weight" value="1" />
 						</group>
-						<group name="weighted_intention" List.ItemID="1679192737">
+						<group name="weighted_intention" List.ItemID="1440221908">
 							<enum name="strategic_intention_type" value="defense" />
 							<float name="strategic_intention_weight" value="1" />
 						</group>
 					</list>
 					<bool name="inherit_utility" value="True" />
-					<float name="requested_production_scale" value="1E+17" />
+					<float name="requested_production_scale" value="3.402823E+38" />
 					<bool name="consider_time_to_acquire" value="False" />
 					<float name="minimum_final_utility_to_produce" value="10000" />
-					<float name="minimum_placement_utility_to_produce" value="1" />
+					<float name="minimum_placement_utility_to_produce" value="-1" />
 					<bool name="recalculate_utility_when_produced" value="True" />
 				</template_reference>
 			</group>
@@ -1375,12 +1375,12 @@
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
 					<float name="utility" value="1000" />
-					<float name="utility_random_range_offset" value="-1" />
+					<float name="utility_random_range_offset" value="1000" />
 					<string name="utility_function" value="" />
-					<float name="per_unit_scale" value="-1" />
-					<float name="per_unit_scale_produced" value="20" />
+					<float name="per_unit_scale" value="100" />
+					<float name="per_unit_scale_produced" value="100" />
 					<int name="max_num" value="-1" />
-					<int name="max_num_produced" value="100" />
+					<int name="max_num_produced" value="-1" />
 					<list name="weighted_strategic_intentions">
 						<group name="weighted_intention" List.ItemID="-706567972">
 							<enum name="strategic_intention_type" value="offense" />
@@ -1400,7 +1400,7 @@
 						</group>
 					</list>
 					<bool name="inherit_utility" value="True" />
-					<float name="requested_production_scale" value="1E+15" />
+					<float name="requested_production_scale" value="3.402823E+38" />
 					<bool name="consider_time_to_acquire" value="False" />
 					<float name="minimum_final_utility_to_produce" value="10000" />
 					<float name="minimum_placement_utility_to_produce" value="-1" />

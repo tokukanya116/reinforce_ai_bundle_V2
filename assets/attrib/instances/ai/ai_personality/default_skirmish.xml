@@ -44,7 +44,7 @@
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3" />
-				<instance_reference name="statemodel_tunings_xbox" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3" />
+				<instance_reference name="statemodel_tunings_xbox" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3_xbox" />
 			</template_reference>
 			<template_reference name="cheat2" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />
@@ -53,7 +53,7 @@
 				<state_tree_node name="planner_statetree_node" value="ai_skirmish_default" />
 				<state_tree_node name="strategizer_statetree_node" value="ai_strategy_default" />
 				<instance_reference name="statemodel_tunings_pc" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3" />
-				<instance_reference name="statemodel_tunings_xbox" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3" />
+				<instance_reference name="statemodel_tunings_xbox" value="ai\ai_statemodel_tunings\skirmish_difficulty_cheat3_xbox" />
 			</template_reference>
 			<template_reference name="cheat3" value="ai\ai_personality_per_difficulty_info">
 				<file name="lua_script" value="cardinal_default_skirmish" />

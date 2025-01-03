@@ -5,9 +5,15 @@
 			<bool name="browsable_in_editor" value="True" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-894120277" List.ParentItemID="-894120277">
-			<float name="hitpoints" value="7000" overrideParent="True" />
+			<float name="hitpoints" value="15000" overrideParent="True" />
 			<float name="regeneration" value="20" overrideParent="True" />
-			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+			<bool name="regeneration_disabled" value="True" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="True Damage" value="30" overrideParent="True" />
+				<float name="Melee" value="30" overrideParent="True" />
+				<float name="Ranged" value="80" overrideParent="True" />
+				<float name="Fire" value="30" overrideParent="True" />
+			</enum_table>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="519261965" List.ParentItemID="519261965">
 			<list name="unit_type_list" overrideParent="True">
