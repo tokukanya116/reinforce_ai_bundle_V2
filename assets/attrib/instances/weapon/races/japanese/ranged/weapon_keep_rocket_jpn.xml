@@ -13,8 +13,8 @@
 			</template_reference>
 		</group>
 		<group name="damage">
-			<float name="max" value="88" overrideParent="True" />
-			<float name="min" value="88" overrideParent="True" />
+			<float name="max" value="95" overrideParent="True" />
+			<float name="min" value="95" overrideParent="True" />
 			<enum name="damage_type" value="Ranged" overrideParent="True" />
 		</group>
 		<group name="reload">

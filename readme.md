@@ -72,6 +72,7 @@ ai_updater
 
    B 参考 ebp 下 **building_town_center_capital_chi** 的 **upgrade_ext** 子类upgrade\races\common\upgrade_empire_rising
 
+3.请注意：大部分技能只有同名同目录才有效(仅覆盖)，且后续复制出来的同模板，改了文件夹也会引用父模版
 
 
 

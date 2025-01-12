@@ -56,7 +56,7 @@
 				<instance_reference name="ability" value="abilities\toggle_abilities\civ_core\core_xbox_auto_train_villager" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-271361929" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_heal" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1590160278" />
 				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_speed" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-998676677" />
-				<instance_reference name="ability" value="abilities\always_on_abilities\home_guard_attack_dmg" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1639651575" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\mongol\kurultai_healing_aura_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-1639651575" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="2068490625" List.ParentItemID="2068490625">

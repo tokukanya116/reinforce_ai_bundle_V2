@@ -31,7 +31,7 @@
 		<bool name="initial_recharge" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="55" comment="Edit the cooldown float property to match the range" />
+		<float name="range" value="40" comment="Edit the cooldown float property to match the range" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="0" />
 		<bool name="refundable" value="True" />
@@ -48,18 +48,18 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
+			<locstring name="extra_text" value="13" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
-			<file name="icon_name" value="placeholder\icon_placeholder" />
+			<file name="icon_name" value="unit_stat_attack" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="9" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 			<file name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="0" />
+			<locstring name="brief_text" value="13" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
-			<locstring name="screen_name_short" value="0" />
+			<locstring name="screen_name_short" value="9" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 			<string name="debug_text" value="" />
 			<string name="tooltip_data_template" value="AbilityDataTemplate" />
 			<enum name="ui_combine_type" value="intersection" />
@@ -69,10 +69,9 @@
 			</template_reference>
 			<template_reference name="help_text_formatter" value="ui_text_formatter">
 				<list name="formatter_arguments">
-					<int name="int_value" value="3" List.ItemID="1073531561" />
-					<float name="float_value" value="1.5" List.ItemID="-1992333893" />
+					<int name="int_value" value="50" List.ItemID="308958517" />
 				</list>
-				<locstring name="formatter" value="6" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
+				<locstring name="formatter" value="13" mod="fe975498c26b480ab1aea44d8c8fd7ea" />
 			</template_reference>
 			<template_reference name="help_text_alternate_formatter" value="">
 			</template_reference>
@@ -95,7 +94,7 @@
 				</template_reference>
 				<template_reference name="ping_menu_info" value="">
 				</template_reference>
-				<enum name="category" value="Economic" />
+				<enum name="category" value="Military" />
 				<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
 					<enum name="quick_commands_hotkey" value="" />
 					<int name="quick_commands_priority" value="-1" />
@@ -116,7 +115,7 @@
 		<locstring name="ui_usage_txt" value="0" />
 		<bool name="validate_actions" value="False" />
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="-679992637">
+			<template_reference name="required" value="requirements\required_statemodelbool" List.ItemID="818621923">
 				<locstring name="ui_name" value="0" />
 				<enum name="reason" value="usage_and_display" />
 				<enum name="key" value="landmark_active" />
@@ -213,7 +212,7 @@
 		<bool name="ui_range_reticule_shows_while_active" value="False" />
 		<bool name="can_move_to_cast" value="True" />
 		<string name="toggle_ability_group" value="" />
-		<bool name="ui_ability_can_display" value="False" />
+		<bool name="ui_ability_can_display" value="True" />
 		<instance_reference name="projectile_for_preview" value="" />
 		<float name="can_use_ability_check_interval" value="0.125" />
 		<bool name="should_trigger_immediately" value="False" />
@@ -227,23 +226,19 @@
 		<bool name="can_passive_ability_create_formation_squad_group" value="False" />
 		<bool name="can_cast_again_whilst_pending" value="False" />
 		<list name="float_properties">
-			<template_reference name="float" value="abilitybag_float_property" List.ItemID="1772289205">
-				<float name="value" value="1.8" />
+			<template_reference name="float" value="abilitybag_float_property" List.ItemID="1204845477">
+				<float name="value" value="1.5" />
 				<enum name="id" value="melee_damage_amplification" />
 			</template_reference>
-			<template_reference name="float" value="abilitybag_float_property" List.ItemID="-1091664833">
-				<float name="value" value="55" />
+			<template_reference name="float" value="abilitybag_float_property" List.ItemID="1581671398">
+				<float name="value" value="40" />
 				<enum name="id" value="cooldown" comment="Aura size" />
 			</template_reference>
 		</list>
 		<list name="int_properties">
-			<template_reference name="int" value="abilitybag_int_property" List.ItemID="-693755919">
-				<int name="value" value="1" />
+			<template_reference name="int" value="abilitybag_int_property" List.ItemID="-1820456878">
+				<int name="value" value="3" />
 				<enum name="id" value="military_building_heal_amount_mon" />
-			</template_reference>
-			<template_reference name="int" value="abilitybag_int_property" List.ItemID="-92426863">
-				<int name="value" value="4" />
-				<enum name="id" value="duration" />
 			</template_reference>
 		</list>
 		<bool name="can_queue_passive_ability" value="False" />
@@ -252,6 +247,6 @@
 		<instance_reference name="hotkey_binding" value="" />
 		<int name="default_command_additional_rally_weight_modifier" value="0" />
 	</group>
-	<uniqueid name="pbgid" value="1073741832" />
+	<uniqueid name="pbgid" value="2075585" />
 	<instance_reference name="parent_pbg" value="" />
 </instance>

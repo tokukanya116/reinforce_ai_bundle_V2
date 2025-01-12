@@ -1,0 +1,46 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="785177981" List.ParentItemID="785177981">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="204034348" List.ParentItemID="204034348">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="regeneration" value="10" overrideParent="True" />
+			<bool name="regeneration_disabled" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1100494298" List.ParentItemID="1100494298">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="-1112853639" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="151295069" List.ParentItemID="151295069">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+				<instance_reference name="blueprint_to_replace" value="ebps\races\sultanate\buildings\building_defense_wall_sul\building_defense_palisade_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="135796" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_palisade_gate" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-35287734" List.ParentItemID="-35287734">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1901319237" List.ParentItemID="1901319237">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="2006275906" List.ParentItemID="2006275906">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\sultanate" List.ItemID="-234134292" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1296191894" List.ParentItemID="-1296191894">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
+					<instance_reference name="blueprint_to_replace" value="ebps\races\sultanate\buildings\building_defense_wall_sul\building_defense_palisade_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="135796" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_palisade_gate" />
+	</variant>
+</instance>

@@ -867,7 +867,7 @@
 					<instance_reference name="construction_menu" value="menu\mon_age2_wonders" />
 					<list name="construction_items" overrideParent="True">
 						<group name="construction_item" List.ItemID="1169377671">
-							<instance_reference name="ebp" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" overrideParent="True" />
+							<instance_reference name="ebp" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 							<group name="ui_position">
 								<int name="ui_position_row" value="1" />
 								<int name="ui_position_column" value="1" />
@@ -1988,7 +1988,7 @@
 						<instance_reference name="construction_menu" value="menu\mon_age2_wonders" />
 						<list name="construction_items" overrideParent="True">
 							<group name="construction_item" List.ItemID="334413163">
-								<instance_reference name="ebp" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" overrideParent="True" />
+								<instance_reference name="ebp" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 								<group name="ui_position">
 									<int name="ui_position_row" value="1" />
 									<int name="ui_position_column" value="1" />
@@ -3157,7 +3157,7 @@
 						<instance_reference name="construction_menu" value="menu\mon_age2_wonders" />
 						<list name="construction_items" overrideParent="True">
 							<group name="construction_item" List.ItemID="-111965115">
-								<instance_reference name="ebp" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" overrideParent="True" />
+								<instance_reference name="ebp" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
 								<group name="ui_position">
 									<int name="ui_position_row" value="1" />
 									<int name="ui_position_column" value="1" />

@@ -11,8 +11,8 @@
 		</group>
 		<string name="name" value="Wooden Fortress Upgrade Springald B" overrideParent="True" />
 		<group name="damage">
-			<float name="max" value="50" overrideParent="True" />
-			<float name="min" value="50" overrideParent="True" />
+			<float name="max" value="60" overrideParent="True" />
+			<float name="min" value="60" overrideParent="True" />
 			<enum name="damage_type" value="True Damage" overrideParent="True" />
 			<bool name="allow_overkill" value="True" overrideParent="True" />
 		</group>

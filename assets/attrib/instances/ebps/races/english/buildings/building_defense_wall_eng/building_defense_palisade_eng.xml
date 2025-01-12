@@ -1,0 +1,107 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1942916370" List.ParentItemID="1942916370">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			<enum name="subclass_type" value="Wall" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="261052378" List.ParentItemID="261052378">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<float name="regeneration" value="10" overrideParent="True" />
+			<bool name="regeneration_disabled" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-1181036222" List.ParentItemID="-1181036222">
+			<list name="blocked_weapon_types" overrideParent="True">
+				<enum name="line_of_sight_blocked_weapon_type" value="melee" List.ItemID="596828653" />
+				<enum name="line_of_sight_blocked_weapon_type" value="ranged" List.ItemID="679862763" />
+				<enum name="line_of_sight_blocked_weapon_type" value="siege" List.ItemID="2073990069" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-478749961" List.ParentItemID="-478749961">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\english" List.ItemID="1354513789" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="280898031" List.ParentItemID="280898031">
+			<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1116589513" List.ParentItemID="-1116589513">
+			<file name="icon_name" value="races\common\buildings\palisade_wall" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1710736497" List.ParentItemID="-1710736497">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+				<instance_reference name="fence_cap_entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_palisade_bastion_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="166246" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_palisade" />
+	<variant name="campaign">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-2117704741" List.ParentItemID="-2117704741">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="Wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2106082170" List.ParentItemID="-2106082170">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-821251318" List.ParentItemID="-821251318">
+				<list name="blocked_weapon_types" overrideParent="True">
+					<enum name="line_of_sight_blocked_weapon_type" value="melee" List.ItemID="-1328404437" />
+					<enum name="line_of_sight_blocked_weapon_type" value="ranged" List.ItemID="-225726553" />
+					<enum name="line_of_sight_blocked_weapon_type" value="siege" List.ItemID="1928218684" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2105640981" List.ParentItemID="-2105640981">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="-1643312310" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-978434843" List.ParentItemID="-978434843">
+				<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1756148958" List.ParentItemID="-1756148958">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_palisade_bastion_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="166246" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_palisade" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1942916370" List.ParentItemID="1942916370">
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+				<enum name="subclass_type" value="Wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="261052378" List.ParentItemID="261052378">
+				<bool name="can_repair" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\line_of_sight_ext" List.ItemID="-1181036222" List.ParentItemID="-1181036222">
+				<list name="blocked_weapon_types" overrideParent="True">
+					<enum name="line_of_sight_blocked_weapon_type" value="melee" List.ItemID="-903237047" />
+					<enum name="line_of_sight_blocked_weapon_type" value="ranged" List.ItemID="435150247" />
+					<enum name="line_of_sight_blocked_weapon_type" value="siege" List.ItemID="352357975" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-478749961" List.ParentItemID="-478749961">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="2127857139" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="280898031" List.ParentItemID="280898031">
+				<bool name="construction_site_erase_inactive" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1116589513" List.ParentItemID="-1116589513">
+				<file name="icon_name" value="races\common\buildings\palisade_wall" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-1710736497" List.ParentItemID="-1710736497">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary">
+					<instance_reference name="fence_cap_entity" value="ebps\races\english\buildings\building_defense_wall_eng\building_defense_palisade_bastion_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="166246" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_palisade" />
+	</variant>
+</instance>

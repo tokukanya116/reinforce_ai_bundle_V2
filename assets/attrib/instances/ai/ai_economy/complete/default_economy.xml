@@ -1126,7 +1126,6 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_palantine_chapel_hre\building_landmark_age1_palantine_chapel_hre" List.ItemID="1789652072" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_golden_gate_vladimir_rus\building_landmark_age1_golden_gate_vladimir_control_rus" List.ItemID="909406363" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_quwwat_ul_islam_sul\building_landmark_age1_quwwat_ul_islam_control_sul" List.ItemID="497046511" />
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-61915732" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarkb_mal" List.ItemID="921492129" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age1_cifte_minareli_medrese_ott" List.ItemID="-759685221" />
 					<instance_reference name="entity" value="ebps\races\ottoman\buildings\building_landmark_age1_han_caravanserai_ott" List.ItemID="-2048963378" />
@@ -1164,7 +1163,6 @@
 					<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age1_imperial_palace_of_paderborn_hre" List.ItemID="1668340374" />
 					<instance_reference name="entity" value="ebps\races\rus\buildings\building_landmark_age1_novgorod_kremlin_rus\building_landmark_age1_novgorod_kremlin_control_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1121309540" />
 					<instance_reference name="entity" value="ebps\races\sultanate\buildings\building_landmark_age1_qutub_minar_sul\building_landmark_age1_qutub_minar_control_sul" List.ItemID="-1053481768" />
-					<instance_reference name="entity" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1464116832" />
 					<instance_reference name="entity" value="ebps\races\malian\buildings\building_landmark_age1_landmarka_mal" List.ItemID="1535091096" />
 				</list>
 				<template_reference name="utility" value="ai\economy\production_instance_utility">
@@ -2777,7 +2775,6 @@
 				<list name="members">
 					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age2_white_tower_eng\building_landmark_age2_white_tower_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="431192803" />
 					<instance_reference name="member" value="ebps\races\sultanate\buildings\building_landmark_age2_siri_fort_sul\building_landmark_age2_siri_fort_control_sul" List.ItemID="1687319786" />
-					<instance_reference name="member" value="ebps\races\mongol\buildings\building_wonder_age1_kurultai_mon" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1574303334" />
 					<instance_reference name="member" value="ebps\races\french\buildings\building_landmark_age2_la_chateau_rouge_fre\building_landmark_age2_la_chateau_rouge_fre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1381348956" />
 					<instance_reference name="member" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1020611228" />
 					<instance_reference name="member" value="ebps\races\english\buildings\building_landmark_age3_windsor_castle_eng\building_landmark_age3_windsor_castle_eng" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1154108611" />
