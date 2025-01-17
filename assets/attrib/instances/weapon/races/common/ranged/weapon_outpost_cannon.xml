@@ -171,8 +171,8 @@
 			<bool name="persistent_cooldownticks" value="False" />
 		</group>
 		<group name="damage">
-			<float name="max" value="90" />
-			<float name="min" value="90" />
+			<float name="max" value="95" />
+			<float name="min" value="95" />
 			<enum name="damage_type" value="Ranged" />
 			<bool name="allow_overkill" value="True" />
 			<list name="on_penetrated_state_trees">

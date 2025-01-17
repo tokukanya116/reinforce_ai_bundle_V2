@@ -21,6 +21,7 @@
 			</enum_table>
 		</group>
 		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_keep\tech_upgrade_mangonel_emplacement_byz" overrideParent="True" />
+		<enum name="owner_type" value="self" overrideParent="True" />
 	</group>
 	<uniqueid name="pbgid" value="2129278" />
 	<instance_reference name="parent_pbg" value="upgrade\races\common\research\upgrade_keep_springald" />

@@ -39,7 +39,7 @@
 			</template_reference>
 			<template_reference name="help_text_formatter" value="ui_text_formatter">
 				<list name="formatter_arguments">
-					<int name="int_value" value="40" List.ItemID="1138626079" />
+					<int name="int_value" value="45" List.ItemID="1138626079" />
 				</list>
 				<locstring name="formatter" value="11143005" />
 			</template_reference>

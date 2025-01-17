@@ -38,7 +38,7 @@
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\economy\upgrade_tech_university_murder_holes_4_sul" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1945392425" />
 					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1170676061" />
 					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_empire_rising" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1013835251" />
-					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" List.ItemID="-1355977765" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-1355977765" />
 				</list>
 			</group>
 			<group name="utility_entry" comment="econ" List.ItemID="1058485965">
@@ -320,9 +320,9 @@
 					<instance_reference name="upgrade" value="upgrade\races\mongol\units\upgrade_unit_scorpion_4_mon" List.ItemID="-758479962" />
 					<instance_reference name="upgrade" value="upgrade\races\hre\research\upgrade_man_at_arms_maces_hre" List.ItemID="1858472529" />
 					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2095423293" />
-					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" List.ItemID="-108965875" />
-					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_turret_rus" List.ItemID="-2032919639" />
-					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_watch_rus" List.ItemID="483555569" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-108965875" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_turret_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-2032919639" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_watch_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="483555569" />
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_improved_swords_sul" List.ItemID="358659443" />
 					<instance_reference name="upgrade" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" List.ItemID="-1195337630" />
 					<instance_reference name="upgrade" value="upgrade\races\sultanate\research\upgrade_outpost_lookout_tower_sul" List.ItemID="-1418735413" />
@@ -430,7 +430,7 @@
 					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_keep_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="479839542" />
 					<instance_reference name="upgrade" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="-914967238" />
 					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_cannon" List.ItemID="-2110747062" />
-					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" List.ItemID="1214717729" />
+					<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_springald_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1214717729" />
 				</list>
 			</group>
 		</list>

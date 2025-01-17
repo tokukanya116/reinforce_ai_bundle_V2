@@ -50,7 +50,7 @@
 		<group name="ui_info">
 			<template_reference name="help_text_formatter" value="ui_text_formatter">
 				<list name="formatter_arguments">
-					<int name="int_value" value="40" overrideParent="True" List.ItemID="1303600366" List.ParentItemID="1303600366" />
+					<int name="int_value" value="45" overrideParent="True" List.ItemID="1303600366" List.ParentItemID="1303600366" />
 				</list>
 			</template_reference>
 		</group>

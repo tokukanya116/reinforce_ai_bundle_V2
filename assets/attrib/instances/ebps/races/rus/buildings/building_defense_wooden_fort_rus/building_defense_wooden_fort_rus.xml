@@ -65,8 +65,8 @@
 		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="536671903" List.ParentItemID="536671903">
 			<list name="standard_upgrades" overrideParent="True">
 				<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_arrowslits_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-757898646" />
-				<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_turret_rus" List.ItemID="744222795" />
-				<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_watch_rus" List.ItemID="1619570598" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_turret_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="744222795" />
+				<instance_reference name="upgrade" value="upgrade\races\rus\research\upgrade_wooden_castle_watch_rus" mod="fe975498c26b480ab1aea44d8c8fd7ea" List.ItemID="1619570598" />
 				<instance_reference name="upgrade" value="upgrade\races\common\upgrade_outpost_mangonel_byz" mod="fe975498c26b480ab1aea44d8c8fd7ea" overrideParent="True" List.ItemID="-489709763" />
 			</list>
 		</template_reference>
